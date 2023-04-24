@@ -66,7 +66,6 @@ directionsService.route(request1, function(result1, status1) {
 
 // MAP
 
-<script>
       function initMap() {
         // Create a new map centered on the user's current location
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -127,4 +126,3 @@ directionsService.route(request1, function(result1, status1) {
               });
           });
       }
-    </script>
