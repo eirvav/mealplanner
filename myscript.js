@@ -63,3 +63,68 @@ directionsService.route(request1, function(result1, status1) {
     console.error('Failed to calculate route from starting location to grocery store 1:', status1);
   }
 });
+
+// MAP
+
+<script>
+      function initMap() {
+        // Create a new map centered on the user's current location
+        navigator.geolocation.getCurrentPosition(function (position) {
+          var currentLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: currentLocation,
+          });
+
+          // Add a marker at the user's current location
+          var marker = new google.maps.Marker({
+            position: currentLocation,
+            map: map,
+          });
+        });
+      }
+
+      function displayCalendar() {
+        gapi.client
+          .init({
+            apiKey: "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",
+            discoveryDocs: [
+              "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
+            ],
+          })
+          .then(function () {
+            gapi.client.calendar.events
+              .list({
+                calendarId: "primary",
+                timeMin: new Date().toISOString(),
+                showDeleted: false,
+                singleEvents: true,
+                maxResults: 10,
+                orderBy: "startTime",
+              })
+              .then(function (response) {
+                var events = response.result.items;
+                var calendarDiv = document.getElementById("calendar");
+                if (events.length > 0) {
+                  for (i = 0; i < events.length; i++) {
+                    var event = events[i];
+                    var when = new Date(event.start.dateTime);
+                    var dateString =
+                      when.toLocaleDateString() +
+                      " " +
+                      when.toLocaleTimeString();
+                    var eventDiv = document.createElement("div");
+                    eventDiv.innerHTML =
+                      event.summary + " (" + dateString + ")";
+                    calendarDiv.appendChild(eventDiv);
+                  }
+                } else {
+                  calendarDiv.innerHTML = "No upcoming events.";
+                }
+              });
+          });
+      }
+    </script>
