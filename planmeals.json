@@ -1,0 +1,160 @@
+{
+    "Vegan": {
+        "Breakfast": [
+            {
+                "Meal": "Vegan Tofu Scramble",
+                "Ingredients": [
+                    "tofu",
+                    "onion",
+                    "bell pepper",
+                    "turmeric",
+                    "nutritional yeast",
+                    "spinach",
+                    "olive oil",
+                    "salt",
+                    "black pepper"
+                ],
+                "Nutrition": {
+                    "Calories": 250,
+                    "Protein": 15,
+                    "Carbohydrates": 10,
+                    "Fat": 15,
+                    "Fiber": 5
+                }
+            }
+        ],
+        "Lunch": [
+            {
+                "Meal": "Vegetable Stir-Fry",
+                "Ingredients": [
+                    "assorted vegetables",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "ginger",
+                    "vegetable oil",
+                    "brown sugar",
+                    "cornstarch",
+                    "rice"
+                ],
+                "Nutrition": {
+                    "Calories": 350,
+                    "Protein": 8,
+                    "Carbohydrates": 45,
+                    "Fat": 15,
+                    "Fiber": 5
+                }
+            },
+            {
+                "Meal": "Quinoa Salad with Roasted Vegetables",
+                "Ingredients": [
+                    "quinoa",
+                    "assorted vegetables (such as carrots, broccoli, bell peppers)",
+                    "olive oil",
+                    "balsamic vinegar",
+                    "garlic",
+                    "fresh herbs",
+                    "salt",
+                    "black pepper"
+                ],
+                "Nutrition": {
+                    "Calories": 350,
+                    "Protein": 10,
+                    "Carbohydrates": 45,
+                    "Fat": 15,
+                    "Fiber": 8
+                }
+            }
+        ],
+        "Dinner": [
+            {
+                "Meal": "Tofu and Vegetable Curry",
+                "Ingredients": [
+                    "tofu",
+                    "assorted vegetables",
+                    "coconut milk",
+                    "curry paste",
+                    "onion",
+                    "garlic",
+                    "ginger",
+                    "vegetable oil",
+                    "rice"
+                ],
+                "Nutrition": {
+                    "Calories": 450,
+                    "Protein": 20,
+                    "Carbohydrates": 55,
+                    "Fat": 18,
+                    "Fiber": 7
+                }
+            }
+        ]
+    },
+    "ProteinBased": {
+        "Breakfast": [],
+        "Lunch": [],
+        "Dinner": [
+            {
+                "Meal": "Pasta Carbonara",
+                "Ingredients": [
+                    "pasta",
+                    "sauce",
+                    "onion",
+                    "bacon",
+                    "eggs",
+                    "cheese",
+                    "black pepper"
+                ],
+                "Nutrition": {
+                    "Calories": 550,
+                    "Protein": 25,
+                    "Carbohydrates": 40,
+                    "Fat": 30,
+                    "Fiber": 3
+                }
+            },
+            {
+                "Meal": "Chicken Alfredo",
+                "Ingredients": [
+                    "chicken",
+                    "fettuccine",
+                    "butter",
+                    "heavy cream",
+                    "Parmesan cheese",
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "Nutrition": {
+                    "Calories": 700,
+                    "Protein": 40,
+                    "Carbohydrates": 55,
+                    "Fat": 35,
+                    "Fiber": 2
+                }
+            },
+            {
+                "Meal": "Beef Stroganoff",
+                "Ingredients": [
+                    "beef",
+                    "onion",
+                    "mushrooms",
+                    "sour cream",
+                    "beef broth",
+                    "flour",
+                    "butter",
+                    "egg noodles",
+                    "salt",
+                    "black pepper"
+                ],
+                "Nutrition": {
+                    "Calories": 600,
+                    "Protein": 30,
+                    "Carbohydrates": 45,
+                    "Fat": 35,
+                    "Fiber": 3
+                }
+            }
+        ]
+    }
+}
