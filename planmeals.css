@@ -9,6 +9,8 @@ body {
 
 }
 
+/* GENERAL INFO FOR SHOWING MEALS */
+
 .meal-green-container {
     grid-column: 2/3;
     background-color: #AED3C2;
@@ -39,6 +41,18 @@ img {
     justify-items: center;
     align-items: center;
     margin: 5px;
+
+}
+
+#button-style {
+    height: 50%;
+    color: #0AAF60;
+    background-color: #F3FBF6;
+    border: 0px;
+}
+
+#button-style:hover {
+    background-color: #d6ebde;
 
 }
 
@@ -76,13 +90,27 @@ img {
 
 /* SELECTED MEALS */
 
-.selected-meals {
+#selected-meals {
     grid-column: 2/3;
     grid-row: 2/12;
-
     background-color: white;
     margin: 10px 10px;
     padding: 5px 0px;
     border: solid 3px #0AAF60;
     border-radius: 10px;
+}
+
+.title-right {
+    color: #0A894C;
+    text-align: center;
+    margin: 10px 25px;
+    border-bottom: solid 3px #AED3C2;
+}
+
+.added-meals {
+    margin: 10px 10px;
+    border-radius: 5px;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }

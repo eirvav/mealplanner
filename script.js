@@ -1,9 +1,9 @@
 
-// Hides the meal selector before it displayed after "submit"
-// window.onload = function () {
-//   let hideresult = document.getElementById("mealplan-container");
-//   hideresult.style.visibility = "hidden";
-// }
+//Hides the meal selector before it displayed after "submit"
+window.onload = function () {
+  let hideresult = document.getElementById("mealplan-container");
+  hideresult.style.visibility = "hidden";
+}
 
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", (e) => {
@@ -110,6 +110,20 @@ function getLunch(result, mealType) {
       calories[i].innerHTML = result.Vegan.Lunch[i].Nutrition.Calories + " Calories | " + result.All.Lunch[i].Nutrition.Protein + " Protein | " + result.All.Lunch[i].Nutrition.Fat + " Fat";
     }
   }
+}
+
+
+// ADD MEALS TO RIGHT SIDE
+
+function clickMeal(btnNumber, mealType) {
+  console.log(mealType)
+  var newDiv = document.createElement('div');
+  newDiv.className = "added-meals";
+  newDiv.textContent = "appended div to this";
+  document.getElementById('selected-meals').appendChild(newDiv);
+
+
+
 }
 
 
