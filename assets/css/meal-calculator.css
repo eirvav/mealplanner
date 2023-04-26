@@ -1,0 +1,59 @@
+.calc {
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.form-control {
+  max-width: 300px;
+}
+
+/* Add padding or margin to meal-type-card elements when they are stacked */
+@media (max-width: 992px) {
+  .meal-type-card {
+    padding-bottom: 1rem;
+  }
+}
+
+.card {
+  cursor: pointer;
+  border: none !important;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-selected {
+  border-color: #77c14b;
+  box-shadow: 0 0 10px #77c14b80;
+  background-color: #77c14b;
+  color: #fff;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.btn {
+  color: #000;
+  background-color: #fff;
+  border-color: #0aaf60;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  min-width: 150px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0aaf60;
+  border-color: #0aaf60;
+}
+
+.form-label {
+  margin-top: 1rem;
+}
