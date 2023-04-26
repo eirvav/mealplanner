@@ -7,6 +7,9 @@
     <title>PlanYourPlate</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
+    <!-- link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="planmeals.js"></script>
 
     <!-- Favicons -->
     <link href="assets/img/egg_alt.svg" rel="icon" />
@@ -66,7 +69,6 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a href="#">How it works</a></li>
-            <li><a href="./planmeals.html">Planmeals.html</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="./test.html">Test</a></li>
@@ -116,36 +118,37 @@
                     class="card text-center h-100 card-selected"
                     data-meal-type="All"
                   >
+                    <!-- Add the 'card-selected' class here -->
                     <img src="./assets/img/IconAll.png" />
                     <p>All</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center" data-meal-type="Paleo">
+                  <div class="card text-center">
                     <img src="./assets/img/IconMeat.png" />
                     <p>Paleo</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center" data-meal-type="Vegan">
+                  <div class="card text-center">
                     <img src="./assets/img/IconVegan.png" />
                     <p>Vegan</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center" data-meal-type="Pescetarian">
+                  <div class="card text-center">
                     <img src="./assets/img/IconPesc.png" />
                     <p>Pescetarian</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center" data-meal-type="Ketogenic">
+                  <div class="card text-center">
                     <img src="./assets/img/IconGluten.png" />
                     <p>Ketogenic</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center" data-meal-type="Glutenfree">
+                  <div class="card text-center">
                     <img src="./assets/img/IconLactose.png" />
                     <p>No-Dairy</p>
                   </div>
@@ -197,7 +200,53 @@
       </section>
       <!-- End Calculator section -->
       <!-- Start new content below -->
-      <div id="result-container"></div>
+      <!-- Generated meal Options -->
+      <section class="container">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-calories">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-calories">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End Main -->
     <script src="./script.js"></script>
