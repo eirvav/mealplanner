@@ -1,160 +1,670 @@
 {
-    "Vegan": {
-        "Breakfast": [
-            {
-                "Meal": "Vegan Tofu Scramble",
-                "Ingredients": [
-                    "tofu",
-                    "onion",
-                    "bell pepper",
-                    "turmeric",
-                    "nutritional yeast",
-                    "spinach",
-                    "olive oil",
-                    "salt",
-                    "black pepper"
-                ],
-                "Nutrition": {
-                    "Calories": 250,
-                    "Protein": 15,
-                    "Carbohydrates": 10,
-                    "Fat": 15,
-                    "Fiber": 5
-                }
-            }
+  "Vegan": {
+    "Breakfast": [
+      {
+        "Meal": "Vegan Tofu Scramble",
+        "Ingredients": [
+          "tofu",
+          "onion",
+          "bell pepper",
+          "turmeric",
+          "nutritional yeast",
+          "spinach",
+          "olive oil",
+          "salt",
+          "black pepper"
         ],
-        "Lunch": [
-            {
-                "Meal": "Vegetable Stir-Fry",
-                "Ingredients": [
-                    "assorted vegetables",
-                    "soy sauce",
-                    "sesame oil",
-                    "garlic",
-                    "ginger",
-                    "vegetable oil",
-                    "brown sugar",
-                    "cornstarch",
-                    "rice"
-                ],
-                "Nutrition": {
-                    "Calories": 350,
-                    "Protein": 8,
-                    "Carbohydrates": 45,
-                    "Fat": 15,
-                    "Fiber": 5
-                }
-            },
-            {
-                "Meal": "Quinoa Salad with Roasted Vegetables",
-                "Ingredients": [
-                    "quinoa",
-                    "assorted vegetables (such as carrots, broccoli, bell peppers)",
-                    "olive oil",
-                    "balsamic vinegar",
-                    "garlic",
-                    "fresh herbs",
-                    "salt",
-                    "black pepper"
-                ],
-                "Nutrition": {
-                    "Calories": 350,
-                    "Protein": 10,
-                    "Carbohydrates": 45,
-                    "Fat": 15,
-                    "Fiber": 8
-                }
-            }
+        "Nutrition": {
+          "Calories": 250,
+          "Protein": 15,
+          "Carbohydrates": 10,
+          "Fat": 15,
+          "Fiber": 5
+        }
+      },
+      {
+        "Meal": "Vegan Chickpea Omelette",
+        "Ingredients": [
+          "chickpea flour",
+          "water",
+          "salt",
+          "black pepper",
+          "spinach",
+          "mushrooms",
+          "tomatoes"
         ],
-        "Dinner": [
-            {
-                "Meal": "Tofu and Vegetable Curry",
-                "Ingredients": [
-                    "tofu",
-                    "assorted vegetables",
-                    "coconut milk",
-                    "curry paste",
-                    "onion",
-                    "garlic",
-                    "ginger",
-                    "vegetable oil",
-                    "rice"
-                ],
-                "Nutrition": {
-                    "Calories": 450,
-                    "Protein": 20,
-                    "Carbohydrates": 55,
-                    "Fat": 18,
-                    "Fiber": 7
-                }
-            }
-        ]
-    },
-    "ProteinBased": {
-        "Breakfast": [],
-        "Lunch": [],
-        "Dinner": [
-            {
-                "Meal": "Pasta Carbonara",
-                "Ingredients": [
-                    "pasta",
-                    "sauce",
-                    "onion",
-                    "bacon",
-                    "eggs",
-                    "cheese",
-                    "black pepper"
-                ],
-                "Nutrition": {
-                    "Calories": 550,
-                    "Protein": 25,
-                    "Carbohydrates": 40,
-                    "Fat": 30,
-                    "Fiber": 3
-                }
-            },
-            {
-                "Meal": "Chicken Alfredo",
-                "Ingredients": [
-                    "chicken",
-                    "fettuccine",
-                    "butter",
-                    "heavy cream",
-                    "Parmesan cheese",
-                    "garlic",
-                    "salt",
-                    "black pepper"
-                ],
-                "Nutrition": {
-                    "Calories": 700,
-                    "Protein": 40,
-                    "Carbohydrates": 55,
-                    "Fat": 35,
-                    "Fiber": 2
-                }
-            },
-            {
-                "Meal": "Beef Stroganoff",
-                "Ingredients": [
-                    "beef",
-                    "onion",
-                    "mushrooms",
-                    "sour cream",
-                    "beef broth",
-                    "flour",
-                    "butter",
-                    "egg noodles",
-                    "salt",
-                    "black pepper"
-                ],
-                "Nutrition": {
-                    "Calories": 600,
-                    "Protein": 30,
-                    "Carbohydrates": 45,
-                    "Fat": 35,
-                    "Fiber": 3
-                }
-            }
-        ]
-    }
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 20,
+          "Carbohydrates": 30,
+          "Fat": 10,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Vegan Overnight Oats",
+        "Ingredients": [
+          "rolled oats",
+          "almond milk",
+          "chia seeds",
+          "maple syrup",
+          "vanilla extract",
+          "banana",
+          "berries",
+          "nuts"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 10,
+          "Carbohydrates": 50,
+          "Fat": 12,
+          "Fiber": 10
+        }
+      },
+      {
+        "Meal": "Vegan Breakfast Burrito",
+        "Ingredients": [
+          "tortilla",
+          "scrambled tofu",
+          "black beans",
+          "avocado",
+          "salsa",
+          "cilantro"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 18,
+          "Carbohydrates": 40,
+          "Fat": 20,
+          "Fiber": 12
+        }
+      }
+    ],
+    "Lunch": [
+      {
+        "Meal": "Vegetable Stir-Fry",
+        "Ingredients": [
+          "assorted vegetables",
+          "soy sauce",
+          "sesame oil",
+          "garlic",
+          "ginger",
+          "vegetable oil",
+          "brown sugar",
+          "cornstarch",
+          "rice"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 8,
+          "Carbohydrates": 45,
+          "Fat": 15,
+          "Fiber": 5
+        }
+      },
+      {
+        "Meal": "Quinoa Salad with Roasted Vegetables",
+        "Ingredients": [
+          "quinoa",
+          "assorted vegetables (such as carrots, broccoli, bell peppers)",
+          "olive oil",
+          "balsamic vinegar",
+          "garlic",
+          "fresh herbs",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 10,
+          "Carbohydrates": 45,
+          "Fat": 15,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Vegan Buddha Bowl",
+        "Ingredients": [
+          "brown rice",
+          "roasted vegetables (such as sweet potato, broccoli, and cauliflower)",
+          "chickpeas",
+          "avocado",
+          "tahini",
+          "lemon juice",
+          "garlic"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 12,
+          "Carbohydrates": 50,
+          "Fat": 18,
+          "Fiber": 12
+        }
+      },
+      {
+        "Meal": "Vegan Lentil Soup",
+        "Ingredients": [
+          "lentils",
+          "diced tomatoes",
+          "vegetable broth",
+          "onion",
+          "garlic",
+          "celery",
+          "cumin",
+          "smoked paprika",
+          "crusty bread"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 15,
+          "Carbohydrates": 40,
+          "Fat": 8,
+          "Fiber": 10
+        }
+      },
+      {
+        "Meal": "Vegan Falafel Wrap",
+        "Ingredients": [
+          "whole-wheat wrap",
+          "homemade falafel",
+          "hummus",
+          "tomatoes",
+          "cucumber",
+          "tahini"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 12,
+          "Carbohydrates": 40,
+          "Fat": 15,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "Meal": "Tofu and Vegetable Curry",
+        "Ingredients": [
+          "tofu",
+          "assorted vegetables",
+          "coconut milk",
+          "curry paste",
+          "onion",
+          "garlic",
+          "ginger",
+          "vegetable oil",
+          "rice"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 55,
+          "Fat": 18,
+          "Fiber": 7
+        }
+      },
+      {
+        "Meal": "Vegan Lentil Shepherd's Pie",
+        "Ingredients": [
+          "lentils",
+          "carrots",
+          "celery",
+          "onion",
+          "diced tomatoes",
+          "sweet potatoes",
+          "olive oil",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 15,
+          "Carbohydrates": 60,
+          "Fat": 12,
+          "Fiber": 15
+        }
+      },
+      {
+        "Meal": "Vegan Chickpea Curry",
+        "Ingredients": [
+          "chickpeas",
+          "onion",
+          "garlic",
+          "ginger",
+          "vegetable oil",
+          "canned diced tomatoes",
+          "turmeric",
+          "cumin",
+          "coriander",
+          "rice"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 10,
+          "Carbohydrates": 50,
+          "Fat": 15,
+          "Fiber": 12
+        }
+      },
+      {
+        "Meal": "Vegan Mushroom Stroganoff",
+        "Ingredients": [
+          "mushrooms",
+          "onion",
+          "garlic",
+          "vegetable broth",
+          "coconut milk",
+          "whole-wheat flour",
+          "pasta",
+          "zucchini noodles"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 12,
+          "Carbohydrates": 40,
+          "Fat": 15,
+          "Fiber": 8
+        }
+      }
+    ]
+  },
+  "Paleo": {
+    "Breakfast": [
+      {
+        "Meal": "Chocolate Coconut Granola",
+        "Ingredients": [
+          "oats",
+          "coconut",
+          "nuts",
+          "vanilla extract",
+          "brown sugar"
+        ],
+        "Nutrition": {
+          "Calories": 550,
+          "Protein": 25,
+          "Carbohydrates": 40,
+          "Fat": 30,
+          "Fiber": 10
+        }
+      },
+      {
+        "Meal": "Sweet Potato Hash with Sausage and Eggs",
+        "Ingredients": [
+          "sweet potatoes",
+          "sausage",
+          "eggs",
+          "salt",
+          "pepper",
+          "olive oil"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 30,
+          "Fat": 30,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Avocado and Tomato Omelette",
+        "Ingredients": [
+          "eggs",
+          "avocado",
+          "tomato",
+          "salt",
+          "pepper",
+          "olive oil"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 15,
+          "Carbohydrates": 10,
+          "Fat": 25,
+          "Fiber": 5
+        }
+      },
+      {
+        "Meal": "Paleo Banana Pancakes",
+        "Ingredients": [
+          "ripe bananas",
+          "almond flour",
+          "eggs",
+          "cinnamon",
+          "coconut oil",
+          "maple syrup",
+          "berries"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 15,
+          "Carbohydrates": 30,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Lunch": [
+      {
+        "Meal": "Grilled Chicken and Vegetable Skewers",
+        "Ingredients": [
+          "chicken breast",
+          "assorted vegetables (such as bell peppers, zucchini, and onions)",
+          "olive oil",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 30,
+          "Carbohydrates": 20,
+          "Fat": 20,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Tuna Salad Lettuce Wraps",
+        "Ingredients": [
+          "canned tuna",
+          "celery",
+          "red onion",
+          "paleo mayo",
+          "salt",
+          "pepper",
+          "lemon juice",
+          "lettuce leaves"
+        ],
+        "Nutrition": {
+          "Calories": 250,
+          "Protein": 20,
+          "Carbohydrates": 5,
+          "Fat": 15,
+          "Fiber": 2
+        }
+      },
+      {
+        "Meal": "Beef and Broccoli Stir-Fry",
+        "Ingredients": [
+          "flank steak",
+          "broccoli florets",
+          "garlic",
+          "ginger",
+          "coconut aminos",
+          "olive oil",
+          "cauliflower rice"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 25,
+          "Carbohydrates": 20,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "Meal": "Pasta Carbonara",
+        "Ingredients": [
+          "pasta",
+          "sauce",
+          "onion",
+          "bacon",
+          "eggs",
+          "cheese",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 550,
+          "Protein": 25,
+          "Carbohydrates": 40,
+          "Fat": 30,
+          "Fiber": 3
+        }
+      },
+      {
+        "Meal": "Chicken Alfredo",
+        "Ingredients": [
+          "chicken",
+          "fettuccine",
+          "butter",
+          "heavy cream",
+          "Parmesan cheese",
+          "garlic",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 700,
+          "Protein": 40,
+          "Carbohydrates": 55,
+          "Fat": 35,
+          "Fiber": 2
+        }
+      },
+      {
+        "Meal": "Beef Stroganoff",
+        "Ingredients": [
+          "beef",
+          "onion",
+          "mushrooms",
+          "sour cream",
+          "beef broth",
+          "flour",
+          "butter",
+          "egg noodles",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 600,
+          "Protein": 30,
+          "Carbohydrates": 45,
+          "Fat": 35,
+          "Fiber": 3
+        }
+      }
+    ]
+  },
+  "All": {
+    "Breakfast": [
+      {
+        "Meal": "Shakshuka",
+        "Ingredients": [
+          "onion",
+          "red bell pepper",
+          "olive oil",
+          "canned diced tomatoes",
+          "smoked paprika",
+          "cumin",
+          "chili flakes",
+          "eggs",
+          "bread"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 15,
+          "Carbohydrates": 25,
+          "Fat": 20,
+          "Fiber": 5
+        }
+      },
+      {
+        "Meal": "Banana Nut Oatmeal",
+        "Ingredients": [
+          "rolled oats",
+          "almond milk",
+          "banana",
+          "nuts (such as almonds or walnuts)",
+          "honey or maple syrup"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 12,
+          "Carbohydrates": 50,
+          "Fat": 18,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Breakfast Burrito",
+        "Ingredients": [
+          "eggs",
+          "bell pepper",
+          "onion",
+          "tortilla",
+          "avocado",
+          "salsa",
+          "shredded cheese (optional)"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 30,
+          "Fat": 25,
+          "Fiber": 5
+        }
+      },
+      {
+        "Meal": "Overnight Chia Pudding",
+        "Ingredients": [
+          "chia seeds",
+          "almond milk",
+          "vanilla extract",
+          "honey or agave",
+          "fresh fruit",
+          "chopped nuts"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 10,
+          "Carbohydrates": 25,
+          "Fat": 20,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Lunch": [
+      {
+        "Meal": "Greek Salad",
+        "Ingredients": [
+          "romaine lettuce",
+          "cherry tomatoes",
+          "cucumber",
+          "red onion",
+          "feta cheese",
+          "Kalamata olives",
+          "olive oil",
+          "red wine vinegar",
+          "Dijon mustard",
+          "garlic",
+          "oregano"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 10,
+          "Carbohydrates": 20,
+          "Fat": 28,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Turkey Club Wrap",
+        "Ingredients": [
+          "turkey",
+          "bacon",
+          "lettuce",
+          "tomato",
+          "avocado",
+          "mayo or hummus",
+          "whole wheat wrap"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 30,
+          "Carbohydrates": 30,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Lentil Soup",
+        "Ingredients": [
+          "onion",
+          "carrot",
+          "celery",
+          "olive oil",
+          "canned lentils",
+          "chicken or vegetable broth",
+          "diced tomatoes",
+          "Italian seasoning"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 15,
+          "Carbohydrates": 40,
+          "Fat": 8,
+          "Fiber": 15
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "Meal": "Baked Salmon with Roasted Vegetables",
+        "Ingredients": [
+          "salmon fillets",
+          "salt",
+          "pepper",
+          "lemon juice",
+          "assorted vegetables (such as asparagus, broccoli, or Brussels sprouts)",
+          "olive oil",
+          "garlic",
+          "rosemary"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 30,
+          "Carbohydrates": 20,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Spaghetti Squash with Meatballs",
+        "Ingredients": [
+          "spaghetti squash",
+          "ground turkey",
+          "almond flour",
+          "egg",
+          "garlic",
+          "Italian seasoning",
+          "marinara sauce"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 30,
+          "Carbohydrates": 20,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      },
+      {
+        "Meal": "Stir-Fry with Quinoa",
+        "Ingredients": [
+          "quinoa",
+          "protein (such as chicken or tofu)",
+          "assorted vegetables (such as bell peppers, broccoli, and carrots)",
+          "soy sauce",
+          "rice vinegar",
+          "honey"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 50,
+          "Fat": 18,
+          "Fiber": 8
+        }
+      }
+    ]
+  }
 }

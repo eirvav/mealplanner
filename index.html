@@ -66,6 +66,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a href="#">How it works</a></li>
+            <li><a href="./planmeals.html">Planmeals.html</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="./test.html">Test</a></li>
@@ -115,37 +116,36 @@
                     class="card text-center h-100 card-selected"
                     data-meal-type="All"
                   >
-                    <!-- Add the 'card-selected' class here -->
                     <img src="./assets/img/IconAll.png" />
                     <p>All</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card text-center" data-meal-type="Paleo">
                     <img src="./assets/img/IconMeat.png" />
                     <p>Paleo</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card text-center" data-meal-type="Vegan">
                     <img src="./assets/img/IconVegan.png" />
                     <p>Vegan</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card text-center" data-meal-type="Pescetarian">
                     <img src="./assets/img/IconPesc.png" />
                     <p>Pescetarian</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card text-center" data-meal-type="Ketogenic">
                     <img src="./assets/img/IconGluten.png" />
                     <p>Ketogenic</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card text-center" data-meal-type="Glutenfree">
                     <img src="./assets/img/IconLactose.png" />
                     <p>No-Dairy</p>
                   </div>
@@ -197,6 +197,7 @@
       </section>
       <!-- End Calculator section -->
       <!-- Start new content below -->
+      <div id="result-container"></div>
     </main>
     <!-- End Main -->
     <script src="./script.js"></script>
