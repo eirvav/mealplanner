@@ -1,3 +1,10 @@
+
+// Hides the meal selector before it displayed after "submit"
+window.onload = function () {
+  let hideresult = document.getElementById("mealplan-container");
+  hideresult.style.visibility = "hidden";
+}
+
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", (e) => {
     // Remove the card-selected class from any previously selected card
@@ -40,13 +47,16 @@ document
     const dailyCalories = document.getElementById("daily-calories").value;
 
     // Log the values (you can replace this with your desired logic)
-    console.log("Meal Type:", mealType);
-    console.log("Number of Meals per Day:", numMeals);
-    console.log("Daily Calorie Intake:", dailyCalories);
+    // console.log("Meal Type:", mealType);
+    // console.log("Number of Meals per Day:", numMeals);
+    // console.log("Daily Calorie Intake:", dailyCalories);
 
     // GET THE JSON FOR WEB AND STARTS FUNCTION WITH ALL THE NESSESERY VARIABLES
     $.getJSON("https://gist.githubusercontent.com/isakmd/a5cfc2f513dfc58b4546310d66ad4b3b/raw/b0b6935a143b6484f31d3c8207d539af664141dc/mealplans.json", function (result) {
-      console.log(result)
+
+      // Displays the hidden content
+      let showresult = document.getElementById("mealplan-container");
+      showresult.style.visibility = "visible";
       getBreakfast(result, mealType)
     });
   });
