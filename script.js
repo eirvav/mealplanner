@@ -1,9 +1,9 @@
 
 // Hides the meal selector before it displayed after "submit"
-window.onload = function () {
-  let hideresult = document.getElementById("mealplan-container");
-  hideresult.style.visibility = "hidden";
-}
+// window.onload = function () {
+//   let hideresult = document.getElementById("mealplan-container");
+//   hideresult.style.visibility = "hidden";
+// }
 
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", (e) => {
@@ -53,15 +53,19 @@ document
 
     // GET THE JSON FOR WEB AND STARTS FUNCTION WITH ALL THE NESSESERY VARIABLES
     $.getJSON("https://gist.githubusercontent.com/isakmd/a5cfc2f513dfc58b4546310d66ad4b3b/raw/b0b6935a143b6484f31d3c8207d539af664141dc/mealplans.json", function (result) {
-
+      console.log(result)
       // Displays the hidden content
       let showresult = document.getElementById("mealplan-container");
       showresult.style.visibility = "visible";
-      getBreakfast(result, mealType)
+      getBreakfast(result, mealType);
+      getLunch(result, mealType);
     });
   });
 ;
 
+//
+// MEAL OPTIONS
+//
 
 
 function getBreakfast(result, mealType) {
@@ -71,22 +75,42 @@ function getBreakfast(result, mealType) {
   if (mealType == 'All') {
     for (i = 0; i < result.All.Breakfast.length; i++) {
       titlemeal[i].innerHTML = result.All.Breakfast[i].Meal;
-      calories[i].innerHTML = result.All.Breakfast[i].Nutrition.Calories + " Calories";
+      calories[i].innerHTML = result.All.Breakfast[i].Nutrition.Calories + " Calories | " + result.All.Breakfast[i].Nutrition.Protein + " Protein | " + result.All.Breakfast[i].Nutrition.Fat + " Fat";
     }
   } else if (mealType == 'Paleo') {
     for (i = 0; i < result.Paleo.Breakfast.length; i++) {
       titlemeal[i].innerHTML = result.Paleo.Breakfast[i].Meal;
-      calories[i].innerHTML = result.Paleo.Breakfast[i].Nutrition.Calories + " Calories";
+      calories[i].innerHTML = result.Paleo.Breakfast[i].Nutrition.Calories + " Calories | " + result.All.Breakfast[i].Nutrition.Protein + " Protein | " + result.All.Breakfast[i].Nutrition.Fat + " Fat";
     }
   } else if (mealType == 'Vegan') {
     for (i = 0; i < result.Vegan.Breakfast.length; i++) {
       titlemeal[i].innerHTML = result.Vegan.Breakfast[i].Meal;
-      calories[i].innerHTML = result.Vegan.Breakfast[i].Nutrition.Calories + " Calories";
+      calories[i].innerHTML = result.Vegan.Breakfast[i].Nutrition.Calories + " Calories | " + result.All.Breakfast[i].Nutrition.Protein + " Protein | " + result.All.Breakfast[i].Nutrition.Fat + " Fat";
     }
   }
 }
-//
-// MEAL OPTIONS
-//
+
+function getLunch(result, mealType) {
+  console.log(mealType)
+  titlemeal = document.getElementsByClassName("title-meal-lunch")
+  calories = document.getElementsByClassName("calories-lunch")
+  if (mealType == 'All') {
+    for (i = 0; i < result.All.Lunch.length; i++) {
+      titlemeal[i].innerHTML = result.All.Lunch[i].Meal;
+      calories[i].innerHTML = result.All.Lunch[i].Nutrition.Calories + " Calories | " + result.All.Lunch[i].Nutrition.Protein + " Protein | " + result.All.Lunch[i].Nutrition.Fat + " Fat";
+    }
+  } else if (mealType == 'Paleo') {
+    for (i = 0; i < result.Paleo.Lunch.length; i++) {
+      titlemeal[i].innerHTML = result.Paleo.Lunch[i].Meal;
+      calories[i].innerHTML = result.Paleo.Lunch[i].Nutrition.Calories + " Calories | " + result.All.Lunch[i].Nutrition.Protein + " Protein | " + result.All.Lunch[i].Nutrition.Fat + " Fat";
+    }
+  } else if (mealType == 'Vegan') {
+    for (i = 0; i < result.Vegan.Lunch.length; i++) {
+      titlemeal[i].innerHTML = result.Vegan.Lunch[i].Meal;
+      calories[i].innerHTML = result.Vegan.Lunch[i].Nutrition.Calories + " Calories | " + result.All.Lunch[i].Nutrition.Protein + " Protein | " + result.All.Lunch[i].Nutrition.Fat + " Fat";
+    }
+  }
+}
+
 
 

@@ -17,7 +17,7 @@ body {
     grid-template-columns: 3fr 2fr;
 }
 
-.breakfastmeal {
+.meal {
     display: grid;
     grid-template-columns: 2fr 6fr 1fr;
     border: solid #0AAF60 3px;
@@ -60,6 +60,10 @@ img {
     font-size: 20px;
 }
 
+.title-meal-lunch {
+    font-size: 20px;
+}
+
 .pluss {
     display: flex;
     justify-items: center;
@@ -74,7 +78,7 @@ img {
 
 .selected-meals {
     grid-column: 2/3;
-    grid-row: 2/6;
+    grid-row: 2/12;
 
     background-color: white;
     margin: 10px 10px;
