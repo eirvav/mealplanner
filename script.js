@@ -43,20 +43,40 @@ document
     console.log("Meal Type:", mealType);
     console.log("Number of Meals per Day:", numMeals);
     console.log("Daily Calorie Intake:", dailyCalories);
-  });
 
+    // GET THE JSON FOR WEB AND STARTS FUNCTION WITH ALL THE NESSESERY VARIABLES
+    $.getJSON("https://gist.githubusercontent.com/isakmd/a5cfc2f513dfc58b4546310d66ad4b3b/raw/b0b6935a143b6484f31d3c8207d539af664141dc/mealplans.json", function (result) {
+      console.log(result)
+      getBreakfast(result, mealType)
+    });
+  });
+;
+
+
+
+function getBreakfast(result, mealType) {
+  console.log(mealType)
+  titlemeal = document.getElementsByClassName("title-meal-breakfast")
+  calories = document.getElementsByClassName("calories-breakfast")
+  if (mealType == 'All') {
+    for (i = 0; i < result.All.Breakfast.length; i++) {
+      titlemeal[i].innerHTML = result.All.Breakfast[i].Meal;
+      calories[i].innerHTML = result.All.Breakfast[i].Nutrition.Calories + " Calories";
+    }
+  } else if (mealType == 'Paleo') {
+    for (i = 0; i < result.Paleo.Breakfast.length; i++) {
+      titlemeal[i].innerHTML = result.Paleo.Breakfast[i].Meal;
+      calories[i].innerHTML = result.Paleo.Breakfast[i].Nutrition.Calories + " Calories";
+    }
+  } else if (mealType == 'Vegan') {
+    for (i = 0; i < result.Vegan.Breakfast.length; i++) {
+      titlemeal[i].innerHTML = result.Vegan.Breakfast[i].Meal;
+      calories[i].innerHTML = result.Vegan.Breakfast[i].Nutrition.Calories + " Calories";
+    }
+  }
+}
 //
 // MEAL OPTIONS
 //
 
-// $.getJSON("https://gist.githubusercontent.com/isakmd/f09c90e170f342745e94c6bccdef0895/raw/c52b2481931ac279da5ed7beb6f008882e4763d2/mealplans.json", function (result) {
-//   console.log(result)
-//   titlemeal = document.getElementsByClassName("card-title")
-//   calories = document.getElementsByClassName("card-calories")
-//   for (i = 0; i < 2; i++) {
-//     titlemeal[i].innerHTML = result.Vegan.Lunch[i].Meal
-//     calories[i].innerHTML = result.Vegan.Lunch[i].Nutrition.Calories + " Calories";
-
-//   }
-// })
 

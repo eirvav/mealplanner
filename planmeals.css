@@ -12,7 +12,7 @@ body {
 .meal-green-container {
     grid-column: 2/3;
     background-color: #AED3C2;
-    padding: 0px 30px;
+    padding: 15px 30px;
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
@@ -20,7 +20,7 @@ body {
 .breakfastmeal {
     display: grid;
     grid-template-columns: 2fr 6fr 1fr;
-    border: solid #0AAF60 2px;
+    border: solid #0AAF60 3px;
     border-radius: 20px;
     background-color: white;
     margin: 10px 0px;
@@ -38,6 +38,17 @@ img {
     display: flex;
     justify-items: center;
     align-items: center;
+    margin: 5px;
+
+}
+
+.img-breakfast {
+    border: solid 2px #0AAF60;
+    border-radius: 10px;
+    height: 100%;
+    margin-left: 5px;
+
+
 }
 
 .rightside {
@@ -45,7 +56,7 @@ img {
     margin: 10px 0px;
 }
 
-.title-meal {
+.title-meal-breakfast {
     font-size: 20px;
 }
 
@@ -57,4 +68,17 @@ img {
     line-height: 0px;
     color: #0AAF60;
 
+}
+
+/* SELECTED MEALS */
+
+.selected-meals {
+    grid-column: 2/3;
+    grid-row: 2/6;
+
+    background-color: white;
+    margin: 10px 10px;
+    padding: 5px 0px;
+    border: solid 3px #0AAF60;
+    border-radius: 10px;
 }
