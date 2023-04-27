@@ -129,6 +129,8 @@ function clickMeal(btnNumber, mealday, mealType) {
       newDiv.className = "added-meals";
       if (mealType == 'All') {
         newDiv.textContent = result.All.Lunch[btnNumber].Meal;
+        //Legger til senere
+        // newDiv.textContent += result.Paleo.Lunch[btnNumber].Nutrition.Calories + "g Calories | " + result.All.Lunch[btnNumber].Nutrition.Protein + "g Protein | " + result.All.Lunch[btnNumber].Nutrition.Fat + "g Fat";
       } else if (mealType == 'Paleo') {
         newDiv.textContent = result.Paleo.Lunch[btnNumber].Meal;
       } else if (mealType == 'Vegan') {
