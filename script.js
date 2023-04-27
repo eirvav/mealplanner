@@ -115,7 +115,7 @@ function getLunch(result, mealType) {
 
 
 // ADD MEALS TO RIGHT SIDE
-
+var ingredientArray = [];
 function clickMeal(btnNumber, mealday, mealType) {
   const selectedMealTypeCard = document.querySelector(".card-selected");
   mealType = selectedMealTypeCard
@@ -128,13 +128,27 @@ function clickMeal(btnNumber, mealday, mealType) {
       var newDiv = document.createElement('div');
       newDiv.className = "added-meals";
       if (mealType == 'All') {
-        newDiv.textContent = result.All.Lunch[btnNumber].Meal;
-        //Legger til senere
-        // newDiv.textContent += result.Paleo.Lunch[btnNumber].Nutrition.Calories + "g Calories | " + result.All.Lunch[btnNumber].Nutrition.Protein + "g Protein | " + result.All.Lunch[btnNumber].Nutrition.Fat + "g Fat";
+        newDiv.innerHTML = result.All.Lunch[btnNumber].Meal + "\n";
+        //newDiv.innerHTML += result.Paleo.Lunch[btnNumber].Nutrition.Calories + "g Calories | " + result.All.Lunch[btnNumber].Nutrition.Protein + "g Protein | " + result.All.Lunch[btnNumber].Nutrition.Fat + "g Fat";
+        for (var i = 0; i < result.All.Lunch[btnNumber].Ingredients.length; i++) {
+          console.log(result.All.Lunch[btnNumber].Ingredients[i])
+          ingredientArray.push(result.All.Lunch[btnNumber].Ingredients[i]);
+        }
+        ingredients()
       } else if (mealType == 'Paleo') {
         newDiv.textContent = result.Paleo.Lunch[btnNumber].Meal;
+        for (var i = 0; i < result.All.Lunch[btnNumber].Ingredients.length; i++) {
+          console.log(result.Paleo.Lunch[btnNumber].Ingredients[i])
+          ingredientArray.push(result.Paleo.Lunch[btnNumber].Ingredients[i]);
+        }
+        ingredients()
       } else if (mealType == 'Vegan') {
         newDiv.textContent = result.Vegan.Lunch[btnNumber].Meal;
+        for (var i = 0; i < result.Vegan.Lunch[btnNumber].Ingredients.length; i++) {
+          console.log(result.All.Lunch[btnNumber].Ingredients[i])
+          ingredientArray.push(result.Vegan.Lunch[btnNumber].Ingredients[i]);
+        }
+        ingredients()
       }
       document.getElementById('selected-meals').appendChild(newDiv);
     } else if (mealday == "Breakfast") {
@@ -142,16 +156,36 @@ function clickMeal(btnNumber, mealday, mealType) {
       newDiv.className = "added-meals";
       if (mealType == 'All') {
         newDiv.textContent = result.All.Breakfast[btnNumber].Meal;
+        for (var i = 0; i < result.All.Breakfast[btnNumber].Ingredients.length; i++) {
+          ingredientArray.push(result.All.Breakfast[btnNumber].Ingredients[i]);
+        }
+        ingredients()
       } else if (mealType == 'Paleo') {
         newDiv.textContent = result.Paleo.Breakfast[btnNumber].Meal;
+        for (var i = 0; i < result.Paleo.Breakfast[btnNumber].Ingredients.length; i++) {
+          ingredientArray.push(result.Paleo.Breakfast[btnNumber].Ingredients[i]);
+        }
+        ingredients()
       } else if (mealType == 'Vegan') {
         newDiv.textContent = result.Vegan.Breakfast[btnNumber].Meal;
+        for (var i = 0; i < result.Vegan.Breakfast[btnNumber].Ingredients.length; i++) {
+          ingredientArray.push(result.Vegan.Breakfast[btnNumber].Ingredients[i]);
+        }
+        ingredients()
       }
       document.getElementById('selected-meals').appendChild(newDiv);
     }
 
   });
 
+}
+
+function ingredients() {
+  var displayArray = "";
+  for (var i = 0; i < ingredientArray.length; i++) {
+    displayArray += ingredientArray[i] + "<br>";
+  }
+  document.getElementById('ingredients').innerHTML = displayArray;
 }
 
 

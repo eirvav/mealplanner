@@ -92,7 +92,7 @@ img {
 
 #selected-meals {
     grid-column: 2/3;
-    grid-row: 2/12;
+    grid-row: 2/8;
     background-color: white;
     margin: 10px 10px;
     padding: 5px 0px;
@@ -111,6 +111,23 @@ img {
     margin: 10px 10px;
     border-radius: 5px;
     height: auto;
-    padding: 15px 5px;
+    padding: 10px 5px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* SHOPPING LIST */
+#selected-ingredients {
+    grid-column: 2/3;
+    grid-row: 8/12;
+    background-color: white;
+    margin: 10px 10px;
+    padding: 5px 0px;
+    border: solid 3px #0AAF60;
+    border-radius: 10px;
+}
+
+#ingredients {
+    color: #0A894C;
+    padding: 10px;
+    margin-left: 30px;
 }
