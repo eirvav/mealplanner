@@ -131,21 +131,21 @@ function clickMeal(btnNumber, mealday, mealType) {
         newDiv.innerHTML = result.All.Lunch[btnNumber].Meal + "\n";
         //newDiv.innerHTML += result.Paleo.Lunch[btnNumber].Nutrition.Calories + "g Calories | " + result.All.Lunch[btnNumber].Nutrition.Protein + "g Protein | " + result.All.Lunch[btnNumber].Nutrition.Fat + "g Fat";
         for (var i = 0; i < result.All.Lunch[btnNumber].Ingredients.length; i++) {
-          console.log(result.All.Lunch[btnNumber].Ingredients[i])
+
           ingredientArray.push(result.All.Lunch[btnNumber].Ingredients[i]);
         }
         ingredients()
       } else if (mealType == 'Paleo') {
         newDiv.textContent = result.Paleo.Lunch[btnNumber].Meal;
-        for (var i = 0; i < result.All.Lunch[btnNumber].Ingredients.length; i++) {
-          console.log(result.Paleo.Lunch[btnNumber].Ingredients[i])
+        for (var i = 0; i < result.Paleo.Lunch[btnNumber].Ingredients.length; i++) {
+
           ingredientArray.push(result.Paleo.Lunch[btnNumber].Ingredients[i]);
         }
         ingredients()
       } else if (mealType == 'Vegan') {
         newDiv.textContent = result.Vegan.Lunch[btnNumber].Meal;
         for (var i = 0; i < result.Vegan.Lunch[btnNumber].Ingredients.length; i++) {
-          console.log(result.All.Lunch[btnNumber].Ingredients[i])
+
           ingredientArray.push(result.Vegan.Lunch[btnNumber].Ingredients[i]);
         }
         ingredients()
