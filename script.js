@@ -60,6 +60,8 @@ document
       getBreakfast(result, mealType);
       getLunch(result, mealType);
     });
+
+
   });
 ;
 
@@ -91,7 +93,6 @@ function getBreakfast(result, mealType) {
 }
 
 function getLunch(result, mealType) {
-  console.log(mealType)
   titlemeal = document.getElementsByClassName("title-meal-lunch")
   calories = document.getElementsByClassName("calories-lunch")
   if (mealType == 'All') {
@@ -115,16 +116,43 @@ function getLunch(result, mealType) {
 
 // ADD MEALS TO RIGHT SIDE
 
-function clickMeal(btnNumber, mealType) {
+function clickMeal(btnNumber, mealday, mealType) {
+  const selectedMealTypeCard = document.querySelector(".card-selected");
+  mealType = selectedMealTypeCard
+    ? selectedMealTypeCard.querySelector("p").textContent
+    : null;
   console.log(mealType)
-  var newDiv = document.createElement('div');
-  newDiv.className = "added-meals";
-  newDiv.textContent = "appended div to this";
-  document.getElementById('selected-meals').appendChild(newDiv);
+  console.log(mealday)
+  $.getJSON("https://gist.githubusercontent.com/isakmd/a5cfc2f513dfc58b4546310d66ad4b3b/raw/b0b6935a143b6484f31d3c8207d539af664141dc/mealplans.json", function (result) {
+    if (mealday == "Lunch") {
+      var newDiv = document.createElement('div');
+      newDiv.className = "added-meals";
+      if (mealType == 'All') {
+        newDiv.textContent = result.All.Lunch[btnNumber].Meal;
+      } else if (mealType == 'Paleo') {
+        newDiv.textContent = result.Paleo.Lunch[btnNumber].Meal;
+      } else if (mealType == 'Vegan') {
+        newDiv.textContent = result.Vegan.Lunch[btnNumber].Meal;
+      }
+      document.getElementById('selected-meals').appendChild(newDiv);
+    } else if (mealday == "Breakfast") {
+      var newDiv = document.createElement('div');
+      newDiv.className = "added-meals";
+      if (mealType == 'All') {
+        newDiv.textContent = result.All.Breakfast[btnNumber].Meal;
+      } else if (mealType == 'Paleo') {
+        newDiv.textContent = result.Paleo.Breakfast[btnNumber].Meal;
+      } else if (mealType == 'Vegan') {
+        newDiv.textContent = result.Vegan.Breakfast[btnNumber].Meal;
+      }
+      document.getElementById('selected-meals').appendChild(newDiv);
+    }
 
-
+  });
 
 }
+
+
 
 
 
