@@ -196,34 +196,45 @@ function clickMeal(btnNumber, mealday, mealType) {
       if (mealType == 'All') {
         if (btnNumber == 0) {
           newDiv.innerHTML = result.All.Lunch[arrayRandom[0]].Meal + "\n";
+          for (var i = 0; i < result.All.Lunch[arrayRandom[0]].Ingredients.length; i++) {
+            ingredientArray.push(result.All.Lunch[arrayRandom[0]].Ingredients[i]);
+          }
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result.All.Lunch[arrayRandom[1]].Meal + "\n";
-        }
-        //newDiv.innerHTML += result.Paleo.Lunch[btnNumber].Nutrition.Calories + "g Calories | " + result.All.Lunch[btnNumber].Nutrition.Protein + "g Protein | " + result.All.Lunch[btnNumber].Nutrition.Fat + "g Fat";
-        for (var i = 0; i < result.All.Lunch[btnNumber].Ingredients.length; i++) {
-          ingredientArray.push(result.All.Lunch[btnNumber].Ingredients[i]);
+          for (var i = 0; i < result.All.Lunch[arrayRandom[1]].Ingredients.length; i++) {
+            ingredientArray.push(result.All.Lunch[arrayRandom[1]].Ingredients[i]);
+          }
         }
         ingredients()
+
       } else if (mealType == 'Paleo') {
         if (btnNumber == 0) {
           newDiv.innerHTML = result.Paleo.Lunch[arrayRandom[0]].Meal + "\n";
+          for (var i = 0; i < result.Paleo.Lunch[arrayRandom[0]].Ingredients.length; i++) {
+            ingredientArray.push(result.Paleo.Lunch[arrayRandom[0]].Ingredients[i]);
+          }
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result.Paleo.Lunch[arrayRandom[1]].Meal + "\n";
-        }
-        for (var i = 0; i < result.Paleo.Lunch[btnNumber].Ingredients.length; i++) {
-          ingredientArray.push(result.Paleo.Lunch[btnNumber].Ingredients[i]);
+          for (var i = 0; i < result.Paleo.Lunch[arrayRandom[1]].Ingredients.length; i++) {
+            ingredientArray.push(result.Paleo.Lunch[arrayRandom[1]].Ingredients[i]);
+          }
         }
         ingredients()
+
       } else if (mealType == 'Vegan') {
         if (btnNumber == 0) {
           newDiv.innerHTML = result.Vegan.Lunch[arrayRandom[0]].Meal + "\n";
+          for (var i = 0; i < result.Vegan.Lunch[arrayRandom[0]].Ingredients.length; i++) {
+            ingredientArray.push(result.Vegan.Lunch[arrayRandom[0]].Ingredients[i]);
+          }
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result.Vegan.Lunch[arrayRandom[1]].Meal + "\n";
-        }
-        for (var i = 0; i < result.Vegan.Lunch[btnNumber].Ingredients.length; i++) {
-          ingredientArray.push(result.Vegan.Lunch[btnNumber].Ingredients[i]);
+          for (var i = 0; i < result.Vegan.Lunch[arrayRandom[1]].Ingredients.length; i++) {
+            ingredientArray.push(result.Vegan.Lunch[arrayRandom[1]].Ingredients[i]);
+          }
         }
         ingredients()
+
       }
       document.getElementById('selected-meals').appendChild(newDiv);
     } else if (mealday == "Breakfast") {
@@ -232,21 +243,28 @@ function clickMeal(btnNumber, mealday, mealType) {
       if (mealType == 'All') {
         if (btnNumber == 0) {
           newDiv.innerHTML = result.All.Breakfast[arrayRandom[0]].Meal + "\n";
+          for (var i = 0; i < result.All.Breakfast[arrayRandom[0]].Ingredients.length; i++) {
+            ingredientArray.push(result.All.Breakfast[arrayRandom[0]].Ingredients[i]);
+          }
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result.All.Breakfast[arrayRandom[1]].Meal + "\n";
-        }
-        for (var i = 0; i < result.All.Breakfast[btnNumber].Ingredients.length; i++) {
-          ingredientArray.push(result.All.Breakfast[btnNumber].Ingredients[i]);
+          for (var i = 0; i < result.All.Breakfast[arrayRandom[1]].Ingredients.length; i++) {
+            ingredientArray.push(result.All.Breakfast[arrayRandom[1]].Ingredients[i]);
+          }
         }
         ingredients()
+
       } else if (mealType == 'Paleo') {
         if (btnNumber == 0) {
           newDiv.innerHTML = result.Paleo.Breakfast[arrayRandom[0]].Meal + "\n";
+          for (var i = 0; i < result.Paleo.Breakfast[arrayRandom[0]].Ingredients.length; i++) {
+            ingredientArray.push(result.Paleo.Breakfast[arrayRandom[0]].Ingredients[i]);
+          }
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result.Paleo.Breakfast[arrayRandom[1]].Meal + "\n";
-        }
-        for (var i = 0; i < result.Paleo.Breakfast[btnNumber].Ingredients.length; i++) {
-          ingredientArray.push(result.Paleo.Breakfast[btnNumber].Ingredients[i]);
+          for (var i = 0; i < result.Paleo.Breakfast[arrayRandom[1]].Ingredients.length; i++) {
+            ingredientArray.push(result.Paleo.Breakfast[arrayRandom[1]].Ingredients[i]);
+          }
         }
         ingredients()
       } else if (mealType == 'Vegan') {
