@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+var arrayRandom = [];
+
 document
   .getElementById("meal-planner-form")
   .addEventListener("submit", function (event) {
@@ -62,6 +64,9 @@ document
       while (randomDish1 == randomDish2) {
         randomDish2 = Math.floor(Math.random() * 4);
       }
+      arrayRandom = [];
+      arrayRandom.push(randomDish1);
+      arrayRandom.push(randomDish2)
       console.log(randomDish1);
       console.log(randomDish2);
       getBreakfast(result, mealType, randomDish1, randomDish2);
@@ -182,28 +187,40 @@ function clickMeal(btnNumber, mealday, mealType) {
     : null;
   console.log(mealType)
   console.log(mealday)
+  console.log(arrayRandom)
 
   $.getJSON("https://gist.githubusercontent.com/isakmd/f09c90e170f342745e94c6bccdef0895/raw/01195da35abaca7772964f3b131741531a865cec/mealplans.json", function (result) {
     if (mealday == "Lunch") {
       var newDiv = document.createElement('div');
       newDiv.className = "added-meals";
       if (mealType == 'All') {
-        newDiv.innerHTML = result.All.Lunch[btnNumber].Meal + "\n";
+        if (btnNumber == 0) {
+          newDiv.innerHTML = result.All.Lunch[arrayRandom[0]].Meal + "\n";
+        } else if (btnNumber == 1) {
+          newDiv.innerHTML = result.All.Lunch[arrayRandom[1]].Meal + "\n";
+        }
         //newDiv.innerHTML += result.Paleo.Lunch[btnNumber].Nutrition.Calories + "g Calories | " + result.All.Lunch[btnNumber].Nutrition.Protein + "g Protein | " + result.All.Lunch[btnNumber].Nutrition.Fat + "g Fat";
         for (var i = 0; i < result.All.Lunch[btnNumber].Ingredients.length; i++) {
           ingredientArray.push(result.All.Lunch[btnNumber].Ingredients[i]);
         }
         ingredients()
       } else if (mealType == 'Paleo') {
-        newDiv.textContent = result.Paleo.Lunch[btnNumber].Meal;
+        if (btnNumber == 0) {
+          newDiv.innerHTML = result.Paleo.Lunch[arrayRandom[0]].Meal + "\n";
+        } else if (btnNumber == 1) {
+          newDiv.innerHTML = result.Paleo.Lunch[arrayRandom[1]].Meal + "\n";
+        }
         for (var i = 0; i < result.Paleo.Lunch[btnNumber].Ingredients.length; i++) {
           ingredientArray.push(result.Paleo.Lunch[btnNumber].Ingredients[i]);
         }
         ingredients()
       } else if (mealType == 'Vegan') {
-        newDiv.textContent = result.Vegan.Lunch[btnNumber].Meal;
+        if (btnNumber == 0) {
+          newDiv.innerHTML = result.Vegan.Lunch[arrayRandom[0]].Meal + "\n";
+        } else if (btnNumber == 1) {
+          newDiv.innerHTML = result.Vegan.Lunch[arrayRandom[1]].Meal + "\n";
+        }
         for (var i = 0; i < result.Vegan.Lunch[btnNumber].Ingredients.length; i++) {
-
           ingredientArray.push(result.Vegan.Lunch[btnNumber].Ingredients[i]);
         }
         ingredients()
@@ -213,19 +230,31 @@ function clickMeal(btnNumber, mealday, mealType) {
       var newDiv = document.createElement('div');
       newDiv.className = "added-meals";
       if (mealType == 'All') {
-        newDiv.textContent = result.All.Breakfast[btnNumber].Meal;
+        if (btnNumber == 0) {
+          newDiv.innerHTML = result.All.Breakfast[arrayRandom[0]].Meal + "\n";
+        } else if (btnNumber == 1) {
+          newDiv.innerHTML = result.All.Breakfast[arrayRandom[1]].Meal + "\n";
+        }
         for (var i = 0; i < result.All.Breakfast[btnNumber].Ingredients.length; i++) {
           ingredientArray.push(result.All.Breakfast[btnNumber].Ingredients[i]);
         }
         ingredients()
       } else if (mealType == 'Paleo') {
-        newDiv.textContent = result.Paleo.Breakfast[btnNumber].Meal;
+        if (btnNumber == 0) {
+          newDiv.innerHTML = result.Paleo.Breakfast[arrayRandom[0]].Meal + "\n";
+        } else if (btnNumber == 1) {
+          newDiv.innerHTML = result.Paleo.Breakfast[arrayRandom[1]].Meal + "\n";
+        }
         for (var i = 0; i < result.Paleo.Breakfast[btnNumber].Ingredients.length; i++) {
           ingredientArray.push(result.Paleo.Breakfast[btnNumber].Ingredients[i]);
         }
         ingredients()
       } else if (mealType == 'Vegan') {
-        newDiv.textContent = result.Vegan.Breakfast[btnNumber].Meal;
+        if (btnNumber == 0) {
+          newDiv.innerHTML = result.Vegan.Breakfast[arrayRandom[0]].Meal + "\n";
+        } else if (btnNumber == 1) {
+          newDiv.innerHTML = result.Vegan.Breakfast[arrayRandom[1]].Meal + "\n";
+        }
         for (var i = 0; i < result.Vegan.Breakfast[btnNumber].Ingredients.length; i++) {
           ingredientArray.push(result.Vegan.Breakfast[btnNumber].Ingredients[i]);
         }
