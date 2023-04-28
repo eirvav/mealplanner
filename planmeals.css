@@ -45,6 +45,11 @@
   color: #fff;
 }
 
+.img-meal {
+  width: 296px;
+  height: 180px;
+  object-fit: cover;
+}
 .img-breakfast {
   border-radius: 5px;
   max-height: 100%;
@@ -104,10 +109,9 @@
 
 .added-meals {
   margin: 10px 10px;
-  border-radius: 5x;
-  height: auto;
-  padding: 10px 5px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
 }
 
 /* SHOPPING LIST */
