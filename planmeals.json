@@ -2,6 +2,7 @@
   "Vegan": {
     "Breakfast": [
       {
+        "Img": "https://zardyplants.com/wp-content/uploads/2020/04/Breakfast-Tofu-Scramble-02.jpg",
         "Meal": "Vegan Tofu Scramble",
         "Ingredients": [
           "tofu",
@@ -23,6 +24,7 @@
         }
       },
       {
+        "Img": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2020/09/Chickpea-omelette.jpg",
         "Meal": "Vegan Chickpea Omelette",
         "Ingredients": [
           "chickpea flour",
@@ -42,6 +44,7 @@
         }
       },
       {
+        "Img": "https://simple-veganista.com/wp-content/uploads/2021/04/healthy-overnight-oats-recipe-11.jpg",
         "Meal": "Vegan Overnight Oats",
         "Ingredients": [
           "rolled oats",
@@ -62,6 +65,7 @@
         }
       },
       {
+        "Img": "https://rainbowplantlife.com/wp-content/uploads/2021/05/stack-of-vegan-breakfast-burritos-closeup.jpg",
         "Meal": "Vegan Breakfast Burrito",
         "Ingredients": [
           "tortilla",
@@ -82,6 +86,7 @@
     ],
     "Lunch": [
       {
+        "Img": "https://therecipecritic.com/wp-content/uploads/2019/08/vegetable_stir_fry.jpg",
         "Meal": "Vegetable Stir-Fry",
         "Ingredients": [
           "assorted vegetables",
@@ -103,6 +108,7 @@
         }
       },
       {
+        "Img": "https://www.deliciousmagazine.co.uk/wp-content/uploads/2020/02/069-roasted-vegetable-salad-768x960.jpg",
         "Meal": "Quinoa Salad with Roasted Vegetables",
         "Ingredients": [
           "quinoa",
@@ -123,6 +129,7 @@
         }
       },
       {
+        "Img": "https://sixhungryfeet.com/wp-content/uploads/2021/01/Vegan-Buddha-Bowl-with-Tofu-2.jpg",
         "Meal": "Vegan Buddha Bowl",
         "Ingredients": [
           "brown rice",
@@ -142,6 +149,7 @@
         }
       },
       {
+        "Img": "https://simple-veganista.com/wp-content/uploads/2019/10/vegan-lentil-soup-recipe-5.jpg",
         "Meal": "Vegan Lentil Soup",
         "Ingredients": [
           "lentils",
@@ -163,6 +171,7 @@
         }
       },
       {
+        "Img": "https://www.schaer.com/sites/default/files/styles/panoramic_xxl/public/2216_Vegan%20Falafel%20Wrap.jpg",
         "Meal": "Vegan Falafel Wrap",
         "Ingredients": [
           "whole-wheat wrap",
@@ -183,6 +192,7 @@
     ],
     "Dinner": [
       {
+        "Img": "https://healthynibblesandbits.com/wp-content/uploads/2020/08/Red-Curry-Vegetables-FF2.jpg",
         "Meal": "Tofu and Vegetable Curry",
         "Ingredients": [
           "tofu",
@@ -204,6 +214,7 @@
         }
       },
       {
+        "Img": "https://rainbowplantlife.com/wp-content/uploads/2020/11/137_image-asset-500x500.jpg",
         "Meal": "Vegan Lentil Shepherd's Pie",
         "Ingredients": [
           "lentils",
@@ -225,6 +236,7 @@
         }
       },
       {
+        "Img": "https://veganhuggs.com/wp-content/uploads/2020/03/easy-vegan-chickpea-curry-5.jpg",
         "Meal": "Vegan Chickpea Curry",
         "Ingredients": [
           "chickpeas",
@@ -247,6 +259,7 @@
         }
       },
       {
+        "Img": "https://rainbowplantlife.com/wp-content/uploads/2019/02/stroganoff11of1-819x1024-1-500x500.jpg",
         "Meal": "Vegan Mushroom Stroganoff",
         "Ingredients": [
           "mushrooms",
@@ -271,6 +284,7 @@
   "Paleo": {
     "Breakfast": [
       {
+        "Img": "https://eating-made-easy.com/wp-content/uploads/2016/12/DSC_1512.jpg",
         "Meal": "Chocolate Coconut Granola",
         "Ingredients": [
           "oats",
@@ -288,6 +302,7 @@
         }
       },
       {
+        "Img": "https://www.paleorunningmomma.com/wp-content/uploads/2017/03/sweet-potato-hash-3.jpg",
         "Meal": "Sweet Potato Hash with Sausage and Eggs",
         "Ingredients": [
           "sweet potatoes",
@@ -306,6 +321,7 @@
         }
       },
       {
+        "Img": "https://www.wholesomeyum.com/wp-content/uploads/2020/06/wholesomeyum-the-perfect-keto-omelette-recipe-with-avocado-veggies-15-500x500.jpg",
         "Meal": "Avocado and Tomato Omelette",
         "Ingredients": [
           "eggs",
@@ -324,6 +340,7 @@
         }
       },
       {
+        "Img": "https://www.asweetalternative.com/wp-content/uploads/2020/05/paleo-banana-pancakes.jpg",
         "Meal": "Paleo Banana Pancakes",
         "Ingredients": [
           "ripe bananas",
@@ -345,6 +362,7 @@
     ],
     "Lunch": [
       {
+        "Img": "https://www.wellplated.com/wp-content/uploads/2019/05/Greek-Grilled-Chicken-Kabobs.jpg",
         "Meal": "Grilled Chicken and Vegetable Skewers",
         "Ingredients": [
           "chicken breast",
@@ -362,6 +380,7 @@
         }
       },
       {
+        "Img": "https://www.theroastedroot.net/wp-content/uploads/2021/06/tuna-salad-lettuce-wraps-2-720x720.jpg",
         "Meal": "Tuna Salad Lettuce Wraps",
         "Ingredients": [
           "canned tuna",
@@ -382,6 +401,7 @@
         }
       },
       {
+        "Img": "https://www.dinneratthezoo.com/wp-content/uploads/2017/10/beef-and-broccoli-stir-fry-14.jpg",
         "Meal": "Beef and Broccoli Stir-Fry",
         "Ingredients": [
           "flank steak",
@@ -403,6 +423,7 @@
     ],
     "Dinner": [
       {
+        "Img": "https://cdn-yams.godt.no/api/v1/godt-recipe/images/23/2348d2b0-e7b2-4a32-8c90-ed3af46337ed?rule=w1600_auto",
         "Meal": "Pasta Carbonara",
         "Ingredients": [
           "pasta",
@@ -422,6 +443,7 @@
         }
       },
       {
+        "Img": "https://www.budgetbytes.com/wp-content/uploads/2022/07/Chicken-Alfredo-bowl.jpg",
         "Meal": "Chicken Alfredo",
         "Ingredients": [
           "chicken",
@@ -442,6 +464,7 @@
         }
       },
       {
+        "Img": "https://www.gimmesomeoven.com/wp-content/uploads/2020/10/Beef-Stroganoff-Recipe-9.jpg",
         "Meal": "Beef Stroganoff",
         "Ingredients": [
           "beef",
@@ -468,6 +491,7 @@
   "All": {
     "Breakfast": [
       {
+        "Img": "https://feelgoodfoodie.net/wp-content/uploads/2018/10/Shakshuka-09.jpg",
         "Meal": "Shakshuka",
         "Ingredients": [
           "onion",
@@ -489,6 +513,7 @@
         }
       },
       {
+        "Img": "https://www.girlgonegourmet.com/wp-content/uploads/2015/02/Banana-Nut-Oatmeal-2-tastyrecipes.jpg",
         "Meal": "Banana Nut Oatmeal",
         "Ingredients": [
           "rolled oats",
@@ -506,6 +531,7 @@
         }
       },
       {
+        "Img": "https://www.onceuponachef.com/images/2018/03/Breakfast-Burritos.jpg",
         "Meal": "Breakfast Burrito",
         "Ingredients": [
           "eggs",
@@ -525,6 +551,7 @@
         }
       },
       {
+        "Img": "https://ifoodreal.com/wp-content/uploads/2021/06/fg-chia-pudding.jpg",
         "Meal": "Overnight Chia Pudding",
         "Ingredients": [
           "chia seeds",
@@ -545,6 +572,7 @@
     ],
     "Lunch": [
       {
+        "Img": "https://www.themediterraneandish.com/wp-content/uploads/2020/02/Greek-salad-recipe-3.jpg",
         "Meal": "Greek Salad",
         "Ingredients": [
           "romaine lettuce",
@@ -568,6 +596,7 @@
         }
       },
       {
+        "Img": "https://tastesbetterfromscratch.com/wp-content/uploads/2015/10/Turkey-Wrap-2-500x500.jpg",
         "Meal": "Turkey Club Wrap",
         "Ingredients": [
           "turkey",
@@ -587,6 +616,7 @@
         }
       },
       {
+        "Img": "https://www.noracooks.com/wp-content/uploads/2018/11/square-1.jpg",
         "Meal": "Lentil Soup",
         "Ingredients": [
           "onion",
@@ -609,6 +639,7 @@
     ],
     "Dinner": [
       {
+        "Img": "https://apriljharris.com/wp-content/uploads/2018/08/full-size-roasted-veggies-and-salmon-cooked-800.jpg",
         "Meal": "Baked Salmon with Roasted Vegetables",
         "Ingredients": [
           "salmon fillets",
@@ -629,6 +660,7 @@
         }
       },
       {
+        "Img": "https://healthyrecipesblogs.com/wp-content/uploads/2021/01/spaghetti-squash-meatballs-featured-2022.jpg",
         "Meal": "Spaghetti Squash with Meatballs",
         "Ingredients": [
           "spaghetti squash",
@@ -648,6 +680,7 @@
         }
       },
       {
+        "Img": "https://www.hummusapien.com/wp-content/uploads/2019/08/Quinoa-Veggie-Stir-Fry-Sesame-Peanut-Sauce-3-683x1024-1.jpg",
         "Meal": "Stir-Fry with Quinoa",
         "Ingredients": [
           "quinoa",
