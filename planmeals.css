@@ -1,147 +1,150 @@
-body {
-    background-color: #EFF6F3;
-}
-
-#mealplan-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-
-
-}
-
 /* GENERAL INFO FOR SHOWING MEALS */
 
 .meal-green-container {
-    grid-column: 2/3;
-    background-color: #AED3C2;
-    padding: 15px 30px;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+  grid-column: 2/3;
+  background-color: #fff;
+  padding: 15px 30px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  max-width: 1000px !important;
 }
 
 .meal {
-    display: grid;
-    grid-template-columns: 2fr 6fr 1fr;
-    border: solid #0AAF60 3px;
-    border-radius: 20px;
-    background-color: #F3FBF6;
-    margin: 10px 0px;
-    padding: 5px 0px;
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  border-radius: 5px;
 
+  margin: 10px 0px;
+  padding: 5px 0px;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 .imgmeal {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 5px;
-
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 5px;
 }
 
 #button-style {
-    height: 50%;
-    color: #0AAF60;
-    background-color: #F3FBF6;
-    border: 0px;
+  border: none;
+  color: #000;
+  background-color: #fff; /* Green */
+  border: 2px solid #0aaf60;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 #button-style:hover {
-    background-color: #d6ebde;
-
+  background-color: #0aaf60; /* Green */
+  color: #fff;
 }
 
 .img-meal {
-    height: 100px;
-    width: 100%;
+  height: 100px;
+  width: 100%;
 }
 
 .img-breakfast {
-    border: solid 2px #0AAF60;
-    border-radius: 10px;
-    max-height: 100%;
-    width: 100%;
-    margin-left: 5px;
-    overflow: hidden;
+  border-radius: 5px;
+  max-height: 100%;
+  width: 100%;
+  margin-left: 5px;
+  overflow: hidden;
 }
 
 .img-lunch {
-    border: solid 2px #0AAF60;
-    border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
-    margin-left: 5px;
-    overflow: hidden;
+  border-radius: 5px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 5px;
+  overflow: hidden;
 }
 
 .rightside {
-    padding: 5px;
-    margin: 10px 0px;
+  padding: 5px;
+  margin: 10px 0px;
 }
 
 .title-meal-breakfast {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .title-meal-lunch {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .pluss {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    font-size: 40px;
-    line-height: 0px;
-    color: #0AAF60;
-
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 0px;
+  color: #0aaf60;
 }
 
 /* SELECTED MEALS */
 
 #selected-meals {
-    grid-column: 2/3;
-    grid-row: 2/8;
-    background-color: white;
-    margin: 10px 10px;
-    padding: 5px 0px;
-    border: solid 3px #0AAF60;
-    border-radius: 10px;
+  grid-column: 2/3;
+  grid-row: 2/8;
+  background-color: white;
+  margin: 10px 10px;
+  padding: 5px 0px;
+  border: solid 3px #0aaf60;
+  border-radius: 5px;
 }
 
 .title-right {
-    color: #0A894C;
-    text-align: center;
-    margin: 10px 25px;
-    border-bottom: solid 3px #AED3C2;
+  color: #0a894c;
+  text-align: center;
+  margin: 10px 25px;
+  border-bottom: solid 3px #aed3c2;
 }
 
 .added-meals {
-    margin: 10px 10px;
-    border-radius: 5px;
-    height: auto;
-    padding: 10px 5px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 10px;
+  border-radius: 5x;
+  height: auto;
+  padding: 10px 5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* SHOPPING LIST */
 #selected-ingredients {
-    grid-column: 2/3;
-    grid-row: 8/12;
-    background-color: white;
-    margin: 10px 10px;
-    padding: 5px 0px;
-    border: solid 3px #0AAF60;
-    border-radius: 10px;
+  grid-column: 2/3;
+  grid-row: 8/12;
+  background-color: white;
+  margin: 10px 10px;
+  padding: 5px 0px;
+  border: solid 3px #0aaf60;
+  border-radius: 5px;
 }
 
 #ingredients {
-    color: #0A894C;
-    padding: 10px;
-    margin-left: 30px;
+  color: #0a894c;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.card-footer {
+  padding: 0 !important;
+  background-color: #fff !important;
+  border-top: none !important;
+}
+
+.meals {
+  padding: 0 !important;
+  max-width: 1000px !important;
 }

@@ -117,7 +117,7 @@
               <div class="row gx-3">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
                   <div
-                    class="card text-center h-100 card-selected"
+                    class="card text-center card-selected"
                     data-meal-type="All"
                   >
                     <!-- Add the 'card-selected' class here -->
@@ -173,27 +173,7 @@
                 />
               </div>
             </div>
-            <div class="mb-3">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <label for="num-meals" class="form-label"
-                    >Number of Meals per Day</label
-                  >
-                </div>
-                <select
-                  class="form-control d-block mx-auto"
-                  id="num-meals"
-                  required
-                >
-                  <option value="1">1 Meal</option>
-                  <option value="2">2 Meals</option>
-                  <option value="3" selected>3 Meals</option>
-                  <option value="4">4 Meals</option>
-                  <option value="5">5 Meals</option>
-                  <option value="6">6 Meals</option>
-                </select>
-              </div>
-            </div>
+
             <button type="submit" class="btn btn-primary d-block mx-auto">
               Generate mealplan
             </button>
@@ -201,154 +181,172 @@
         </div>
       </section>
       <section class="generated-content">
-        <div id="mealplan-container">
-          <div class="meal-green-container">
-            <!-- BREAKFAST -->
-            <div>
-              <h3>Breakfast</h3>
-            </div>
-            <!-- Dont take away this div -->
-            <div></div>
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-breakfast" src="" alt="bilde av toast" />
+        <div class="container meals">
+          <div id="mealplan-container">
+            <div class="meal-green-container">
+              <!-- BREAKFAST -->
+              <div>
+                <h3>Breakfast</h3>
               </div>
-              <div class="rightside">
-                <div class="title-meal-breakfast">
-                  Toast with eggs and avocado
+              <!-- Dont take away this div -->
+              <div></div>
+              <div class="card-deck">
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-breakfast"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-breakfast"></h5>
+                    <p class="card-text calories-breakfast"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button
+                        onclick="clickMeal(0,'Breakfast')"
+                        id="button-style"
+                      >
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
                 </div>
-                <div class="calories-breakfast">
-                  300 calories 20 g protein 10 g fat
-                </div>
-              </div>
-              <div class="pluss">
-                <button onclick="clickMeal(0,'Breakfast')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
 
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-breakfast" src="" alt="" />
-              </div>
-              <div class="rightside">
-                <div class="title-meal-breakfast">
-                  Avocado Breakfast Sandwich
-                </div>
-                <div class="calories-breakfast">
-                  300 calories 20 g protein 10 g fat
-                </div>
-              </div>
-              <div class="pluss">
-                <button onclick="clickMeal(1,'Breakfast')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-breakfast" src="" alt="" />
-              </div>
-              <div class="rightside">
-                <div class="title-meal-breakfast">
-                  Avocado Breakfast Sandwich
-                </div>
-                <div class="calories-breakfast">
-                  300 calories 20 g protein 10 g fat
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This card has supporting text below as a natural lead-in
+                      to additional content.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
                 </div>
               </div>
-              <div class="pluss">
-                <button onclick="clickMeal(2,'Breakfast')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-breakfast" src="" alt="" />
-              </div>
-              <div class="rightside">
-                <div class="title-meal-breakfast">
-                  Avocado Breakfast Sandwich
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-breakfast" src="" alt="bilde av toast" />
                 </div>
-                <div class="calories-breakfast">
-                  300 calories 20 g protein 10 g fat
+                <div class="rightside">
+                  <div class="title-meal-breakfast"></div>
+                  <div class="calories-breakfast"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(0,'Breakfast')" id="button-style">
+                    Add Meal
+                  </button>
                 </div>
               </div>
-              <div class="pluss">
-                <button onclick="clickMeal(3,'Breakfast')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
 
-            <!-- LUNCH -->
-            <div>
-              <h3>Lunch</h3>
-            </div>
-            <div></div>
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-lunch" src="" alt="bilde av toast" />
-              </div>
-              <div class="rightside">
-                <div class="title-meal-lunch">Toast with eggs and avocado</div>
-                <div class="calories-lunch">
-                  300 calories 20 g protein 10 g fat
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-breakfast" src="" alt="" />
+                </div>
+                <div class="rightside">
+                  <div class="title-meal-breakfast"></div>
+                  <div class="calories-breakfast"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(1,'Breakfast')" id="button-style">
+                    Add
+                  </button>
                 </div>
               </div>
-              <div class="pluss">
-                <button onclick="clickMeal(0,'Lunch')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
-
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-lunch" src="" alt="" />
-              </div>
-              <div class="rightside">
-                <div class="title-meal-lunch">Avocado Breakfast Sandwich</div>
-                <div class="calories-lunch">
-                  300 calories 20 g protein 10 g fat
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-breakfast" src="" alt="" />
+                </div>
+                <div class="rightside">
+                  <div class="title-meal-breakfast"></div>
+                  <div class="calories-breakfast"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(2,'Breakfast')" id="button-style">
+                    Add
+                  </button>
                 </div>
               </div>
-              <div class="pluss">
-                <button onclick="clickMeal(1,'Lunch')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
-            <div class="meal">
-              <div class="img-meal">
-                <img class="img-lunch" src="" alt="" />
-              </div>
-              <div class="rightside">
-                <div class="title-meal-lunch">Avocado Breakfast Sandwich</div>
-                <div class="calories-lunch">
-                  300 calories 20 g protein 10 g fat
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-breakfast" src="" alt="" />
+                </div>
+                <div class="rightside">
+                  <div class="title-meal-breakfast"></div>
+                  <div class="calories-breakfast"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(3,'Breakfast')" id="button-style">
+                    Add
+                  </button>
                 </div>
               </div>
-              <div class="pluss">
-                <button onclick="clickMeal(2,'Lunch')" id="button-style">
-                  +
-                </button>
-              </div>
-            </div>
 
-            <div id="selected-meals">
-              <div class="title-right">
-                <h4>MEALS ADDED</h4>
+              <!-- LUNCH -->
+              <div>
+                <h3>Lunch</h3>
               </div>
-            </div>
+              <div></div>
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-lunch" src="" alt="bilde av toast" />
+                </div>
+                <div class="rightside">
+                  <div class="title-meal-lunch"></div>
+                  <div class="calories-lunch"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(0,'Lunch')" id="button-style">
+                    Add
+                  </button>
+                </div>
+              </div>
 
-            <div id="selected-ingredients">
-              <div class="title-right">
-                <h4>SHOPPING LIST</h4>
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-lunch" src="" alt="" />
+                </div>
+                <div class="rightside">
+                  <div class="title-meal-lunch"></div>
+                  <div class="calories-lunch"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(1,'Lunch')" id="button-style">
+                    Add
+                  </button>
+                </div>
               </div>
-              <div id="ingredients"></div>
+              <div class="meal">
+                <div class="img-meal">
+                  <img class="img-lunch" src="" alt="" />
+                </div>
+                <div class="rightside">
+                  <div class="title-meal-lunch"></div>
+                  <div class="calories-lunch"></div>
+                </div>
+                <div class="pluss">
+                  <button onclick="clickMeal(2,'Lunch')" id="button-style">
+                    Add
+                  </button>
+                </div>
+              </div>
+
+              <div id="selected-meals">
+                <div class="title-right">
+                  <h4>MEALS ADDED</h4>
+                </div>
+              </div>
+
+              <div id="selected-ingredients">
+                <div class="title-right">
+                  <h4>SHOPPING LIST</h4>
+                </div>
+                <div id="ingredients"></div>
+              </div>
             </div>
           </div>
         </div>
