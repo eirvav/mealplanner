@@ -401,6 +401,27 @@
         }
       },
       {
+        "Img": "https://www.cookingclassy.com/wp-content/uploads/2017/03/blta-chicken-salad-lettuce-wraps-10.jpg",
+        "Meal": "Salad Wraps",
+        "Ingredients": [
+          "chicke",
+          "celery",
+          "red onion",
+          "paleo mayo",
+          "salt",
+          "pepper",
+          "lemon juice",
+          "lettuce leaves"
+        ],
+        "Nutrition": {
+          "Calories": 280,
+          "Protein": 24,
+          "Carbohydrates": 5,
+          "Fat": 15,
+          "Fiber": 2
+        }
+      },
+      {
         "Img": "https://www.dinneratthezoo.com/wp-content/uploads/2017/10/beef-and-broccoli-stir-fry-14.jpg",
         "Meal": "Beef and Broccoli Stir-Fry",
         "Ingredients": [
@@ -613,6 +634,29 @@
           "Carbohydrates": 30,
           "Fat": 25,
           "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2021/11/Tuscan-Mushroom-Stew_02.jpg",
+        "Meal": "Mushroom Stue",
+        "Ingredients": [
+          "onion",
+          "mushrooms",
+          "red bell pepper",
+          "olive oil",
+          "canned diced tomatoes",
+          "smoked paprika",
+          "cumin",
+          "chili flakes",
+          "eggs",
+          "bread"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 15,
+          "Carbohydrates": 25,
+          "Fat": 20,
+          "Fiber": 5
         }
       },
       {

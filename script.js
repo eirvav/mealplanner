@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+var arrayRandom = [];
+
 document
   .getElementById("meal-planner-form")
   .addEventListener("submit", function (event) {
@@ -110,7 +112,7 @@ function getBreakfast(result, mealType) {
   }
 }
 
-function getLunch(result, mealType) {
+function getLunch(result, mealType, randomDish1, randomDish2) {
   titlemeal = document.getElementsByClassName("title-meal-lunch");
   calories = document.getElementsByClassName("calories-lunch");
   imgchange = document.getElementsByClassName("img-lunch");
