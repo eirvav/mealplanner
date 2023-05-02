@@ -44,7 +44,6 @@ document
     // Get the number of meals per day
 
     // Get the daily calorie intake
-    const dailyCalories = document.getElementById("daily-calories").value;
 
     // Log the values (you can replace this with your desired logic)
     // console.log("Meal Type:", mealType);
@@ -527,8 +526,7 @@ function clickMeal(btnNumber, mealday, mealType) {
           ingredients();
         } else if (mealType == "Paleo") {
           if (btnNumber == 0) {
-            newDiv.innerHTML =
-              result.Paleo.Dinner[arrayRandom[0]].Meal + "\n";
+            newDiv.innerHTML = result.Paleo.Dinner[arrayRandom[0]].Meal + "\n";
             for (
               var i = 0;
               i < result.Paleo.Dinner[arrayRandom[0]].Ingredients.length;
@@ -539,8 +537,7 @@ function clickMeal(btnNumber, mealday, mealType) {
               );
             }
           } else if (btnNumber == 1) {
-            newDiv.innerHTML =
-              result.Paleo.Dinner[arrayRandom[1]].Meal + "\n";
+            newDiv.innerHTML = result.Paleo.Dinner[arrayRandom[1]].Meal + "\n";
             for (
               var i = 0;
               i < result.Paleo.Dinner[arrayRandom[1]].Ingredients.length;
@@ -554,20 +551,16 @@ function clickMeal(btnNumber, mealday, mealType) {
           ingredients();
         } else if (mealType == "Vegan") {
           if (btnNumber == 0) {
-            newDiv.innerHTML =
-              result.Vegan.Dinner[arrayRandom[0]].Meal + "\n";
+            newDiv.innerHTML = result.Vegan.Dinner[arrayRandom[0]].Meal + "\n";
           } else if (btnNumber == 1) {
-            newDiv.innerHTML =
-              result.Vegan.Dinner[arrayRandom[1]].Meal + "\n";
+            newDiv.innerHTML = result.Vegan.Dinner[arrayRandom[1]].Meal + "\n";
           }
           for (
             var i = 0;
             i < result.Vegan.Dinner[btnNumber].Ingredients.length;
             i++
           ) {
-            ingredientArray.push(
-              result.Vegan.Dinner[btnNumber].Ingredients[i]
-            );
+            ingredientArray.push(result.Vegan.Dinner[btnNumber].Ingredients[i]);
           }
           ingredients();
         }
