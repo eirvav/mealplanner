@@ -579,8 +579,13 @@ function clickMeal(btnNumber, mealday, mealType) {
 
 function ingredients() {
   var displayArray = "";
-  for (var i = 0; i < ingredientArray.length; i++) {
-    displayArray += ingredientArray[i] + "<br>";
+  sortedArray = [];
+  let uniqueArr = ingredientArray.filter((item, index) => {
+    return ingredientArray.indexOf(item) === index;
+  });
+
+  for (var i = 0; i < uniqueArr.length; i++) {
+    displayArray += uniqueArr[i] + "<br>";
   }
   document.getElementById("ingredients").innerHTML = displayArray;
 }
