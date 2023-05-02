@@ -3,7 +3,7 @@
 .meal-green-container {
   grid-column: 2/3;
   background-color: #fff;
-  padding: 15px 30px;
+  padding: 25px 25px;
   display: grid;
   grid-template-columns: 3fr 2fr;
   max-width: 1000px !important;
@@ -13,7 +13,6 @@
   display: grid;
   grid-template-columns: 2fr 6fr 1fr;
   border-radius: 5px;
-
   margin: 10px 0px;
   padding: 5px 0px;
 }
