@@ -545,6 +545,9 @@ h6,
 section {
   padding: 60px 0;
 }
+.services {
+  padding: 0 0 !important;
+}
 
 .section-bg {
   background-color: #f3f8fa;
