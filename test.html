@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hei</p>
+    <button id="myButton">Click me</button>
+    <div id="myDiv"></div>
+
+    <script>
+      function saveMeals() {}
+
+      // Get a reference to the button element
+      const button = document.getElementById("myButton");
+
+      // Define a function to run when the button is clicked
+      function handleClick() {
+        var allMeals = [
+          "Overnight Chia Pudding",
+          "Banana Nut Oatmeal",
+          "Turkey Club Wrap",
+          "Banana Nut Oatmeal",
+        ];
+        localStorage.setItem("meals", JSON.stringify(allMeals));
+
+        //...
+        var storedMeals = JSON.parse(localStorage.getItem("All meals"));
+        console.log("Button clicked!");
+        // add your code here
+      }
+
+      // Add an event listener to the button that calls the handleClick function when the button is clicked
+      button.addEventListener("click", handleClick);
+
+      // Retrieve the data from local storage
+      const myData = localStorage.getItem("meals");
+
+      // Target the <div> element and set its content to the retrieved data
+      const myDiv = document.getElementById("myDiv");
+      myDiv.textContent = myData;
+    </script>
+  </body>
+</html>

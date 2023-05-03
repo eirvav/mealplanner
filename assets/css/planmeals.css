@@ -1,0 +1,130 @@
+/* GENERAL INFO FOR SHOWING MEALS */
+
+.meal-green-container {
+  background-color: #fff;
+  padding: 25px 25px;
+
+  max-width: 1000px !important;
+}
+
+.meal {
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 5px 0px;
+}
+
+.imgmeal {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 5px;
+}
+
+#button-style {
+  border: none;
+  color: #000;
+  background-color: #fff; /* Green */
+  border: 2px solid #0aaf60;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#button-style:hover {
+  background-color: #0aaf60; /* Green */
+  color: #fff;
+}
+
+.img-meal {
+  width: 296px;
+  height: 180px;
+  object-fit: cover;
+}
+.img-breakfast {
+  border-radius: 5px;
+  max-height: 100%;
+  width: 100%;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.img-lunch {
+  border-radius: 5px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.rightside {
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+.title-meal-breakfast {
+  font-size: 20px;
+}
+
+.title-meal-lunch {
+  font-size: 20px;
+}
+
+.pluss {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 0px;
+  color: #0aaf60;
+}
+
+/* SELECTED MEALS */
+
+#selected-meals {
+  background-color: white;
+  margin: 10px 10px;
+  padding: 5px 0px;
+}
+
+.title-right {
+  color: #0a894c;
+  text-align: center;
+  margin: 10px 25px;
+  border-bottom: solid 3px #aed3c2;
+}
+
+.added-meals {
+  margin: 10px 10px;
+  padding: 10px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
+}
+
+/* SHOPPING LIST */
+#selected-ingredients {
+  background-color: white;
+  margin: 10px 10px;
+  padding: 5px 0px;
+}
+
+#ingredients {
+  color: #0a894c;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.card-footer {
+  padding: 0 !important;
+  background-color: #fff !important;
+  border-top: none !important;
+}
+
+.meals {
+  padding: 0 !important;
+  max-width: 1000px !important;
+}

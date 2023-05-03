@@ -7,6 +7,9 @@
     <title>PlanYourPlate</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
+    <!-- link jquery -->
+
+    <link rel="stylesheet" href="/assets/css/planmeals.css" />
 
     <!-- Favicons -->
     <link href="assets/img/egg_alt.svg" rel="icon" />
@@ -48,6 +51,7 @@
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
   ======================================================== -->
   </head>
+
   <body>
     <!-- ======= Header ======= -->
     <header
@@ -68,7 +72,18 @@
             <li><a href="#">How it works</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="./test.html">Test</a></li>
+            <li>
+              <a href="./Google Cal/calendar.html" target="_blank"
+                >Google Calendar</a
+              >
+            </li>
+            <li>
+              <a
+                href="./fullcalendar/examples/external-dragging-builtin.html"
+                target="_blank"
+                >fullCalendar</a
+              >
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -83,7 +98,6 @@
         id="heroCarousel"
         class="container carousel carousel-fade"
         data-bs-ride="carousel"
-        data-bs-interval="5000"
       >
         <!-- Slide 1 -->
         <div class="carousel-item active">
@@ -104,7 +118,7 @@
     <!-- Start Main - All content must be in Main -->
     <main id="main">
       <!-- ======= Calculator section ======= -->
-      <section class="services">
+      <section class="calcGenerator">
         <div class="container calc">
           <h1 class="text-center my-4">Meal Planner</h1>
           <form id="meal-planner-form">
@@ -112,7 +126,7 @@
               <div class="row gx-3">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
                   <div
-                    class="card text-center h-100 card-selected"
+                    class="card kort text-center card-selected"
                     data-meal-type="All"
                   >
                     <!-- Add the 'card-selected' class here -->
@@ -121,84 +135,224 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card kort text-center">
                     <img src="./assets/img/IconMeat.png" />
                     <p>Paleo</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card kort text-center">
                     <img src="./assets/img/IconVegan.png" />
                     <p>Vegan</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card kort text-center">
                     <img src="./assets/img/IconPesc.png" />
                     <p>Pescetarian</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card kort text-center">
                     <img src="./assets/img/IconGluten.png" />
                     <p>Ketogenic</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 meal-type-card">
-                  <div class="card text-center">
+                  <div class="card kort text-center">
                     <img src="./assets/img/IconLactose.png" />
                     <p>No-Dairy</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-3">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <label for="daily-calories" class="form-label"
-                    >Daily Calorie Goal</label
-                  >
-                </div>
-                <input
-                  type="number"
-                  class="form-control d-block mx-auto"
-                  id="daily-calories"
-                  min="0"
-                  required
-                />
-              </div>
-            </div>
-            <div class="mb-3">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <label for="num-meals" class="form-label"
-                    >Number of Meals per Day</label
-                  >
-                </div>
-                <select
-                  class="form-control d-block mx-auto"
-                  id="num-meals"
-                  required
-                >
-                  <option value="1">1 Meal</option>
-                  <option value="2">2 Meals</option>
-                  <option value="3" selected>3 Meals</option>
-                  <option value="4">4 Meals</option>
-                  <option value="5">5 Meals</option>
-                  <option value="6">6 Meals</option>
-                </select>
-              </div>
-            </div>
+
             <button type="submit" class="btn btn-primary d-block mx-auto">
               Generate mealplan
             </button>
           </form>
         </div>
       </section>
-      <!-- End Calculator section -->
-      <!-- Start new content below -->
+      <section class="generated-content">
+        <div class="container meals">
+          <div id="mealplan-container">
+            <div class="meal-green-container">
+              <!-- BREAKFAST -->
+              <div>
+                <h3>Breakfast</h3>
+              </div>
+              <!-- Dont take away this div -->
+              <div></div>
+              <div class="card-deck">
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-breakfast"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-breakfast"></h5>
+                    <p class="card-text calories-breakfast"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button
+                        onclick="clickMeal(0,'Breakfast')"
+                        id="button-style"
+                      >
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-breakfast"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-breakfast"></h5>
+                    <p class="card-text calories-breakfast"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button
+                        onclick="clickMeal(1,'Breakfast')"
+                        id="button-style"
+                      >
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LUNCH -->
+              <div>
+                <h3>Lunch</h3>
+              </div>
+              <div></div>
+              <div class="card-deck">
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-lunch"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-lunch"></h5>
+                    <p class="card-text calories-lunch"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button onclick="clickMeal(0,'Lunch')" id="button-style">
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-lunch"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-lunch"></h5>
+                    <p class="card-text calories-lunch"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button onclick="clickMeal(1,'Lunch')" id="button-style">
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DINNER -->
+              <div>
+                <h3>Dinner</h3>
+              </div>
+              <div></div>
+              <div class="card-deck">
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-dinner"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-dinner"></h5>
+                    <p class="card-text calories-dinner"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button onclick="clickMeal(0,'Dinner')" id="button-style">
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+
+                <div class="card meal">
+                  <img
+                    class="card-img-top img-meal img-dinner"
+                    src=""
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title-meal-dinner"></h5>
+                    <p class="card-text calories-dinner"></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="pluss">
+                      <button onclick="clickMeal(1,'Dinner')" id="button-style">
+                        Add Meal
+                      </button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test">
+                <div class="title-right">
+                  <h4>MEALS ADDED</h4>
+                </div>
+                <div id="selected-meals"></div>
+                <a
+                  href="./fullcalendar/examples/external-dragging-builtin.html"
+                  target="_blank"
+                >
+                  <button onclick="addToCalendar()">Add To Calendar</button>
+                </a>
+              </div>
+
+              <div id="selected-ingredients">
+                <div class="title-right">
+                  <h4>SHOPPING LIST</h4>
+                </div>
+                <div id="ingredients"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <!-- End Main -->
-    <script src="./script.js"></script>
+    <!-- jquery må stå her med script.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

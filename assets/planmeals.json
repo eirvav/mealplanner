@@ -1,0 +1,747 @@
+{
+  "Vegan": {
+    "Breakfast": [
+      {
+        "Img": "https://zardyplants.com/wp-content/uploads/2020/04/Breakfast-Tofu-Scramble-02.jpg",
+        "Meal": "Vegan Tofu Scramble",
+        "Ingredients": [
+          "tofu",
+          "onion",
+          "bell pepper",
+          "turmeric",
+          "nutritional yeast",
+          "spinach",
+          "olive oil",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 250,
+          "Protein": 15,
+          "Carbohydrates": 10,
+          "Fat": 15,
+          "Fiber": 5
+        }
+      },
+      {
+        "Img": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2020/09/Chickpea-omelette.jpg",
+        "Meal": "Vegan Chickpea Omelette",
+        "Ingredients": [
+          "chickpea flour",
+          "water",
+          "salt",
+          "black pepper",
+          "spinach",
+          "mushrooms",
+          "tomatoes"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 20,
+          "Carbohydrates": 30,
+          "Fat": 10,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://simple-veganista.com/wp-content/uploads/2021/04/healthy-overnight-oats-recipe-11.jpg",
+        "Meal": "Vegan Overnight Oats",
+        "Ingredients": [
+          "rolled oats",
+          "almond milk",
+          "chia seeds",
+          "maple syrup",
+          "vanilla extract",
+          "banana",
+          "berries",
+          "nuts"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 10,
+          "Carbohydrates": 50,
+          "Fat": 12,
+          "Fiber": 10
+        }
+      },
+      {
+        "Img": "https://rainbowplantlife.com/wp-content/uploads/2021/05/stack-of-vegan-breakfast-burritos-closeup.jpg",
+        "Meal": "Vegan Breakfast Burrito",
+        "Ingredients": [
+          "tortilla",
+          "scrambled tofu",
+          "black beans",
+          "avocado",
+          "salsa",
+          "cilantro"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 18,
+          "Carbohydrates": 40,
+          "Fat": 20,
+          "Fiber": 12
+        }
+      }
+    ],
+    "Lunch": [
+      {
+        "Img": "https://therecipecritic.com/wp-content/uploads/2019/08/vegetable_stir_fry.jpg",
+        "Meal": "Vegetable Stir-Fry",
+        "Ingredients": [
+          "assorted vegetables",
+          "soy sauce",
+          "sesame oil",
+          "garlic",
+          "ginger",
+          "vegetable oil",
+          "brown sugar",
+          "cornstarch",
+          "rice"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 8,
+          "Carbohydrates": 45,
+          "Fat": 15,
+          "Fiber": 5
+        }
+      },
+      {
+        "Img": "https://www.deliciousmagazine.co.uk/wp-content/uploads/2020/02/069-roasted-vegetable-salad-768x960.jpg",
+        "Meal": "Quinoa Salad with Roasted Vegetables",
+        "Ingredients": [
+          "quinoa",
+          "assorted vegetables (such as carrots, broccoli, bell peppers)",
+          "olive oil",
+          "balsamic vinegar",
+          "garlic",
+          "fresh herbs",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 10,
+          "Carbohydrates": 45,
+          "Fat": 15,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://sixhungryfeet.com/wp-content/uploads/2021/01/Vegan-Buddha-Bowl-with-Tofu-2.jpg",
+        "Meal": "Vegan Buddha Bowl",
+        "Ingredients": [
+          "brown rice",
+          "roasted vegetables (such as sweet potato, broccoli, and cauliflower)",
+          "chickpeas",
+          "avocado",
+          "tahini",
+          "lemon juice",
+          "garlic"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 12,
+          "Carbohydrates": 50,
+          "Fat": 18,
+          "Fiber": 12
+        }
+      },
+      {
+        "Img": "https://simple-veganista.com/wp-content/uploads/2019/10/vegan-lentil-soup-recipe-5.jpg",
+        "Meal": "Vegan Lentil Soup",
+        "Ingredients": [
+          "lentils",
+          "diced tomatoes",
+          "vegetable broth",
+          "onion",
+          "garlic",
+          "celery",
+          "cumin",
+          "smoked paprika",
+          "crusty bread"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 15,
+          "Carbohydrates": 40,
+          "Fat": 8,
+          "Fiber": 10
+        }
+      },
+      {
+        "Img": "https://www.schaer.com/sites/default/files/styles/panoramic_xxl/public/2216_Vegan%20Falafel%20Wrap.jpg",
+        "Meal": "Vegan Falafel Wrap",
+        "Ingredients": [
+          "whole-wheat wrap",
+          "homemade falafel",
+          "hummus",
+          "tomatoes",
+          "cucumber",
+          "tahini"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 12,
+          "Carbohydrates": 40,
+          "Fat": 15,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "Img": "https://healthynibblesandbits.com/wp-content/uploads/2020/08/Red-Curry-Vegetables-FF2.jpg",
+        "Meal": "Tofu and Vegetable Curry",
+        "Ingredients": [
+          "tofu",
+          "assorted vegetables",
+          "coconut milk",
+          "curry paste",
+          "onion",
+          "garlic",
+          "ginger",
+          "vegetable oil",
+          "rice"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 55,
+          "Fat": 18,
+          "Fiber": 7
+        }
+      },
+      {
+        "Img": "https://rainbowplantlife.com/wp-content/uploads/2020/11/137_image-asset-500x500.jpg",
+        "Meal": "Vegan Lentil Shepherd's Pie",
+        "Ingredients": [
+          "lentils",
+          "carrots",
+          "celery",
+          "onion",
+          "diced tomatoes",
+          "sweet potatoes",
+          "olive oil",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 15,
+          "Carbohydrates": 60,
+          "Fat": 12,
+          "Fiber": 15
+        }
+      },
+      {
+        "Img": "https://veganhuggs.com/wp-content/uploads/2020/03/easy-vegan-chickpea-curry-5.jpg",
+        "Meal": "Vegan Chickpea Curry",
+        "Ingredients": [
+          "chickpeas",
+          "onion",
+          "garlic",
+          "ginger",
+          "vegetable oil",
+          "canned diced tomatoes",
+          "turmeric",
+          "cumin",
+          "coriander",
+          "rice"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 10,
+          "Carbohydrates": 50,
+          "Fat": 15,
+          "Fiber": 12
+        }
+      },
+      {
+        "Img": "https://rainbowplantlife.com/wp-content/uploads/2019/02/stroganoff11of1-819x1024-1-500x500.jpg",
+        "Meal": "Vegan Mushroom Stroganoff",
+        "Ingredients": [
+          "mushrooms",
+          "onion",
+          "garlic",
+          "vegetable broth",
+          "coconut milk",
+          "whole-wheat flour",
+          "pasta",
+          "zucchini noodles"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 12,
+          "Carbohydrates": 40,
+          "Fat": 15,
+          "Fiber": 8
+        }
+      }
+    ]
+  },
+  "Paleo": {
+    "Breakfast": [
+      {
+        "Img": "https://eating-made-easy.com/wp-content/uploads/2016/12/DSC_1512.jpg",
+        "Meal": "Chocolate Coconut Granola",
+        "Ingredients": [
+          "oats",
+          "coconut",
+          "nuts",
+          "vanilla extract",
+          "brown sugar"
+        ],
+        "Nutrition": {
+          "Calories": 550,
+          "Protein": 25,
+          "Carbohydrates": 40,
+          "Fat": 30,
+          "Fiber": 10
+        }
+      },
+      {
+        "Img": "https://www.paleorunningmomma.com/wp-content/uploads/2017/03/sweet-potato-hash-3.jpg",
+        "Meal": "Sweet Potato Hash with Sausage and Eggs",
+        "Ingredients": [
+          "sweet potatoes",
+          "sausage",
+          "eggs",
+          "salt",
+          "pepper",
+          "olive oil"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 30,
+          "Fat": 30,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://www.wholesomeyum.com/wp-content/uploads/2020/06/wholesomeyum-the-perfect-keto-omelette-recipe-with-avocado-veggies-15-500x500.jpg",
+        "Meal": "Avocado and Tomato Omelette",
+        "Ingredients": [
+          "eggs",
+          "avocado",
+          "tomato",
+          "salt",
+          "pepper",
+          "olive oil"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 15,
+          "Carbohydrates": 10,
+          "Fat": 25,
+          "Fiber": 5
+        }
+      },
+      {
+        "Img": "https://www.asweetalternative.com/wp-content/uploads/2020/05/paleo-banana-pancakes.jpg",
+        "Meal": "Paleo Banana Pancakes",
+        "Ingredients": [
+          "ripe bananas",
+          "almond flour",
+          "eggs",
+          "cinnamon",
+          "coconut oil",
+          "maple syrup",
+          "berries"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 15,
+          "Carbohydrates": 30,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Lunch": [
+      {
+        "Img": "https://www.wellplated.com/wp-content/uploads/2019/05/Greek-Grilled-Chicken-Kabobs.jpg",
+        "Meal": "Grilled Chicken and Vegetable Skewers",
+        "Ingredients": [
+          "chicken breast",
+          "assorted vegetables (such as bell peppers, zucchini, and onions)",
+          "olive oil",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 30,
+          "Carbohydrates": 20,
+          "Fat": 20,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://www.theroastedroot.net/wp-content/uploads/2021/06/tuna-salad-lettuce-wraps-2-720x720.jpg",
+        "Meal": "Tuna Salad Lettuce Wraps",
+        "Ingredients": [
+          "canned tuna",
+          "celery",
+          "red onion",
+          "paleo mayo",
+          "salt",
+          "pepper",
+          "lemon juice",
+          "lettuce leaves"
+        ],
+        "Nutrition": {
+          "Calories": 250,
+          "Protein": 20,
+          "Carbohydrates": 5,
+          "Fat": 15,
+          "Fiber": 2
+        }
+      },
+      {
+        "Img": "https://www.cookingclassy.com/wp-content/uploads/2017/03/blta-chicken-salad-lettuce-wraps-10.jpg",
+        "Meal": "Salad Wraps",
+        "Ingredients": [
+          "chicke",
+          "celery",
+          "red onion",
+          "paleo mayo",
+          "salt",
+          "pepper",
+          "lemon juice",
+          "lettuce leaves"
+        ],
+        "Nutrition": {
+          "Calories": 280,
+          "Protein": 24,
+          "Carbohydrates": 5,
+          "Fat": 15,
+          "Fiber": 2
+        }
+      },
+      {
+        "Img": "https://www.dinneratthezoo.com/wp-content/uploads/2017/10/beef-and-broccoli-stir-fry-14.jpg",
+        "Meal": "Beef and Broccoli Stir-Fry",
+        "Ingredients": [
+          "flank steak",
+          "broccoli florets",
+          "garlic",
+          "ginger",
+          "coconut aminos",
+          "olive oil",
+          "cauliflower rice"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 25,
+          "Carbohydrates": 20,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "Img": "https://cdn-yams.godt.no/api/v1/godt-recipe/images/23/2348d2b0-e7b2-4a32-8c90-ed3af46337ed?rule=w1600_auto",
+        "Meal": "Pasta Carbonara",
+        "Ingredients": [
+          "pasta",
+          "sauce",
+          "onion",
+          "bacon",
+          "eggs",
+          "cheese",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 550,
+          "Protein": 25,
+          "Carbohydrates": 40,
+          "Fat": 30,
+          "Fiber": 3
+        }
+      },
+      {
+        "Img": "https://www.budgetbytes.com/wp-content/uploads/2022/07/Chicken-Alfredo-bowl.jpg",
+        "Meal": "Chicken Alfredo",
+        "Ingredients": [
+          "chicken",
+          "fettuccine",
+          "butter",
+          "heavy cream",
+          "Parmesan cheese",
+          "garlic",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 700,
+          "Protein": 40,
+          "Carbohydrates": 55,
+          "Fat": 35,
+          "Fiber": 2
+        }
+      },
+      {
+        "Img": "https://www.gimmesomeoven.com/wp-content/uploads/2020/10/Beef-Stroganoff-Recipe-9.jpg",
+        "Meal": "Beef Stroganoff",
+        "Ingredients": [
+          "beef",
+          "onion",
+          "mushrooms",
+          "sour cream",
+          "beef broth",
+          "flour",
+          "butter",
+          "egg noodles",
+          "salt",
+          "black pepper"
+        ],
+        "Nutrition": {
+          "Calories": 600,
+          "Protein": 30,
+          "Carbohydrates": 45,
+          "Fat": 35,
+          "Fiber": 3
+        }
+      }
+    ]
+  },
+  "All": {
+    "Breakfast": [
+      {
+        "Img": "https://feelgoodfoodie.net/wp-content/uploads/2018/10/Shakshuka-09.jpg",
+        "Meal": "Shakshuka",
+        "Ingredients": [
+          "onion",
+          "red bell pepper",
+          "olive oil",
+          "canned diced tomatoes",
+          "smoked paprika",
+          "cumin",
+          "chili flakes",
+          "eggs",
+          "bread"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 15,
+          "Carbohydrates": 25,
+          "Fat": 20,
+          "Fiber": 5
+        }
+      },
+      {
+        "Img": "https://www.girlgonegourmet.com/wp-content/uploads/2015/02/Banana-Nut-Oatmeal-2-tastyrecipes.jpg",
+        "Meal": "Banana Nut Oatmeal",
+        "Ingredients": [
+          "rolled oats",
+          "almond milk",
+          "banana",
+          "nuts (such as almonds or walnuts)",
+          "honey or maple syrup"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 12,
+          "Carbohydrates": 50,
+          "Fat": 18,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://www.onceuponachef.com/images/2018/03/Breakfast-Burritos.jpg",
+        "Meal": "Breakfast Burrito",
+        "Ingredients": [
+          "eggs",
+          "bell pepper",
+          "onion",
+          "tortilla",
+          "avocado",
+          "salsa",
+          "shredded cheese (optional)"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 30,
+          "Fat": 25,
+          "Fiber": 5
+        }
+      },
+      {
+        "Img": "https://ifoodreal.com/wp-content/uploads/2021/06/fg-chia-pudding.jpg",
+        "Meal": "Overnight Chia Pudding",
+        "Ingredients": [
+          "chia seeds",
+          "almond milk",
+          "vanilla extract",
+          "honey or agave",
+          "fresh fruit",
+          "chopped nuts"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 10,
+          "Carbohydrates": 25,
+          "Fat": 20,
+          "Fiber": 8
+        }
+      }
+    ],
+    "Lunch": [
+      {
+        "Img": "https://www.themediterraneandish.com/wp-content/uploads/2020/02/Greek-salad-recipe-3.jpg",
+        "Meal": "Greek Salad",
+        "Ingredients": [
+          "romaine lettuce",
+          "cherry tomatoes",
+          "cucumber",
+          "red onion",
+          "feta cheese",
+          "Kalamata olives",
+          "olive oil",
+          "red wine vinegar",
+          "Dijon mustard",
+          "garlic",
+          "oregano"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 10,
+          "Carbohydrates": 20,
+          "Fat": 28,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://tastesbetterfromscratch.com/wp-content/uploads/2015/10/Turkey-Wrap-2-500x500.jpg",
+        "Meal": "Turkey Club Wrap",
+        "Ingredients": [
+          "turkey",
+          "bacon",
+          "lettuce",
+          "tomato",
+          "avocado",
+          "mayo or hummus",
+          "whole wheat wrap"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 30,
+          "Carbohydrates": 30,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2021/11/Tuscan-Mushroom-Stew_02.jpg",
+        "Meal": "Mushroom Stue",
+        "Ingredients": [
+          "onion",
+          "mushrooms",
+          "red bell pepper",
+          "olive oil",
+          "canned diced tomatoes",
+          "smoked paprika",
+          "cumin",
+          "chili flakes",
+          "eggs",
+          "bread"
+        ],
+        "Nutrition": {
+          "Calories": 350,
+          "Protein": 15,
+          "Carbohydrates": 25,
+          "Fat": 20,
+          "Fiber": 5
+        }
+      },
+      {
+        "Img": "https://www.noracooks.com/wp-content/uploads/2018/11/square-1.jpg",
+        "Meal": "Lentil Soup",
+        "Ingredients": [
+          "onion",
+          "carrot",
+          "celery",
+          "olive oil",
+          "canned lentils",
+          "chicken or vegetable broth",
+          "diced tomatoes",
+          "Italian seasoning"
+        ],
+        "Nutrition": {
+          "Calories": 300,
+          "Protein": 15,
+          "Carbohydrates": 40,
+          "Fat": 8,
+          "Fiber": 15
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "Img": "https://apriljharris.com/wp-content/uploads/2018/08/full-size-roasted-veggies-and-salmon-cooked-800.jpg",
+        "Meal": "Baked Salmon with Roasted Vegetables",
+        "Ingredients": [
+          "salmon fillets",
+          "salt",
+          "pepper",
+          "lemon juice",
+          "assorted vegetables (such as asparagus, broccoli, or Brussels sprouts)",
+          "olive oil",
+          "garlic",
+          "rosemary"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 30,
+          "Carbohydrates": 20,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://healthyrecipesblogs.com/wp-content/uploads/2021/01/spaghetti-squash-meatballs-featured-2022.jpg",
+        "Meal": "Spaghetti Squash with Meatballs",
+        "Ingredients": [
+          "spaghetti squash",
+          "ground turkey",
+          "almond flour",
+          "egg",
+          "garlic",
+          "Italian seasoning",
+          "marinara sauce"
+        ],
+        "Nutrition": {
+          "Calories": 400,
+          "Protein": 30,
+          "Carbohydrates": 20,
+          "Fat": 25,
+          "Fiber": 8
+        }
+      },
+      {
+        "Img": "https://www.hummusapien.com/wp-content/uploads/2019/08/Quinoa-Veggie-Stir-Fry-Sesame-Peanut-Sauce-3-683x1024-1.jpg",
+        "Meal": "Stir-Fry with Quinoa",
+        "Ingredients": [
+          "quinoa",
+          "protein (such as chicken or tofu)",
+          "assorted vegetables (such as bell peppers, broccoli, and carrots)",
+          "soy sauce",
+          "rice vinegar",
+          "honey"
+        ],
+        "Nutrition": {
+          "Calories": 450,
+          "Protein": 20,
+          "Carbohydrates": 50,
+          "Fat": 18,
+          "Fiber": 8
+        }
+      }
+    ]
+  }
+}
