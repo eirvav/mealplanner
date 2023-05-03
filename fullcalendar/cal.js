@@ -47,3 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   calendar.render();
 });
+
+
+
+window.onload = function () {
+  const getArrayMeals = JSON.parse(localStorage.getItem("meals"));
+
+  for (var i = 0; i < getArrayMeals.length; i++) {
+    var newDiv = document.createElement("div");
+    newDiv.className = "fc-event";
+    newDiv.innerHTML = getArrayMeals[i];
+    document.getElementById("external-events-list").appendChild(newDiv);
+  }
+  
+};

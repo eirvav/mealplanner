@@ -601,3 +601,7 @@ function ingredients() {
   }
   document.getElementById("ingredients").innerHTML = displayArray;
 }
+
+function addToCalendar() {
+  localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
+}
