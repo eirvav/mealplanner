@@ -17,13 +17,12 @@
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-
-    <pre id="content" style="white-space: pre-wrap"></pre>
-    <div id="calendar"></div>
-
     <button id="refresh_button" onclick="handleRefreshClick()">
       Refresh Events
     </button>
+
+    <pre id="content" style="white-space: pre-wrap"></pre>
+    <div id="calendar"></div>
 
     <script type="text/javascript">
       /* exported gapiLoaded */
@@ -50,6 +49,7 @@
 
       document.getElementById("authorize_button").style.visibility = "hidden";
       document.getElementById("signout_button").style.visibility = "hidden";
+      document.getElementById("refresh_button").style.visibility = "hidden";
 
       /**
        * Callback after api.js is loaded.
