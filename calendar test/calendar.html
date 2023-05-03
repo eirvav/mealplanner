@@ -106,6 +106,9 @@
             "visible";
           document.getElementById("authorize_button").innerText = "Refresh";
           await listUpcomingEvents();
+          document.getElementById("authorize_button").style.visibility =
+            "hidden";
+          await listUpcomingEvents();
           document.getElementById("refresh_button").style.visibility =
             "visible";
           await listUpcomingEvents();
