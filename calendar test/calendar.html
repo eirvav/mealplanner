@@ -17,7 +17,7 @@
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-    <button id="refresh_button" onclick="handleRefreshClick()">
+    <button id="refresh_button" onclick="listUpcomingEvents()">
       Refresh Events
     </button>
 
@@ -105,6 +105,9 @@
           document.getElementById("signout_button").style.visibility =
             "visible";
           document.getElementById("authorize_button").innerText = "Refresh";
+          await listUpcomingEvents();
+          document.getElementById("refresh_button").style.visibility =
+            "visible";
           await listUpcomingEvents();
         };
 
