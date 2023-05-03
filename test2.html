@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Calendar API Quickstart</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/interaction/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/interaction/external-dragging/main.min.js"></script>
+    <style>
+      #external-events {
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        background-color: #eee;
+        margin-bottom: 10px;
+      }
+      #external-events .fc-event {
+        cursor: move;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Google Calendar API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+    <button id="refresh_button" onclick="listUpcomingEvents()">
+      Refresh Events
+    </button>
+
+    <pre id="content" style="white-space: pre-wrap"></pre>
+
+    <div id="wrap">
+      <div id="external-events">
+        <h4>Draggable Events</h4>
+        <div id="external-events-list">
+          <div class="fc-event">My Event 1</div>
+        </div>
+      </div>
+      <div id="calendar"></div>
+    </div>
+    <script></script>
+  </body>
+</html>
