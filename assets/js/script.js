@@ -2,7 +2,6 @@
 // window.onload = function () {
 //   let hideresult = document.getElementById("mealplan-container");
 //   hideresult.style.visibility = "hidden";
-
 // };
 
 document.querySelectorAll(".kort").forEach((card) => {
