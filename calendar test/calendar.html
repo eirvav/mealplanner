@@ -3,6 +3,13 @@
   <head>
     <title>Google Calendar API Quickstart</title>
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
   </head>
   <body>
     <p>Google Calendar API Quickstart</p>
@@ -12,6 +19,11 @@
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
 
     <pre id="content" style="white-space: pre-wrap"></pre>
+    <div id="calendar"></div>
+
+    <button id="refresh_button" onclick="handleRefreshClick()">
+      Refresh Events
+    </button>
 
     <script type="text/javascript">
       /* exported gapiLoaded */
@@ -133,7 +145,6 @@
             timeMin: new Date().toISOString(),
             showDeleted: false,
             singleEvents: true,
-            maxResults: 10,
             orderBy: "startTime",
           };
           response = await gapi.client.calendar.events.list(request);
@@ -147,15 +158,31 @@
           document.getElementById("content").innerText = "No events found.";
           return;
         }
-        // Flatten to string to display
-        const output = events.reduce(
-          (str, event) =>
-            `${str}${event.summary} (${
-              event.start.dateTime || event.start.date
-            })\n`,
-          "Events:\n"
-        );
-        document.getElementById("content").innerText = output;
+
+        updateCalendar(events);
+      }
+
+      function updateCalendar(events) {
+        const formattedEvents = events.map((event) => ({
+          title: event.summary,
+          start: event.start.dateTime || event.start.date,
+          end: event.end.dateTime || event.end.date,
+          url: event.htmlLink,
+        }));
+
+        $("#calendar").fullCalendar("destroy");
+        $("#calendar").fullCalendar({
+          events: formattedEvents,
+          header: {
+            left: "prev,next today",
+            center: "title",
+            right: "month,agendaWeek,agendaDay",
+          },
+          defaultView: "month",
+        });
+      }
+      function handleRefreshClick() {
+        listUpcomingEvents();
       }
     </script>
     <script
