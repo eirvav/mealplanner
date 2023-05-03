@@ -82,8 +82,6 @@ document
 
 function getBreakfast(result, mealType, randomDish1, randomDish2) {
   console.log(mealType);
-  console.log(randomDish1);
-  console.log(randomDish2);
   titlemeal = document.getElementsByClassName("title-meal-breakfast");
   calories = document.getElementsByClassName("calories-breakfast");
   imgchange = document.getElementsByClassName("img-breakfast");
@@ -262,7 +260,7 @@ function getDinner(result, mealType, randomDish1, randomDish2) {
       result.All.Dinner[randomDish1].Nutrition.Fat +
       " Fat";
     imgchange[1].src = result.All.Dinner[randomDish2].Img;
-    titlemeal[1].innerHTML = result.All.Diner[randomDish2].Meal;
+    titlemeal[1].innerHTML = result.All.Dinner[randomDish2].Meal;
     calories[1].innerHTML =
       result.All.Dinner[randomDish2].Nutrition.Calories +
       " Calories | " +
