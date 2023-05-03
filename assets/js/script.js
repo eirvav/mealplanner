@@ -1,10 +1,9 @@
 //Hides the meal selector before it displayed after "submit"
-window.onload = function () {
-  let hideresult = document.getElementById("mealplan-container");
-  hideresult.style.visibility = "hidden";
-  
-};
+// window.onload = function () {
+//   let hideresult = document.getElementById("mealplan-container");
+//   hideresult.style.visibility = "hidden";
 
+// };
 
 document.querySelectorAll(".kort").forEach((card) => {
   card.addEventListener("click", (e) => {
@@ -337,7 +336,6 @@ function clickMeal(btnNumber, mealday, mealType) {
     ? selectedMealTypeCard.querySelector("p").textContent
     : null;
   console.log(finishedMealsArray);
-  
 
   $.getJSON(
     "https://gist.githubusercontent.com/isakmd/f09c90e170f342745e94c6bccdef0895/raw/01195da35abaca7772964f3b131741531a865cec/mealplans.json",
@@ -462,7 +460,9 @@ function clickMeal(btnNumber, mealday, mealType) {
           if (btnNumber == 0) {
             newDiv.innerHTML =
               result.Paleo.Breakfast[arrayRandom[0]].Meal + "\n";
-              finishedMealsArray.push(result.Paleo.Breakfast[arrayRandom[0]].Meal);
+            finishedMealsArray.push(
+              result.Paleo.Breakfast[arrayRandom[0]].Meal
+            );
             for (
               var i = 0;
               i < result.Paleo.Breakfast[arrayRandom[0]].Ingredients.length;
@@ -475,7 +475,9 @@ function clickMeal(btnNumber, mealday, mealType) {
           } else if (btnNumber == 1) {
             newDiv.innerHTML =
               result.Paleo.Breakfast[arrayRandom[1]].Meal + "\n";
-              finishedMealsArray.push(result.Paleo.Breakfast[arrayRandom[1]].Meal)
+            finishedMealsArray.push(
+              result.Paleo.Breakfast[arrayRandom[1]].Meal
+            );
             for (
               var i = 0;
               i < result.Paleo.Breakfast[arrayRandom[1]].Ingredients.length;
@@ -491,11 +493,15 @@ function clickMeal(btnNumber, mealday, mealType) {
           if (btnNumber == 0) {
             newDiv.innerHTML =
               result.Vegan.Breakfast[arrayRandom[0]].Meal + "\n";
-              finishedMealsArray.push(result.Vegan.Breakfast[arrayRandom[0]].Meal)
+            finishedMealsArray.push(
+              result.Vegan.Breakfast[arrayRandom[0]].Meal
+            );
           } else if (btnNumber == 1) {
             newDiv.innerHTML =
               result.Vegan.Breakfast[arrayRandom[1]].Meal + "\n";
-              finishedMealsArray.push(result.Vegan.Breakfast[arrayRandom[1]].Meal)
+            finishedMealsArray.push(
+              result.Vegan.Breakfast[arrayRandom[1]].Meal
+            );
           }
           for (
             var i = 0;
@@ -515,7 +521,7 @@ function clickMeal(btnNumber, mealday, mealType) {
         if (mealType == "All") {
           if (btnNumber == 0) {
             newDiv.innerHTML = result.All.Dinner[arrayRandom[0]].Meal + "\n";
-            finishedMealsArray.push(result.All.Dinner[arrayRandom[0]].Meal)
+            finishedMealsArray.push(result.All.Dinner[arrayRandom[0]].Meal);
             for (
               var i = 0;
               i < result.All.Dinner[arrayRandom[0]].Ingredients.length;
@@ -527,7 +533,7 @@ function clickMeal(btnNumber, mealday, mealType) {
             }
           } else if (btnNumber == 1) {
             newDiv.innerHTML = result.All.Dinner[arrayRandom[1]].Meal + "\n";
-            finishedMealsArray.push(result.All.Dinner[arrayRandom[1]].Meal)
+            finishedMealsArray.push(result.All.Dinner[arrayRandom[1]].Meal);
             for (
               var i = 0;
               i < result.All.Dinner[arrayRandom[1]].Ingredients.length;
@@ -542,7 +548,7 @@ function clickMeal(btnNumber, mealday, mealType) {
         } else if (mealType == "Paleo") {
           if (btnNumber == 0) {
             newDiv.innerHTML = result.Paleo.Dinner[arrayRandom[0]].Meal + "\n";
-            finishedMealsArray.push(result.Paleo.Dinner[arrayRandom[0]].Meal)
+            finishedMealsArray.push(result.Paleo.Dinner[arrayRandom[0]].Meal);
             for (
               var i = 0;
               i < result.Paleo.Dinner[arrayRandom[0]].Ingredients.length;
@@ -554,7 +560,7 @@ function clickMeal(btnNumber, mealday, mealType) {
             }
           } else if (btnNumber == 1) {
             newDiv.innerHTML = result.Paleo.Dinner[arrayRandom[1]].Meal + "\n";
-            finishedMealsArray.push(result.Paleo.Dinner[arrayRandom[1]].Meal)
+            finishedMealsArray.push(result.Paleo.Dinner[arrayRandom[1]].Meal);
             for (
               var i = 0;
               i < result.Paleo.Dinner[arrayRandom[1]].Ingredients.length;
@@ -569,10 +575,10 @@ function clickMeal(btnNumber, mealday, mealType) {
         } else if (mealType == "Vegan") {
           if (btnNumber == 0) {
             newDiv.innerHTML = result.Vegan.Dinner[arrayRandom[0]].Meal + "\n";
-            finishedMealsArray.push(result.Vegan.Dinner[arrayRandom[0]].Meal)
+            finishedMealsArray.push(result.Vegan.Dinner[arrayRandom[0]].Meal);
           } else if (btnNumber == 1) {
             newDiv.innerHTML = result.Vegan.Dinner[arrayRandom[1]].Meal + "\n";
-            finishedMealsArray.push(result.Vegan.Dinner[arrayRandom[1]].Meal)
+            finishedMealsArray.push(result.Vegan.Dinner[arrayRandom[1]].Meal);
           }
           for (
             var i = 0;
