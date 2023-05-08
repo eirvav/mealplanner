@@ -58,3 +58,32 @@ window.onload = function () {
     document.getElementById("external-events-list").appendChild(newDiv);
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  var calendarEl = document.getElementById("calendar");
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    eventClick: function (info) {
+      var eventObj = info.event;
+
+      if (eventObj.url) {
+        alert(
+          "Clicked " +
+            eventObj.title +
+            ".\n" +
+            "Will open " +
+            eventObj.url +
+            " in a new tab"
+        );
+
+        window.open(eventObj.url);
+
+        info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
+      } else {
+        alert("Clicked " + eventObj.title);
+      }
+    },
+  });
+
+  calendar.render();
+});
