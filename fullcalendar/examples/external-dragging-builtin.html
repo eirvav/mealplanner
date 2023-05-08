@@ -5,20 +5,88 @@
     <script src="/assets/js/index.global.js"></script>
     <script src="/assets/js/cal.js"></script>
     <link href="/assets/css/cal.css" rel="stylesheet" />
+    <title>PlanYourPlate - Calendar</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/assets/img/egg_alt.svg" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap files -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Files -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="wrap">
-      <div id="external-events">
-        <h4>Draggable Events</h4>
-        <div id="external-events-list"></div>
-        <p>
-          <input type="checkbox" id="drop-remove" />
-          <label for="drop-remove">remove after drop</label>
-        </p>
+    <!-- ======= Header ======= -->
+
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <h1 class="text-light">
+            <a href="/index.html"><span>PlanYourPlate</span></a>
+          </h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a href="./Google Cal/calendar.html" target="_blank"
+                >Google Calendar</a
+              >
+            </li>
+            <li>
+              <a
+                href="./fullcalendar/examples/external-dragging-builtin.html"
+                target="_blank"
+                >Calendar</a
+              >
+            </li>
+            <li>
+              <a href="/maps.html" target="_blank">Google Maps</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
       </div>
-      <div id="calendar-wrap">
-        <div id="calendar"></div>
-      </div>
-    </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+      <section class="container calendar-width">
+        <div id="wrap">
+          <div id="external-events">
+            <h3>Add the meals below to calendar!</h3>
+            <div id="external-events-list"></div>
+            <p>
+              <input type="checkbox" id="drop-remove" />
+              <label for="drop-remove">remove after drop</label>
+            </p>
+          </div>
+          <div id="calendar-wrap">
+            <div id="calendar"></div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

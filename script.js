@@ -32,6 +32,7 @@ document
     const mealType = selectedMealTypeCard
       ? selectedMealTypeCard.querySelector("p").textContent
       : null;
+    l;
 
     // Get the number of meals per day
     const numMeals = document.getElementById("num-meals").value;

@@ -46,6 +46,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- <link href="assets/css/button.css" rel="stylesheet" /> -->
     <link href="assets/css/meal-calculator.css" rel="stylesheet" />
+    <link href="assets/css/preloader.css" rel="stylesheet" />
 
     <!-- =======================================================
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -69,9 +70,6 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQ</a></li>
             <li>
               <a href="./Google Cal/calendar.html" target="_blank"
                 >Google Calendar</a
@@ -81,8 +79,11 @@
               <a
                 href="./fullcalendar/examples/external-dragging-builtin.html"
                 target="_blank"
-                >fullCalendar</a
+                >Calendar</a
               >
+            </li>
+            <li>
+              <a href="/maps.html" target="_blank">Google Maps</a>
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -93,13 +94,13 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <!-- <section id="hero" class="d-flex justify-cntent-center align-items-center">
       <div
         id="heroCarousel"
         class="container carousel carousel-fade"
         data-bs-ride="carousel"
       >
-        <!-- Slide 1 -->
+        
         <div class="carousel-item active">
           <div class="carousel-container">
             <h2 class="">Eat Healthy</h2>
@@ -107,13 +108,10 @@
             <p class="animate__animated animate__fadeInUp plan-plate-header">
               Plan Your Weekly Plate
             </p>
-            <!-- <button class="btn btn-2 hover-opacity">
-              <span><a class="underline-style">Read more</a></span>
-            </button> -->
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Hero -->
     <!-- Start Main - All content must be in Main -->
     <main id="main">
@@ -173,6 +171,11 @@
           </form>
         </div>
       </section>
+      <div class="preload-content">
+        <div id="preloader">
+          <div id="loader"></div>
+        </div>
+      </div>
       <section class="generated-content">
         <div class="container meals">
           <div id="mealplan-container">
@@ -201,7 +204,7 @@
                               onclick="clickMeal(0,'Breakfast')"
                               id="button-style"
                             >
-                              Add Meal
+                              Add
                             </button>
                           </div>
                           <small class="text-muted"></small>
@@ -224,7 +227,7 @@
                               onclick="clickMeal(1,'Breakfast')"
                               id="button-style"
                             >
-                              Add Meal
+                              Add
                             </button>
                           </div>
                           <small class="text-muted"></small>
@@ -254,7 +257,7 @@
                               onclick="clickMeal(0,'Lunch')"
                               id="button-style"
                             >
-                              Add Meal
+                              Add
                             </button>
                           </div>
                           <small class="text-muted"></small>
@@ -277,7 +280,7 @@
                               onclick="clickMeal(1,'Lunch')"
                               id="button-style"
                             >
-                              Add Meal
+                              Add
                             </button>
                           </div>
                           <small class="text-muted"></small>
@@ -307,7 +310,7 @@
                               onclick="clickMeal(0,'Dinner')"
                               id="button-style"
                             >
-                              Add Meal
+                              Add
                             </button>
                           </div>
                           <small class="text-muted"></small>
@@ -330,7 +333,7 @@
                               onclick="clickMeal(1,'Dinner')"
                               id="button-style"
                             >
-                              Add Meal
+                              Add
                             </button>
                           </div>
                           <small class="text-muted"></small>
@@ -339,7 +342,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm right-container">
+                <div class="col-sm right-container" id="myDiv">
                   <!-- Added Meals -->
                   <div class="addedMeals">
                     <div class="title-right">
@@ -350,7 +353,10 @@
                       href="./fullcalendar/examples/external-dragging-builtin.html"
                       target="_blank"
                     >
-                      <button onclick="addToCalendar()" class="btn btn-primary">
+                      <button
+                        onclick="addToCalendar()"
+                        class="btn btn-primary meal-button"
+                      >
                         Add Meals Calendar
                       </button>
                     </a>
@@ -376,5 +382,30 @@
     <!-- jquery må stå her med script.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script>
+      //preload content
+      const button = document.querySelector(".btn-primary");
+      const preloader = document.querySelector("#preloader");
+      const generatedContent = document.querySelector(".generated-content");
+
+      preloader.style.display = "none"; // hide the preloader initially
+      generatedContent.style.display = "none"; // hide the generated content initially
+
+      button.addEventListener("click", function () {
+        preloader.style.display = "block"; // show the preloader
+        setTimeout(function () {
+          preloader.style.display = "none"; // hide the preloader after 2 seconds
+          generatedContent.style.display = "block"; // show the generated content
+        }, 1500);
+      });
+
+      //Make right side conten appear
+      const appearbutton = document.getElementById("button-style");
+      const div = document.getElementById("myDiv");
+
+      appearbutton.addEventListener("click", function () {
+        div.style.display = "block";
+      });
+    </script>
   </body>
 </html>
