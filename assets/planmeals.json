@@ -485,6 +485,27 @@
         }
       },
       {
+        "Img": "https://www.eatwell101.com/wp-content/uploads/2019/04/chicken-and-asparagus-skillet-recipe.jpg",
+        "Meal": "Chicken and Asparagus Skillet",
+        "Ingredients": [
+        "chicken breast",
+        "asparagus",
+        "red bell pepper",
+        "garlic",
+        "lemon juice",
+        "olive oil",
+        "salt",
+        "black pepper"
+        ],
+        "Nutrition": {
+        "Calories": 350,
+        "Protein": 30,
+        "Carbohydrates": 10,
+        "Fat": 20,
+        "Fiber": 3
+        }
+        },
+      {
         "Img": "https://www.gimmesomeoven.com/wp-content/uploads/2020/10/Beef-Stroganoff-Recipe-9.jpg",
         "Meal": "Beef Stroganoff",
         "Ingredients": [
@@ -723,6 +744,29 @@
           "Fiber": 8
         }
       },
+      {
+        "Img": "https://jennifermaune.com/wp-content/uploads/2018/08/Easy-Chicken-Tomato-and-Spinach-Pasta-Bake-2-720x405.jpg",
+        "Meal": "Spinach and Chicken Casserole",
+        "Ingredients": [
+        "chicken breast",
+        "spinach",
+        "onion",
+        "garlic",
+        "heavy cream",
+        "parmesan cheese",
+        "mozzarella cheese",
+        "olive oil",
+        "salt",
+        "black pepper"
+        ],
+        "Nutrition": {
+        "Calories": 450,
+        "Protein": 35,
+        "Carbohydrates": 10,
+        "Fat": 30,
+        "Fiber": 2
+        }
+        },
       {
         "Img": "https://www.hummusapien.com/wp-content/uploads/2019/08/Quinoa-Veggie-Stir-Fry-Sesame-Peanut-Sauce-3-683x1024-1.jpg",
         "Meal": "Stir-Fry with Quinoa",
