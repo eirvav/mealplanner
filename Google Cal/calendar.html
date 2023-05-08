@@ -10,6 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/lib/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/scheduler.min.js"></script>
   </head>
   <body>
     <p>Google Calendar API Quickstart</p>
@@ -244,5 +247,79 @@
       src="https://accounts.google.com/gsi/client"
       onload="gisLoaded()"
     ></script>
+    <script>
+      function updateCalendar(events) {
+        const formattedEvents = events.map((event) => ({
+          title: event.summary,
+          start: event.start.dateTime || event.start.date,
+          end: event.end.dateTime || event.end.date,
+          url: event.htmlLink,
+        }));
+
+        initCalendar(formattedEvents);
+        initializeExternalEvents();
+      }
+
+      function initCalendar(events) {
+        $("#calendar").fullCalendar("destroy");
+        $("#calendar").fullCalendar({
+          events: events,
+          header: {
+            left: "prev,next today",
+            center: "title",
+            right: "month,agendaWeek,agendaDay",
+          },
+          defaultView: "month",
+          editable: true,
+          droppable: true,
+          drop: function (date, jsEvent, ui, resourceId) {
+            const droppedEvent = {
+              title: $(this).text(),
+              start: date.format(),
+              end: date.clone().add(1, "hours").format(),
+            };
+            $("#calendar").fullCalendar("renderEvent", droppedEvent);
+            createGoogleCalendarEvent(droppedEvent);
+          },
+        });
+      }
+
+      function initializeExternalEvents() {
+        $("#external-events .fc-event").each(function () {
+          $(this).data("event", {
+            title: $.trim($(this).text()),
+            stick: true,
+          });
+          $(this).draggable({
+            zIndex: 999,
+            revert: true,
+            revertDuration: 0,
+          });
+        });
+      }
+
+      async function createGoogleCalendarEvent(event) {
+        try {
+          const newEvent = {
+            summary: event.title,
+            start: {
+              dateTime: event.start,
+              timeZone: "UTC",
+            },
+            end: {
+              dateTime: event.end,
+              timeZone: "UTC",
+            },
+          };
+          const response = await gapi.client.calendar.events.insert({
+            calendarId: "primary",
+            resource: newEvent,
+          });
+          console.log("Event created: " + response.result.htmlLink);
+        } catch (error) {
+          console.log("Error creating event: " + error);
+        }
+      }
+    </script>
   </body>
 </html>

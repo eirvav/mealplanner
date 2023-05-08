@@ -92,9 +92,7 @@
 }
 
 .title-right {
-  color: #0a894c;
   text-align: center;
-  margin: 10px 25px;
   border-bottom: solid 3px #aed3c2;
 }
 
@@ -115,7 +113,6 @@
 #ingredients {
   color: #0a894c;
   padding: 10px;
-  
 }
 
 .card-footer {
@@ -138,4 +135,13 @@
   color: green;
   background-color: white;
   float: right;
+}
+
+#mealplan-container {
+  padding-top: 5%;
+  background-color: #fff;
+}
+
+.right-container {
+  border-left: #000 solid 2px;
 }
