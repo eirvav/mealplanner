@@ -267,16 +267,43 @@ function clickMeal(btnNumber, mealday, mealType) {
 }
 
 function ingredients() {
-  var displayArray = "";
   sortedArray = [];
   let uniqueArr = ingredientArray.filter((item, index) => {
     return ingredientArray.indexOf(item) === index;
   });
 
+  // Clean the divs so the new list dont stack over old ones
+  document.getElementById("ingredients").innerHTML = "";
   for (var i = 0; i < uniqueArr.length; i++) {
-    displayArray += uniqueArr[i] + "<br>";
+    
+    var divNew = document.createElement("div");
+    divNew.className = "added-meals";
+    divNew.innerHTML = uniqueArr[i];
+  
+    // Create a new button element
+    var button = document.createElement("button");
+    button.innerHTML = "X";
+  
+    // Add a class to the button
+    button.classList.add("button-style-ingredients");
+
+    // Add an onclick function to the button
+    button.onclick = removeitem;
+  
+    // Append the button to the new div
+    divNew.appendChild(button);
+
+  
+    // Append the new div to the existing container element
+    document.getElementById("ingredients").appendChild(divNew);
   }
-  document.getElementById("ingredients").innerHTML = displayArray;
+
+}
+
+// Define the removeitem() function
+function removeitem() {
+  // This function will remove the parent div of the clicked button
+  this.parentNode.remove();
 }
 
 function addToCalendar() {
