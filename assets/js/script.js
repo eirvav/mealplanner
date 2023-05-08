@@ -41,10 +41,6 @@ document
       ? selectedMealTypeCard.querySelector("p").textContent
       : null;
 
-    // Get the number of meals per day
-
-    // Get the daily calorie intake
-
     // Log the values (you can replace this with your desired logic)
     // console.log("Meal Type:", mealType);
     // console.log("Number of Meals per Day:", numMeals);
@@ -52,7 +48,7 @@ document
 
     // GET THE JSON FOR WEB AND STARTS FUNCTION WITH ALL THE NESSESERY VARIABLES
     $.getJSON(
-      "https://gist.githubusercontent.com/isakmd/f09c90e170f342745e94c6bccdef0895/raw/01195da35abaca7772964f3b131741531a865cec/mealplans.json",
+      "https://gist.githubusercontent.com/isakmd/d94b8623376c89b44fa02da8e57d2a7e/raw/4b682365a892417442d625e22b083b992feab27c/mealplans.json",
       function (result) {
         console.log(result);
         console.log(mealType);
@@ -166,7 +162,7 @@ function clickMeal(btnNumber, mealday, mealType) {
   console.log(finishedMealsArray);
 
   $.getJSON(
-    "https://gist.githubusercontent.com/isakmd/f09c90e170f342745e94c6bccdef0895/raw/01195da35abaca7772964f3b131741531a865cec/mealplans.json",
+    "https://gist.githubusercontent.com/isakmd/d94b8623376c89b44fa02da8e57d2a7e/raw/2b28999fbd524162fa6d1cf844de61f31212e1b1/mealplans.jsonhttps://gist.githubusercontent.com/isakmd/d94b8623376c89b44fa02da8e57d2a7e/raw/4b682365a892417442d625e22b083b992feab27c/mealplans.json",
     function (result) {
       if (mealday == "Lunch") {
         var newDiv = document.createElement("div");
