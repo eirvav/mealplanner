@@ -115,7 +115,7 @@
 #ingredients {
   color: #0a894c;
   padding: 10px;
-  margin-left: 30px;
+  
 }
 
 .card-footer {
@@ -127,4 +127,15 @@
 .meals {
   padding: 0 !important;
   max-width: 1000px !important;
+}
+
+/* INGREDIENTS STYLE */
+
+.button-style-ingredients {
+  display: flex;
+  align-items: center;
+  border: 0px;
+  color: green;
+  background-color: white;
+  float: right;
 }
