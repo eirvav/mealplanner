@@ -22,8 +22,49 @@
     </button>
 
     <pre id="content" style="white-space: pre-wrap"></pre>
+    <div id="external-events">
+      <h4>Draggable Events</h4>
+      <div class="fc-event">My Event 1</div>
+      <div class="fc-event">My Event 2</div>
+      <div class="fc-event">My Event 3</div>
+    </div>
     <div id="calendar"></div>
 
+    <script>
+      document.getElementById("authorize_button").style.visibility = "hidden";
+      document.getElementById("signout_button").style.visibility = "hidden";
+      document.getElementById("refresh_button").style.visibility = "hidden";
+
+      // ... (Rest of your existing code)
+
+      function updateCalendar(events) {
+        const formattedEvents = events.map((event) => ({
+          title: event.summary,
+          start: event.start.dateTime || event.start.date,
+          end: event.end.dateTime || event.end.date,
+          url: event.htmlLink,
+          editable: true,
+        }));
+
+        initCalendar(formattedEvents);
+      }
+
+      function initCalendar(events) {
+        $("#calendar").fullCalendar("destroy");
+        $("#calendar").fullCalendar({
+          events: events,
+          header: {
+            left: "prev,next today",
+            center: "title",
+            right: "month,agendaWeek,agendaDay",
+          },
+          defaultView: "month",
+          editable: true,
+          eventStartEditable: true,
+          eventDurationEditable: true,
+        });
+      }
+    </script>
     <script type="text/javascript">
       /* exported gapiLoaded */
       /* exported gisLoaded */

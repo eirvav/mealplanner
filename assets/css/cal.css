@@ -3,9 +3,7 @@ body {
   font-size: 14px;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
-.container-test {
-  max-width: 1000px;
-}
+
 #external-events {
   position: fixed;
   left: 20px;
@@ -50,3 +48,11 @@ body {
 
 .fc-style {
 }
+
+/* #calendar-wrap {
+  margin-top: 20%;
+}
+
+#external-events {
+  margin-top: 20%;
+} */
