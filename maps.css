@@ -1,0 +1,21 @@
+.title {
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 25px;
+    color: #0A894C;
+
+}
+
+ .content-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ #map {
+    height: 600px;
+    width: 1000px;
+    border: solid 3px #0A894C;
+    border-radius: 15px;
+  }
+  
