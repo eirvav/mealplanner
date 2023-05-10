@@ -45,3 +45,12 @@
 .calendar-width {
   max-width: 1000px !important;
 }
+
+.fc-style {
+  background-color: #0aaf60;
+  color: #fff;
+  display: inline-block !important;
+  margin-right: 15px !important;
+  padding: 5px !important;
+  border-radius: 5px;
+}
