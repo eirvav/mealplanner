@@ -69,3 +69,50 @@
     transform: rotate(360deg);
   }
 }
+
+/* Animated content */
+.generated-content {
+  position: relative;
+  bottom: -100px;
+  opacity: 0;
+  animation: slideIn 0.5s forwards ease-out;
+}
+
+.calc {
+  position: relative;
+  bottom: -100px;
+  opacity: 0;
+  animation: slideIn 0.5s forwards ease-out;
+}
+
+:not(#ingredients) > .added-meals {
+  position: relative;
+  opacity: 0;
+  animation: slideInRight 0.5s forwards ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    bottom: 100px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+/* generated content is hidden */
+.generated-content.show {
+  opacity: 1;
+}

@@ -16,16 +16,46 @@
       <div id="loader"></div>
     </div>
 
+    <div class="generated-content">
+      <h2>Welcome to the site</h2>
+      <p>Here's some content that will slide in from below</p>
+    </div>
+    <style>
+      .generated-content {
+        position: relative;
+        bottom: -100px;
+        opacity: 0;
+        animation: slideIn 0.5s forwards ease-out;
+      }
+
+      @keyframes slideIn {
+        0% {
+          bottom: -100px;
+          opacity: 0;
+        }
+        100% {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+      .generated-content.show {
+        opacity: 1;
+      }
+    </style>
     <script>
       const button = document.querySelector(".btn-primary");
       const preloader = document.querySelector("#preloader");
+      const generatedContent = document.querySelector(".generated-content");
 
       preloader.style.display = "none"; // hide the preloader initially
+      generatedContent.style.display = "none"; // hide the generated content initially
 
       button.addEventListener("click", function () {
         preloader.style.display = "block"; // show the preloader
         setTimeout(function () {
           preloader.style.display = "none"; // hide the preloader after 2 seconds
+          generatedContent.style.display = "block"; // show the generated content
+          generatedContent.classList.add("show"); // add the "show" class to trigger the animation
         }, 2000);
       });
     </script>
