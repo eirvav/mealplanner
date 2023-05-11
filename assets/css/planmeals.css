@@ -111,6 +111,8 @@
 
 #ingredients {
   padding: 10px;
+  overflow: auto;
+    max-height: 1000px;
 }
 
 .card-footer {
