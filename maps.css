@@ -6,16 +6,39 @@
 
 }
 
- .content-map {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
- }
- #map {
+
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin: 0px 15% ;
+    grid-gap: 10px;
+}
+#map {
     height: 600px;
-    width: 1000px;
+    width: 100%;
     border: solid 3px #0A894C;
     border-radius: 15px;
-  }
+}
+
+.title-right{
+    text-align: center;
+}
+
+.shoppingList {
+    background-color: #fff;
+    padding: 20px 10px;
+}
+
+.style-ing {
+    background-color: white;
+  margin: 10px 10px;
+  padding: 5px 0px;
+  margin: 10px 10px;
+  padding: 10px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
   

@@ -1,3 +1,5 @@
+
+// CODE WITH SOME HELP FOR CHATGPT
 var currentLocation; // Declare currentLocation globally
 var userMarker; // Declare userMarker globally
 
@@ -96,6 +98,14 @@ function initMap() {
 // Call the initMap function when the page has finished loading
 window.onload = function() {
   initMap();
+  const getArrayIngre = JSON.parse(localStorage.getItem("ingredients"));
+
+  for (var i = 0; i < getArrayIngre.length; i++) {
+    var newDiv = document.createElement("div");
+    newDiv.className = "style-ing";
+    newDiv.innerHTML = getArrayIngre[i];
+    document.getElementById("ingredients").appendChild(newDiv);
+  }
 };
 
 

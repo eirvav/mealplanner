@@ -301,6 +301,7 @@ function ingredients() {
     // Append the new div to the existing container element
     document.getElementById("ingredients").appendChild(divNew);
   }
+  localStorage.setItem("ingredients", JSON.stringify(uniqueArr));
 }
 
 // Define the removeitem() function
