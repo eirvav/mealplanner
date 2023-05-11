@@ -294,7 +294,7 @@ function ingredients() {
 
     // Add an onclick function to the button
     button.onclick = removeitem;
-
+  
     // Append the button to the new div
     divNew.appendChild(button);
 
@@ -306,8 +306,13 @@ function ingredients() {
 
 // Define the removeitem() function
 function removeitem() {
-  // This function will remove the parent div of the clicked button
-  this.parentNode.remove();
+  var removedItem = this.parentNode.firstChild.textContent.trim(); // Get the text content of the adjacent sibling div
+  var uniqueArr = JSON.parse(localStorage.getItem("ingredients")); // Retrieve the array from local storage
+  var updatedArr = uniqueArr.filter(function(item) {
+    return item !== removedItem; // Filter out the removed item from the array
+  });
+  localStorage.setItem("ingredients", JSON.stringify(updatedArr)); // Update the modified array in local storage
+  this.parentNode.remove(); // Remove the parent div of the clicked button
 }
 
 function addToCalendar() {
