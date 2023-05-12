@@ -84,8 +84,15 @@ function initMap() {
     // Format the distance in meters or kilometers
     var formattedDistance = distance < 1000 ? distance.toFixed(0) + ' meters' : (distance / 1000).toFixed(2) + ' kilometers';
 
+        // Generate a random discount type for the store
+        var discountTypes = ['Student Discounts', 'Vegetable Discounts', 'Special Offers'];
+        var randomDiscountType = discountTypes[Math.floor(Math.random() * discountTypes.length)];
+    
+        // Generate a random whole number discount between 5 and 30
+        var randomDiscount = Math.floor(Math.random() * 26) + 5;
+    
     // Set the content of the info window
-    var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance;
+    var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance + '<br>' + 'Discount: ' + randomDiscount + '% ' + randomDiscountType;
 
     // Add a click event listener to the marker
     marker.addListener('click', function() {
