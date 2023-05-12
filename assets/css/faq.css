@@ -60,6 +60,11 @@ img {
   border-right: none;
 }
 #mealtext {
+  text-align: center;
   margin-top: 50px;
   padding: 20px;
+}
+
+#mealtext h1 {
+  margin-left: 20%;
 }
