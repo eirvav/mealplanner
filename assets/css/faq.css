@@ -1,0 +1,40 @@
+#faq {
+  margin-top: 100px;
+  padding: 50px;
+}
+#faqh {
+  color: green;
+  font-weight: bold;
+  font-size: 10vh;
+}
+
+#eatwell {
+  background-color: #e0eee8;
+  margin-top: 100px;
+  border-radius: 20px;
+  height: 100%;
+  padding: 50px;
+}
+.green-text {
+  color: green;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: left;
+}
+.row {
+  display: flex;
+}
+h3 {
+  color: #0a894c;
+}
+.col {
+  flex: 1;
+  border-right: 1px solid #0a894c;
+  height: 50%;
+  margin-top: 5%;
+}
+.col:last-child {
+  border-right: none;
+}
