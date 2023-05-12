@@ -1,3 +1,6 @@
+body {
+  font-family: "Inter";
+}
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -21,8 +24,8 @@ a:hover {
   font-size: 2rem;
   font-weight: 900;
 }
-.footer-16371 .footer-site-logo a {
-  color: #4200ff;
+.footer-16371 .footer-site-logo a img {
+  width: 30%;
 }
 .footer-16371 .nav-links {
   padding: 0;
@@ -36,7 +39,7 @@ a:hover {
   color: #000;
 }
 .footer-16371 .nav-links li a:hover {
-  color: #4200ff;
+  color: #0aaf60;
 }
 .footer-16371 .social h3 {
   font-weight: bold;
