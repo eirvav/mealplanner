@@ -34,6 +34,11 @@
     ></script>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/faq.css" />
+    <link rel="stylesheet" href="/assets/css/planmeals.css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/meal-calculator.css" rel="stylesheet" />
+    <link href="assets/css/preloader.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
   </head>
   <body>
     <header
@@ -47,10 +52,11 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html"> MEAL PLANNER</a></li>
+            <li><a href="#">HOW IT WORKS </a></li>
+            <li><a href="#">CONTACT</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="./test.html">Test</a></li>
+            <li><a href="./test.html">TEST</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -60,39 +66,38 @@
 
     <!--Section: FAQ-->
     <section id="faq">
-      <h3 class="text-center mb-4 pb-2 text-primary fw-bold" id="faqh">FAQ</h3>
+      <h3 class="text-center mb-4 pb-2 text-green fw-bold">FAQ</h3>
       <p class="text-center mb-5">
         Find the answers for the most frequently asked questions below
       </p>
 
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 text-primary">
-            <i class="far fa-paper-plane text-primary pe-2"></i> A simple
-            question?
+          <h6 class="mb-3 text-green">
+            Is my payment information safe and secure if i buy Premium Plan Your
+            Plate?
           </h6>
           <p>
-            <strong><u>Absolutely!</u></strong> We work with top payment
-            companies which guarantees your safety and security. All billing
-            information is stored on our payment processing partner.
+            Absolutely! We work with top payment companies which guarantees your
+            safety and security. All billing information is stored on our
+            payment processing partner.
           </p>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 text-primary">
-            <i class="fas fa-pen-alt text-primary pe-2"></i> A question that is
-            longer then the previous one?
+          <h6 class="mb-3 text-green">
+            Can i cancel my subscription of Premium Plan Your Plate at any time?
           </h6>
           <p>
-            <strong><u>Yes, it is possible!</u></strong> You can cancel your
-            subscription anytime in your account. Once the subscription is
-            cancelled, you will not be charged next month.
+            Yes, it is possible! You can cancel your subscription anytime in
+            your account. Once the subscription is cancelled, you will not be
+            charged next month.
           </p>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 text-primary">
-            <i class="fas fa-user text-primary pe-2"></i> A simple question?
+          <h6 class="mb-3 text-green">
+            Can i sign up for only a week of Premium Plan Your Plate?
           </h6>
           <p>
             Currently, we only offer monthly subscription. You can upgrade or
@@ -101,32 +106,31 @@
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 text-primary">
-            <i class="fas fa-rocket text-primary pe-2"></i> A simple question?
+          <h6 class="mb-3 text-green">
+            Where can i sign up to Premium Plan Your Plate?
           </h6>
           <p>
-            Yes. Go to the billing section of your dashboard and update your
-            payment information.
+            Go to the billing section of your account and update your payment
+            information.
           </p>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 text-primary">
-            <i class="fas fa-home text-primary pe-2"></i> A simple question?
+          <h6 class="mb-3 text-green">
+            Can i get my money back if i don't use it?
           </h6>
           <p>
-            <strong><u>Unfortunately no</u>.</strong> We do not issue full or
-            partial refunds for any reason.
+            Unfortunately no. We do not issue full or partial refunds for any
+            reason.
           </p>
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4">
-          <h6 class="mb-3 text-primary">
-            <i class="fas fa-book-open text-primary pe-2"></i> Another question
-            that is longer than usual
+          <h6 class="mb-3 text-green">
+            Can i get a free trial for Premium Plan Your Plate?
           </h6>
           <p>
-            Of course! We’re happy to offer a free plan to anyone who wants to
+            Of course! We’re happy to offer a free trial to anyone who wants to
             try our service.
           </p>
         </div>
@@ -174,12 +178,12 @@
 
     <div class="container" id="mealtext">
       <h1>
-        <span class="green-text">Mealplanning </span> has never been easier
+        <span class="green-text"> Mealplanning </span> has never been easier
       </h1>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" id="col">
           <div class="text-center">
-            <i class="bi bi-star"></i>
+            <img src="/assets/img/eco-food 1.png" />
             <h3>Follow any eating style or create your own</h3>
             <p>
               You can customize popular eating styles like vegan and paleo to
@@ -187,9 +191,9 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="col">
           <div class="text-center">
-            <i class="bi bi-heart"></i>
+            <img src="/assets/img/waste 1.png" />
             <h3>Reduce food waste</h3>
             <p>
               Planning ahead means less produce going bad in the fridge. Add
@@ -200,9 +204,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" id="col">
           <div class="text-center">
-            <i class="bi bi-lightbulb"></i>
+            <img src="/assets/img/calendar (1) 1.png" />
             <h3>Take the anxiety out of picking what to eat</h3>
             <p>
               Make the important decisions ahead of time and on your own
@@ -211,9 +215,9 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="col">
           <div class="text-center">
-            <i class="bi bi-rocket"></i>
+            <img src="/assets/img/note 1.png" />
             <h3>Automatic grocery lists</h3>
             <p>
               No more skipping meals because you're missing ingredients. Review
@@ -224,5 +228,58 @@
         </div>
       </div>
     </div>
+    <footer class="footer-16371">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 text-center">
+            <div class="footer-site-logo mb-4">
+              <a href="#"><img src="assets/img/logo green.png" /></a>
+            </div>
+            <ul class="list-unstyled nav-links mb-5">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social mb-4">
+              <h3>Follow us on</h3>
+              <ul class="list-unstyled">
+                <li class="in">
+                  <a href="#"
+                    ><span><img src="assets/img/facebook.svg" /></span
+                  ></a>
+                </li>
+                <li class="fb">
+                  <a href="#"
+                    ><span><img src="assets/img/instagram.svg" /></span
+                  ></a>
+                </li>
+                <li class="tw">
+                  <a href="#"
+                    ><span><img src="assets/img/twitter.svg" /></span
+                  ></a>
+                </li>
+                <li class="pin">
+                  <a href="#"
+                    ><span><img src="assets/img/youtube.svg" /></span
+                  ></a>
+                </li>
+                <li class="dr">
+                  <a href="#"
+                    ><span><img src="assets/img/figma.svg" /></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p class="mb-0">
+                <small>&copy; PlanYourPlate. All Rights Reserved.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
