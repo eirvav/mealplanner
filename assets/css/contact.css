@@ -19,7 +19,8 @@ h1 {
 
 .contact-us {
   width: 80%;
-  margin: auto;
+  margin-top: -100px;
+  margin-left: 170px;
 }
 .contact-col {
   flex-basis: 48%;
@@ -32,12 +33,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-.contact-col div .fa {
-  font-size: 28px;
-  color: #f44336;
-  margin: 10px;
-  margin-right: 30px;
-}
 .contact-col div p {
   padding: 0;
 }
@@ -55,6 +50,7 @@ h1 {
   padding: 15px;
   margin-bottom: 17px;
   outline: none;
-  border: 1px solid #ccc;
+  background-color: #eff6f3;
+  border: 1px solid green;
   box-sizing: border-box;
 }
