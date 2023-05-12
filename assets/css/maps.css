@@ -1,16 +1,15 @@
+.maps-container {
+  padding: 0;
+}
+
 .title {
-  margin-top: 5%;
-  margin-left: 15%;
+  margin: 0;
+  margin-top: 10%;
+  text-align: left;
   padding: 25px;
   color: #0a894c;
 }
 
-.maps-grid {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  margin: 0px 15%;
-  grid-gap: 10px;
-}
 #map {
   height: 600px;
   width: 100%;
@@ -25,7 +24,6 @@
 .shoppingList {
   background-color: #fff;
   padding: 20px 10px;
-  border-radius: 5px;
 }
 
 .style-ing {

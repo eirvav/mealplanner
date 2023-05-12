@@ -32,6 +32,7 @@
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #button-style:hover {
@@ -53,6 +54,14 @@
 }
 
 .img-lunch {
+  border-radius: 5px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.img-dinner {
   border-radius: 5px;
   max-height: 100%;
   max-width: 100%;
@@ -112,7 +121,7 @@
 #ingredients {
   padding: 10px;
   overflow: auto;
-    max-height: 1000px;
+  max-height: 1000px;
 }
 /* STYLE FOR SCROLLBAR */
 #ingredients::-webkit-scrollbar {

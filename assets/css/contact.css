@@ -1,0 +1,56 @@
+h1 {
+  margin-top: 150px;
+  margin-bottom: -100px;
+  padding-left: 10%;
+  text-transform: uppercase;
+  color: green;
+}
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  margin-top: 100px;
+  width: 100%;
+  margin-bottom: -0px;
+}
+
+.contact-us {
+  width: 80%;
+  margin-top: -100px;
+  margin-left: 170px;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div p {
+  padding: 0;
+}
+
+.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  background-color: #eff6f3;
+  border: 1px solid green;
+  box-sizing: border-box;
+}
