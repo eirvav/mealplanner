@@ -72,6 +72,8 @@ function initMap() {
       }
     });
 
+    // Declare an array to store the grocery store names
+    var storeNames = [];
     // Create an info window for the marker
     var infowindow = new google.maps.InfoWindow();
 
@@ -80,6 +82,21 @@ function initMap() {
       currentLocation,
       place.geometry.location
     );
+
+    // // Create a button element
+    // var button = document.createElement('button');
+    // button.innerHTML = 'Save Store';
+
+
+    // // Add a click event listener to the button
+    // button.addEventListener('click', function() {
+    //   storeNames.push(place.name); // Store the grocery store name in the array
+    //   console.log(storeNames); // Display the array in the console (you can modify this part as needed)
+    // });
+
+    // // Create a container element for the button
+    // var buttonContainer = document.createElement('div');
+    // buttonContainer.appendChild(button);
 
     // Format the distance in meters or kilometers
     var formattedDistance = distance < 1000 ? distance.toFixed(0) + ' meters' : (distance / 1000).toFixed(2) + ' kilometers';
@@ -92,7 +109,8 @@ function initMap() {
         var randomDiscount = Math.floor(Math.random() * 26) + 5;
     
     // Set the content of the info window
-    var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance + '<br>' + 'Discount: ' + randomDiscount + '% ' + randomDiscountType;
+    var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance + '<br>' + 'Discount: ' + randomDiscount + '% ' + randomDiscountType + "\n";
+    // content += buttonContainer.innerHTML; // Add the button to the info window content
 
     // Add a click event listener to the marker
     marker.addListener('click', function() {
@@ -117,27 +135,3 @@ window.onload = function() {
 
 
 
-//     // Create a DirectionsService object
-//   var directionsService = new google.maps.DirectionsService();
-
-//   // Create a DirectionsRenderer object to display the route
-//   var directionsRenderer = new google.maps.DirectionsRenderer();
-//   directionsRenderer.setMap(map);
-
-//   // Define the request object for the directions
-//   var request = {
-//     origin: 'Lars Hilles gate 30, 5008 Bergen',
-//     destination: 'Marken 34, 5017 Bergen',
-//     travelMode: google.maps.TravelMode.DRIVING // Specify the travel mode (DRIVING, WALKING, BICYCLING, or TRANSIT)
-//   };
-
-//   // Use the DirectionsService to get the route
-//   directionsService.route(request, function(response, status) {
-//     if (status === google.maps.DirectionsStatus.OK) {
-//       // Display the route on the map
-//       directionsRenderer.setDirections(response);
-//     } else {
-//       // Handle the error
-//       console.log('Directions request failed. Status: ' + status);
-//     }
-//   });
