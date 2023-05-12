@@ -38,3 +38,7 @@ h3 {
 .col:last-child {
   border-right: none;
 }
+#mealtext {
+  margin-top: 50px;
+  padding: 20px;
+}
