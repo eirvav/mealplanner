@@ -156,7 +156,6 @@ function getDinner(result, mealType, randomDish1, randomDish2) {
 // ADD MEALS TO RIGHT SIDE
 var ingredientArray = [];
 var finishedMealsArray = [];
-var mealsArray = [];
 var nutrientsArray = [];
 
 // Sample data representing the nutrients
@@ -164,6 +163,7 @@ const nutrientsData = {
   protein: 0,
   carbohydrates: 0,
   fat: 0,
+  fiber: 0,
 };
 var totalcal = 0;
 function clickMeal(btnNumber, mealday, mealType) {
@@ -182,28 +182,14 @@ function clickMeal(btnNumber, mealday, mealType) {
         if (btnNumber == 0) {
           newDiv.innerHTML = result[mealType].Lunch[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[0]].Meal);
-          localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
-          // Create a new button element
-          var button = document.createElement("button");
-          button.innerHTML = "X";
-
-          // Add a class to the button
-          button.classList.add("button-style-ingredients");
-
-          // Add an onclick function to the button
-          button.onclick = removemeal;
-
-          // Append the button to the new div
-          newDiv.appendChild(button);
           // Update nutrientsData with the nutrients from the added meal
-          const mealNutrients =
-            result[mealType].Lunch[arrayRandom[0]].Nutrition;
-          totalcal += mealNutrients.Calories;
-          document.getElementById("calories-title").innerHTML =
-            "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein;
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
-          nutrientsData.fat += mealNutrients.Fat;
+          const mealNutrients = result[mealType].Lunch[arrayRandom[0]].Nutrition;
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
 
           for (
@@ -218,30 +204,15 @@ function clickMeal(btnNumber, mealday, mealType) {
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result[mealType].Lunch[arrayRandom[1]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[1]].Meal);
-          localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
-          // Create a new button element
-          var button = document.createElement("button");
-          button.innerHTML = "X";
-
-          // Add a class to the button
-          button.classList.add("button-style-ingredients");
-
-          // Add an onclick function to the button
-          button.onclick = removemeal;
-
-          // Append the button to the new div
-          newDiv.appendChild(button);
-
 
           // Update nutrientsData with the nutrients from the added meal
-          const mealNutrients =
-            result[mealType].Lunch[arrayRandom[1]].Nutrition;
-          totalcal += mealNutrients.Calories;
-          document.getElementById("calories-title").innerHTML =
-            "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein;
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
-          nutrientsData.fat += mealNutrients.Fat;
+          const mealNutrients = result[mealType].Lunch[arrayRandom[1]].Nutrition;
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -266,28 +237,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           finishedMealsArray.push(
             result[mealType].Breakfast[arrayRandom[0]].Meal
           );
-          localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
-          // Create a new button element
-          var button = document.createElement("button");
-          button.innerHTML = "X";
-
-          // Add a class to the button
-          button.classList.add("button-style-ingredients");
-
-          // Add an onclick function to the button
-          button.onclick = removemeal;
-
-          // Append the button to the new div
-          newDiv.appendChild(button);
           // Update nutrientsData with the nutrients from the added meal
-          const mealNutrients =
-            result[mealType].Breakfast[arrayRandom[0]].Nutrition;
-          totalcal += mealNutrients.Calories;
-          document.getElementById("calories-title").innerHTML =
-            "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein;
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
-          nutrientsData.fat += mealNutrients.Fat;
+          const mealNutrients = result[mealType].Breakfast[arrayRandom[0]].Nutrition;
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -304,27 +261,13 @@ function clickMeal(btnNumber, mealday, mealType) {
           finishedMealsArray.push(
             result[mealType].Breakfast[arrayRandom[1]].Meal
           );
-          localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
-          // Create a new button element
-          var button = document.createElement("button");
-          button.innerHTML = "X";
-
-          // Add a class to the button
-          button.classList.add("button-style-ingredients");
-
-          // Add an onclick function to the button
-          button.onclick = removemeal;
-
-          // Append the button to the new div
-          newDiv.appendChild(button);
-          const mealNutrients =
-            result[mealType].Breakfast[arrayRandom[1]].Nutrition;
-          totalcal += mealNutrients.Calories;
-          document.getElementById("calories-title").innerHTML =
-            "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein;
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
-          nutrientsData.fat += mealNutrients.Fat;
+          const mealNutrients = result[mealType].Breakfast[arrayRandom[1]].Nutrition;
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -347,27 +290,13 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML =
             result[mealType].Dinner[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[0]].Meal);
-          localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
-          // Create a new button element
-          var button = document.createElement("button");
-          button.innerHTML = "X";
-
-          // Add a class to the button
-          button.classList.add("button-style-ingredients");
-
-          // Add an onclick function to the button
-          button.onclick = removemeal;
-
-          // Append the button to the new div
-          newDiv.appendChild(button);
-          const mealNutrients =
-            result[mealType].Dinner[arrayRandom[0]].Nutrition;
-          totalcal += mealNutrients.Calories;
-          document.getElementById("calories-title").innerHTML =
-            "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein;
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
-          nutrientsData.fat += mealNutrients.Fat;
+          const mealNutrients = result[mealType].Dinner[arrayRandom[0]].Nutrition;
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
 
           for (
@@ -383,28 +312,13 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML =
             result[mealType].Dinner[arrayRandom[1]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[1]].Meal);
-          localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
-
-          // Create a new button element
-          var button = document.createElement("button");
-          button.innerHTML = "X";
-
-          // Add a class to the button
-          button.classList.add("button-style-ingredients");
-
-          // Add an onclick function to the button
-          button.onclick = removemeal;
-
-          // Append the button to the new div
-          newDiv.appendChild(button);
-          const mealNutrients =
-            result[mealType].Dinner[arrayRandom[1]].Nutrition;
-          totalcal += mealNutrients.Calories;
-          document.getElementById("calories-title").innerHTML =
-            "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein;
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
-          nutrientsData.fat += mealNutrients.Fat;
+          const mealNutrients = result[mealType].Dinner[arrayRandom[1]].Nutrition;
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -467,23 +381,12 @@ function removeitem() {
   this.parentNode.remove(); // Remove the parent div of the clicked button
 }
 
-function removemeal() {
-  var removedItem = this.parentNode.firstChild.textContent.trim(); // Get the text content of the adjacent sibling div
-  mealsArray = JSON.parse(localStorage.getItem("meals")); // Retrieve the array from local storage
-  mealsArray = mealsArray.filter(function (item) {
-    return item !== removedItem; // Filter out the removed item from the array
-  });
-  localStorage.setItem("meals", JSON.stringify(mealsArray)); // Update the modified array in local storage
-  this.parentNode.remove(); // Remove the parent div of the clicked button
-
-}
-
 function addToCalendar() {
-  localStorage.setItem("meals", JSON.stringify(mealsArray));
+  localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
 }
 
 // CALORIE COUNT
-Chart.register(ChartDataLabels);
+
 let myChart = null; // Initialize the chart variable
 
 function updatePieChart() {
@@ -520,18 +423,6 @@ function updatePieChart() {
       },
       options: {
         responsive: true,
-        plugins: {
-          datalabels: {
-            color: "#ffffff",
-            font: {
-              size: 14,
-            },
-            formatter: (value, context) => {
-              let label = context.chart.data.labels[context.dataIndex];
-              return value + "g " + label;
-            },
-          },
-        },
       },
     });
   }
