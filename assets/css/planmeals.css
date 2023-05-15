@@ -126,6 +126,13 @@
   /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
 }
 
+/* NUTRITION */
+#calories-title {
+  text-align: center;
+  font-size: x-large;
+  padding: 10px 0px;
+}
+
 /* SHOPPING LIST */
 #selected-ingredients {
   background-color: white;
