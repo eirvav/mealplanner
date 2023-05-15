@@ -78,7 +78,7 @@
   animation: slideIn 0.5s forwards ease-out;
 }
 
-.calc {
+.main {
   position: relative;
   bottom: -100px;
   opacity: 0;
@@ -115,4 +115,8 @@
 /* generated content is hidden */
 .generated-content.show {
   opacity: 1;
+}
+
+#myDiv {
+  display: none;
 }

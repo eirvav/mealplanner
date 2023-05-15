@@ -116,7 +116,6 @@
 
 .title-right {
   text-align: center;
-  border-bottom: solid 2px #aed3c2;
   padding-top: 10%;
 }
 
@@ -177,19 +176,25 @@
 
 #mealplan-container {
   padding: 5% 0;
-
   border-radius: 5px;
 }
 
 .left-container {
-  margin-right: 2%;
   background-color: #fff;
+  border-radius: 5px;
 }
 .right-container {
   margin-left: 2%;
   background-color: #fff;
+  border-radius: 5px;
 }
 
-.meal-button {
-  width: 100% !important;
+#myChart {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+}
+
+#calories-title {
+  text-align: center;
 }

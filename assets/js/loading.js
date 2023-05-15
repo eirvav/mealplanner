@@ -1,5 +1,5 @@
 //Animate content load
-const calc = document.querySelector(".calc");
+const calc = document.querySelector(".main");
 
 calc.style.display = "none"; // hide the calc div initially
 
@@ -23,4 +23,11 @@ button.addEventListener("click", function () {
     generatedContent.style.display = "block"; // show the generated content
     generatedContent.classList.add("show"); // add the "show" class to trigger the animation
   }, 1500);
+});
+
+//Show right container
+$(document).ready(function () {
+  $(".add-button").click(function () {
+    $("#myDiv").show(); // Show the myDiv div
+  });
 });

@@ -47,7 +47,6 @@
   border: 2px solid #0aaf60;
   margin-top: 1.5rem;
   padding: 1rem;
-  min-width: 150px;
 }
 
 .btn:hover {
@@ -59,7 +58,16 @@
 .form-label {
   margin-top: 1rem;
 }
+.meal-button {
+  width: 100% !important;
+  margin-bottom: 5%;
+  margin-top: auto;
+  bottom: 0;
+}
+.meal-button {
+  margin-top: auto;
+}
 
-/* #myDiv {
-  display: none;
+/* .right-container {
+  height: fit-content;
 } */

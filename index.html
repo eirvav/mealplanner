@@ -32,6 +32,7 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="/assets/css/planmeals.css" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/meal-calculator.css" rel="stylesheet" />
@@ -40,6 +41,7 @@
   </head>
 
   <body>
+    <div class="bg"></div>
     <!-- ======= Header ======= -->
     <header
       id="header"
@@ -104,7 +106,7 @@
     </section> -->
     <!-- End Hero -->
     <!-- Start Main - All content must be in Main -->
-    <main id="main">
+    <main id="main" class="main">
       <div class="head">
         <h1>Let us help you</h1>
         <h1 class="pp">Plan Your Plate!</h1>
@@ -352,30 +354,20 @@
                   </div>
                 </div>
                 <div class="col-sm right-container" id="myDiv">
+                  <!-- Pie chart -->
+                  <div class="title-right">
+                    <h3>Nutritional values:</h3>
+                  </div>
+                  <div id="calories-title"></div>
+                  <canvas id="myChart"></canvas>
                   <!-- Added Meals -->
                   <div class="addedMeals">
                     <div class="title-right">
                       <h3>Meals added</h3>
                     </div>
                     <div id="selected-meals"></div>
-                    <a
-                      href="./fullcalendar/examples/external-dragging-builtin.html"
-                    >
-                      <button
-                        onclick="addToCalendar()"
-                        class="btn btn-primary meal-button"
-                      >
-                        Add to Calendar
-                      </button>
-                    </a>
                   </div>
-                  <!-- Pie chart -->
-                  <div class="title-right">
-                    <h3>Macronutrients</h3>
-              
-                  </div>
-                  <div id="calories-title"></div>
-                  <canvas id="myChart"></canvas>
+
                   <!-- ShoppingList -->
                   <div class="shoppingList">
                     <div id="selected-ingredients">
@@ -385,6 +377,16 @@
                       <div id="ingredients"></div>
                     </div>
                   </div>
+                  <a
+                    href="./fullcalendar/examples/external-dragging-builtin.html"
+                  >
+                    <button
+                      onclick="addToCalendar()"
+                      class="btn btn-primary meal-button"
+                    >
+                      Add meals to Calendar
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -450,6 +452,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-beta.1"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/loading.js"></script>
   </body>

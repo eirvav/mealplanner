@@ -163,7 +163,6 @@ const nutrientsData = {
   protein: 0,
   carbohydrates: 0,
   fat: 0,
-  fiber: 0,
 };
 var totalcal = 0;
 function clickMeal(btnNumber, mealday, mealType) {
@@ -183,13 +182,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML = result[mealType].Lunch[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[0]].Meal);
           // Update nutrientsData with the nutrients from the added meal
-          const mealNutrients = result[mealType].Lunch[arrayRandom[0]].Nutrition;
-          totalcal += mealNutrients.Calories
-          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
-          nutrientsData.fat += mealNutrients.Fat
-          nutrientsData.fiber += mealNutrients.Fiber
+          const mealNutrients =
+            result[mealType].Lunch[arrayRandom[0]].Nutrition;
+          totalcal += mealNutrients.Calories;
+          document.getElementById("calories-title").innerHTML =
+            "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein;
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
+          nutrientsData.fat += mealNutrients.Fat;
           console.log(nutrientsData);
 
           for (
@@ -206,13 +206,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[1]].Meal);
 
           // Update nutrientsData with the nutrients from the added meal
-          const mealNutrients = result[mealType].Lunch[arrayRandom[1]].Nutrition;
-          totalcal += mealNutrients.Calories
-          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
-          nutrientsData.fat += mealNutrients.Fat
-          nutrientsData.fiber += mealNutrients.Fiber
+          const mealNutrients =
+            result[mealType].Lunch[arrayRandom[1]].Nutrition;
+          totalcal += mealNutrients.Calories;
+          document.getElementById("calories-title").innerHTML =
+            "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein;
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
+          nutrientsData.fat += mealNutrients.Fat;
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -238,13 +239,14 @@ function clickMeal(btnNumber, mealday, mealType) {
             result[mealType].Breakfast[arrayRandom[0]].Meal
           );
           // Update nutrientsData with the nutrients from the added meal
-          const mealNutrients = result[mealType].Breakfast[arrayRandom[0]].Nutrition;
-          totalcal += mealNutrients.Calories
-          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
-          nutrientsData.fat += mealNutrients.Fat
-          nutrientsData.fiber += mealNutrients.Fiber
+          const mealNutrients =
+            result[mealType].Breakfast[arrayRandom[0]].Nutrition;
+          totalcal += mealNutrients.Calories;
+          document.getElementById("calories-title").innerHTML =
+            "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein;
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
+          nutrientsData.fat += mealNutrients.Fat;
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -261,13 +263,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           finishedMealsArray.push(
             result[mealType].Breakfast[arrayRandom[1]].Meal
           );
-          const mealNutrients = result[mealType].Breakfast[arrayRandom[1]].Nutrition;
-          totalcal += mealNutrients.Calories
-          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
-          nutrientsData.fat += mealNutrients.Fat
-          nutrientsData.fiber += mealNutrients.Fiber
+          const mealNutrients =
+            result[mealType].Breakfast[arrayRandom[1]].Nutrition;
+          totalcal += mealNutrients.Calories;
+          document.getElementById("calories-title").innerHTML =
+            "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein;
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
+          nutrientsData.fat += mealNutrients.Fat;
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -290,13 +293,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML =
             result[mealType].Dinner[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[0]].Meal);
-          const mealNutrients = result[mealType].Dinner[arrayRandom[0]].Nutrition;
-          totalcal += mealNutrients.Calories
-          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
-          nutrientsData.fat += mealNutrients.Fat
-          nutrientsData.fiber += mealNutrients.Fiber
+          const mealNutrients =
+            result[mealType].Dinner[arrayRandom[0]].Nutrition;
+          totalcal += mealNutrients.Calories;
+          document.getElementById("calories-title").innerHTML =
+            "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein;
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
+          nutrientsData.fat += mealNutrients.Fat;
           console.log(nutrientsData);
 
           for (
@@ -312,13 +316,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML =
             result[mealType].Dinner[arrayRandom[1]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[1]].Meal);
-          const mealNutrients = result[mealType].Dinner[arrayRandom[1]].Nutrition;
-          totalcal += mealNutrients.Calories
-          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
-          nutrientsData.protein += mealNutrients.Protein
-          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
-          nutrientsData.fat += mealNutrients.Fat
-          nutrientsData.fiber += mealNutrients.Fiber
+          const mealNutrients =
+            result[mealType].Dinner[arrayRandom[1]].Nutrition;
+          totalcal += mealNutrients.Calories;
+          document.getElementById("calories-title").innerHTML =
+            "Total calories: " + totalcal;
+          nutrientsData.protein += mealNutrients.Protein;
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates;
+          nutrientsData.fat += mealNutrients.Fat;
           console.log(nutrientsData);
           for (
             var i = 0;
@@ -386,7 +391,7 @@ function addToCalendar() {
 }
 
 // CALORIE COUNT
-
+Chart.register(ChartDataLabels);
 let myChart = null; // Initialize the chart variable
 
 function updatePieChart() {
@@ -423,6 +428,18 @@ function updatePieChart() {
       },
       options: {
         responsive: true,
+        plugins: {
+          datalabels: {
+            color: "#ffffff",
+            font: {
+              size: 14,
+            },
+            formatter: (value, context) => {
+              let label = context.chart.data.labels[context.dataIndex];
+              return value + "g " + label;
+            },
+          },
+        },
       },
     });
   }
