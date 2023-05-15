@@ -58,5 +58,16 @@
   text-align: center;
   border-bottom: 2px solid #0aaf60;
   padding-bottom: 5px;
-} 
+}
 
+.enviroment {
+  margin-left: 12%;
+  margin-top: 3%;
+  position: relative;
+}
+.paragraph {
+  width: 50%;
+  font-weight: bold;
+  line-height: 3vh;
+  color: #0a894c;
+}
