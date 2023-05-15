@@ -358,7 +358,9 @@ function ingredients() {
 
     // Create a new button element
     var button = document.createElement("button");
-    button.innerHTML = "X";
+    var icon = document.createElement("img");
+    icon.src = "/assets/img/cross_out.svg";
+    button.appendChild(icon);
 
     // Add a class to the button
     button.classList.add("button-style-ingredients");
