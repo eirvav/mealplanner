@@ -87,3 +87,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   calendar.render();
 });
+
+// var calendar = document.getElementById("calendar"), {
+//   dateClick: function() {
+//     alert('a day has been clicked!');
+//   }
+// });
