@@ -38,6 +38,7 @@
     <script src="/assets/js/cal.js"></script>
 
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/reminder.css">
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -48,7 +49,7 @@ class="fixed-top d-flex align-items-center header-transparent"
 <div class="container d-flex justify-content-between align-items-center">
   <div class="logo">
     <h1 class="text-light">
-      <a href="index.html"><span>PlanYourPlate</span></a>
+      <a href="/index.html"><span>PlanYourPlate</span></a>
     </h1>
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -84,8 +85,8 @@ class="fixed-top d-flex align-items-center header-transparent"
   <!-- .navbar -->
 </div>
 </header>
-
     <!-- End Header -->
+
     <main id="main">
       <div class="title calendar-width">
         <h1>Your <strong>Calendar</strong></h1>
@@ -112,8 +113,22 @@ class="fixed-top d-flex align-items-center header-transparent"
           <div id="calendar-wrap">
             <div id="calendar"></div>
           </div>
+          <br>
+          <div class="set-reminders">
+            <p> <img src="/fullcalendar/examples/img/info.svg" alt="info icon"> Set reminders for your meals:</p>
+            <select id="reminderDropdown">
+              <option value="none"> None</option>
+              <option value="5">10 seconds</option>
+              <option value="10">10 minutes before</option>
+              <option value="15">15 minutes before</option>
+              <option value="30">30 minutes before</option>
+              <!-- Add more options as needed -->
+            </select>
+        </div>
         </div>
       </section>
+
+
       <!-- footer -->
       <footer class="footer-16371">
         <div class="container">
@@ -138,35 +153,35 @@ class="fixed-top d-flex align-items-center header-transparent"
                     <a href="#"
                       ><span
                         ><img
-                          src="/fullcalendar/examples/img/facebook.svg" /></span
+                          src="/fullcalendar/examples/img/Facebook icon.svg" /></span
                     ></a>
                   </li>
                   <li class="fb">
                     <a href="#"
                       ><span
                         ><img
-                          src="/fullcalendar/examples/img/instagram.svg" /></span
+                          src="/fullcalendar/examples/img/instagram icon.svg" /></span
                     ></a>
                   </li>
                   <li class="tw">
                     <a href="#"
                       ><span
                         ><img
-                          src="/fullcalendar/examples/img/twitter.svg" /></span
+                          src="/fullcalendar/examples/img/twitter icon.svg" /></span
                     ></a>
                   </li>
                   <li class="pin">
                     <a href="#"
                       ><span
                         ><img
-                          src="/fullcalendar/examples/img/youtube.svg" /></span
+                          src="/fullcalendar/examples/img/youtube icon.svg" /></span
                     ></a>
                   </li>
                   <li class="dr">
                     <a href="#"
                       ><span
                         ><img
-                          src="/fullcalendar/examples/img/figma.svg" /></span
+                          src="/fullcalendar/examples/img/figma icon.svg" /></span
                     ></a>
                   </li>
                 </ul>

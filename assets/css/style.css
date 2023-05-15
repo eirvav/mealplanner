@@ -531,3 +531,19 @@ section {
 .navbar a {
   padding: 5px 20px 5px 20px;
 }
+
+.head {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-top: 4%;
+}
+
+.head h1 {
+  margin-bottom: 2%;
+  color: #0aaf60;
+  font-size: 7vh;
+}
+.head p {
+  line-height: 3vh;
+}
