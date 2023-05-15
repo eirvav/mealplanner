@@ -2,7 +2,6 @@ h1 {
   margin-top: 150px;
   margin-bottom: -100px;
   padding-left: 10%;
-  /* text-transform: uppercase; */
   color: #0a894c;
 }
 .location {
@@ -55,4 +54,20 @@ h1 {
   border: 1px solid green;
   box-sizing: border-box;
   border-radius: 5px;
+}
+
+.message-btn {
+  width: auto;
+  height: 6vh;
+  border-radius: 5px;
+  border: 1px solid #0aaf60;
+  background-color: transparent;
+  margin: auto;
+  min-width: 150px;
+  transition: 0.5s;
+}
+
+.message-btn:hover {
+  background-color: #0aaf60;
+  color: white;
 }
