@@ -64,10 +64,20 @@
   margin-left: 12%;
   margin-top: 3%;
   position: relative;
-}
-.paragraph {
+  display: flex;
+
+  background-color: #6aaf8e;
   width: 50%;
-  font-weight: bold;
+  padding: 2%;
+  border-radius: 10px;
+}
+.enviroment img {
+  height: 6vh;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.paragraph {
   line-height: 3vh;
-  color: #0a894c;
+  color: white;
 }
