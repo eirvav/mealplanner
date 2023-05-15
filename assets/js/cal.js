@@ -39,6 +39,49 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  var calendarEl = document.getElementById("calendar");
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    eventClick: function (info) {
+      var eventObj = info.event;
+
+      if (eventObj.url) {
+        alert(
+          "Clicked " +
+            eventObj.title +
+            ".\n" +
+            "Will open " +
+            eventObj.url +
+            " in a new tab"
+        );
+
+        window.open(eventObj.url);
+
+        info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
+      } else {
+        alert("Clicked " + eventObj.title);
+      }
+    },
+  });
+
+  calendar.render();
+});
+
+//set alert
+function setAlert() {
+  var timeSelect = document.getElementById("time-select");
+  var selectedTime = parseInt(timeSelect.value);
+
+  if (!isNaN(selectedTime)) {
+    setTimeout(function () {
+      alert(selectedTime + " Time has passed!");
+    }, selectedTime * 1000);
+  } else {
+    alert("Please select a valid time.");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
   /* initialize the external events
         -----------------------------------------------------------------*/
 
@@ -85,34 +128,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
   });
-  calendar.render();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var calendarEl = document.getElementById("calendar");
-
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    eventClick: function (info) {
-      var eventObj = info.event;
-
-      if (eventObj.url) {
-        alert(
-          "Clicked " +
-            eventObj.title +
-            ".\n" +
-            "Will open " +
-            eventObj.url +
-            " in a new tab"
-        );
-
-        window.open(eventObj.url);
-
-        info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
-      } else {
-        alert("Clicked " + eventObj.title);
-      }
-    },
-  });
-
   calendar.render();
 });

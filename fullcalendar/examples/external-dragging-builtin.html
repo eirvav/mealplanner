@@ -38,9 +38,6 @@
     <script src="/assets/js/cal.js"></script>
 
     <link rel="stylesheet" href="/assets/css/footer.css" />
-    <<<<<<< HEAD
-    <link rel="stylesheet" href="/assets/css/reminder.css" />
-    ======= >>>>>>> 435717a12aa6be2c0ec02639060a9f716965986e
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -103,6 +100,31 @@
                 </button>
               </a>
             </div>
+            <!-- <div class="reminders1">
+              <p>
+                <img
+                  src="/fullcalendar/examples/img/info.svg"
+                  alt="info icon"
+                />
+                Set reminders for your meals:
+              </p>
+            </div>
+            <div class="set-reminders">
+              <div class="reminders2">
+                <label for="time-select">Select the time:</label>
+              </div>
+              <div class="reminders3">
+                <select id="time-select" class="reminderDropdown">
+                  <option value="2">2 seconds</option>
+                  <option value="3">3 seconds</option>
+                  <option value="4">4 seconds</option>
+                </select>
+              </div>
+              <div class="reminders4">
+                <button onclick="setAlert()">Start</button>
+              </div>
+            </div> -->
+
             <div id="external-events-list"></div>
             <p>
               <input type="checkbox" id="drop-remove" />
@@ -113,39 +135,11 @@
             <div id="calendar"></div>
           </div>
           <br />
-          <div class="set-reminders">
-            <p>
-              <img src="/fullcalendar/examples/img/info.svg" alt="info icon" />
-              Set reminders for your meals:
-            </p>
-
-            <label for="time-select">Select the time:</label>
-            <select id="time-select" class="reminderDropdown">
-              <option value="2">2 seconds</option>
-              <option value="3">3 seconds</option>
-              <option value="4">4 seconds</option>
-            </select>
-            <button onclick="setAlert()">Start</button>
-            <script>
-              function setAlert() {
-                var timeSelect = document.getElementById("time-select");
-                var selectedTime = parseInt(timeSelect.value);
-
-                if (!isNaN(selectedTime)) {
-                  setTimeout(function () {
-                    alert(selectedTime + " Time has passed!");
-                  }, selectedTime * 1000);
-                } else {
-                  alert("Please select a valid time.");
-                }
-              }
-            </script>
-          </div>
         </div>
       </section>
 
       <!-- footer -->
-      <footer class="footer-16371">
+      <!-- <footer class="footer-16371">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-9 text-center">
@@ -209,7 +203,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </main>
   </body>
 </html>
