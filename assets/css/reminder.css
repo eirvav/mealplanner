@@ -1,11 +1,11 @@
 .set-reminders p {
-    color: #0a894c;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+  color: #0a894c;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
-.set-reminders #reminderDropdown{
-    padding: 10px;
-    border: 1.5px solid #0a894c;
-    border-radius: 5px;
+.set-reminders .reminderDropdown {
+  padding: 10px;
+  border: 1.5px solid #0a894c;
+  border-radius: 5px;
 }

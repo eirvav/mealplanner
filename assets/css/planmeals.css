@@ -121,7 +121,7 @@
 #ingredients {
   padding: 10px;
   overflow: auto;
-  max-height: 1000px;
+  max-height: 400px;
 }
 /* STYLE FOR SCROLLBAR */
 #ingredients::-webkit-scrollbar {
@@ -161,15 +161,19 @@
 
 #mealplan-container {
   padding: 5% 0;
-  background-color: #fff;
+
   border-radius: 5px;
 }
 
+.left-container {
+  margin-right: 2%;
+  background-color: #fff;
+}
 .right-container {
-  border-left: 2px solid #aed3c2;
+  margin-left: 2%;
+  background-color: #fff;
 }
 
 .meal-button {
   width: 100% !important;
 }
-
