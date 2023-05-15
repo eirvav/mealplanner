@@ -160,13 +160,12 @@ var nutrientsArray = [];
 
 // Sample data representing the nutrients
 const nutrientsData = {
-  calories: 0,
   protein: 0,
   carbohydrates: 0,
   fat: 0,
   fiber: 0,
 };
-
+var totalcal = 0;
 function clickMeal(btnNumber, mealday, mealType) {
   const selectedMealTypeCard = document.querySelector(".card-selected");
   mealType = selectedMealTypeCard
@@ -183,10 +182,10 @@ function clickMeal(btnNumber, mealday, mealType) {
         if (btnNumber == 0) {
           newDiv.innerHTML = result[mealType].Lunch[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[0]].Meal);
-
           // Update nutrientsData with the nutrients from the added meal
           const mealNutrients = result[mealType].Lunch[arrayRandom[0]].Nutrition;
-          nutrientsData.calories += mealNutrients.Calories
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
           nutrientsData.protein += mealNutrients.Protein
           nutrientsData.carbohydrates += mealNutrients.Carbohydrates
           nutrientsData.fat += mealNutrients.Fat
@@ -204,7 +203,8 @@ function clickMeal(btnNumber, mealday, mealType) {
 
           // Update nutrientsData with the nutrients from the added meal
           const mealNutrients = result[mealType].Lunch[arrayRandom[1]].Nutrition;
-          nutrientsData.calories += mealNutrients.Calories
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
           nutrientsData.protein += mealNutrients.Protein
           nutrientsData.carbohydrates += mealNutrients.Carbohydrates
           nutrientsData.fat += mealNutrients.Fat
@@ -231,7 +231,8 @@ function clickMeal(btnNumber, mealday, mealType) {
           );
           // Update nutrientsData with the nutrients from the added meal
           const mealNutrients = result[mealType].Breakfast[arrayRandom[0]].Nutrition;
-          nutrientsData.calories += mealNutrients.Calories
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
           nutrientsData.protein += mealNutrients.Protein
           nutrientsData.carbohydrates += mealNutrients.Carbohydrates
           nutrientsData.fat += mealNutrients.Fat
@@ -253,7 +254,8 @@ function clickMeal(btnNumber, mealday, mealType) {
             result[mealType].Breakfast[arrayRandom[1]].Meal
           );
           const mealNutrients = result[mealType].Breakfast[arrayRandom[1]].Nutrition;
-          nutrientsData.calories += mealNutrients.Calories
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
           nutrientsData.protein += mealNutrients.Protein
           nutrientsData.carbohydrates += mealNutrients.Carbohydrates
           nutrientsData.fat += mealNutrients.Fat
@@ -281,7 +283,8 @@ function clickMeal(btnNumber, mealday, mealType) {
             result[mealType].Dinner[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[0]].Meal);
           const mealNutrients = result[mealType].Dinner[arrayRandom[0]].Nutrition;
-          nutrientsData.calories += mealNutrients.Calories
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
           nutrientsData.protein += mealNutrients.Protein
           nutrientsData.carbohydrates += mealNutrients.Carbohydrates
           nutrientsData.fat += mealNutrients.Fat
@@ -302,7 +305,8 @@ function clickMeal(btnNumber, mealday, mealType) {
             result[mealType].Dinner[arrayRandom[1]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[1]].Meal);
           const mealNutrients = result[mealType].Dinner[arrayRandom[1]].Nutrition;
-          nutrientsData.calories += mealNutrients.Calories
+          totalcal += mealNutrients.Calories
+          document.getElementById("calories-title").innerHTML = "Total calories: " + totalcal;
           nutrientsData.protein += mealNutrients.Protein
           nutrientsData.carbohydrates += mealNutrients.Carbohydrates
           nutrientsData.fat += mealNutrients.Fat
