@@ -38,7 +38,6 @@
     <script src="/assets/js/cal.js"></script>
 
     <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/reminder.css">
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -101,8 +100,25 @@ class="fixed-top d-flex align-items-center header-transparent"
                   Find your nearest grocery store
                 </button>
               </a>
-                Find your nearest grocery store
-              </button>
+            <div class="set-reminders">
+              <div class="reminders-info">
+                <h4>
+                  <img src="/fullcalendar/examples/img/alert!.svg" alt="info icon">
+                  Set reminders for your meals:
+                </h4>
+              </div>
+              <div class="reminders-dropdown">
+                <select id="reminderDropdown">
+                  <option value="none">None</option>
+                  <option value="5">5 minutes</option>
+                  <option value="10">10 minutes before</option>
+                  <option value="15">15 minutes before</option>
+                  <option value="30">30 minutes before</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+            </div>
+            
             </div>
             <div id="external-events-list"></div>
             <p>
@@ -113,18 +129,6 @@ class="fixed-top d-flex align-items-center header-transparent"
           <div id="calendar-wrap">
             <div id="calendar"></div>
           </div>
-          <br>
-          <div class="set-reminders">
-            <p> <img src="/fullcalendar/examples/img/info.svg" alt="info icon"> Set reminders for your meals:</p>
-            <select id="reminderDropdown">
-              <option value="none"> None</option>
-              <option value="5">10 seconds</option>
-              <option value="10">10 minutes before</option>
-              <option value="15">15 minutes before</option>
-              <option value="30">30 minutes before</option>
-              <!-- Add more options as needed -->
-            </select>
-        </div>
         </div>
       </section>
 
