@@ -192,7 +192,11 @@ function clickMeal(btnNumber, mealday, mealType) {
           nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
 
-          for (var i = 0; i < result[mealType].Lunch[arrayRandom[0]].Ingredients.length; i++) {
+          for (
+            var i = 0;
+            i < result[mealType].Lunch[arrayRandom[0]].Ingredients.length;
+            i++
+          ) {
             ingredientArray.push(
               result[mealType].Lunch[arrayRandom[0]].Ingredients[i]
             );
@@ -210,7 +214,11 @@ function clickMeal(btnNumber, mealday, mealType) {
           nutrientsData.fat += mealNutrients.Fat
           nutrientsData.fiber += mealNutrients.Fiber
           console.log(nutrientsData);
-          for (var i = 0; i < result[mealType].Lunch[arrayRandom[1]].Ingredients.length; i++) {
+          for (
+            var i = 0;
+            i < result[mealType].Lunch[arrayRandom[1]].Ingredients.length;
+            i++
+          ) {
             ingredientArray.push(
               result[mealType].Lunch[arrayRandom[1]].Ingredients[i]
             );
@@ -352,7 +360,7 @@ function ingredients() {
 
     // Add an onclick function to the button
     button.onclick = removeitem;
-  
+
     // Append the button to the new div
     divNew.appendChild(button);
 
@@ -366,7 +374,7 @@ function ingredients() {
 function removeitem() {
   var removedItem = this.parentNode.firstChild.textContent.trim(); // Get the text content of the adjacent sibling div
   var uniqueArr = JSON.parse(localStorage.getItem("ingredients")); // Retrieve the array from local storage
-  var updatedArr = uniqueArr.filter(function(item) {
+  var updatedArr = uniqueArr.filter(function (item) {
     return item !== removedItem; // Filter out the removed item from the array
   });
   localStorage.setItem("ingredients", JSON.stringify(updatedArr)); // Update the modified array in local storage
@@ -379,12 +387,10 @@ function addToCalendar() {
 
 // CALORIE COUNT
 
-
-
 let myChart = null; // Initialize the chart variable
 
 function updatePieChart() {
-  const chartCanvas = document.getElementById('myChart');
+  const chartCanvas = document.getElementById("myChart");
 
   // Extracting the labels and values from the data
   const nutrientLabels = Object.keys(nutrientsData);
@@ -397,31 +403,27 @@ function updatePieChart() {
     myChart.update();
   } else {
     // Creating the pie chart
-    const ctx = chartCanvas.getContext('2d');
+    const ctx = chartCanvas.getContext("2d");
     myChart = new Chart(ctx, {
-      type: 'pie',
+      type: "pie",
       data: {
         labels: nutrientLabels,
         datasets: [
           {
             data: nutrientValues,
             backgroundColor: [
-              '#FF6384',
-              '#36A2EB',
-              '#FFCE56',
-              '#33FF99',
-              '#9966FF'
-            ]
-          }
-        ]
+              "#53D8FB",
+              "#397367",
+              "#E59F71",
+              "#69DC9E",
+              "#B79CED",
+            ],
+          },
+        ],
       },
       options: {
-        responsive: true
-      }
+        responsive: true,
+      },
     });
   }
 }
-
-
-
-
