@@ -3,6 +3,9 @@
 var currentLocation; // Declare currentLocation globally
 var userMarker; // Declare userMarker globally
 
+// Declare an array to store the grocery store names
+var storeNames = [];
+
 function initMap() {
   // Create a new map object
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -60,6 +63,7 @@ function initMap() {
     console.log('Error: Your browser doesn\'t support geolocation.');
   }
 
+  
   // Create a marker for each place
   function createMarker(place) {
     var marker = new google.maps.Marker({
@@ -72,8 +76,7 @@ function initMap() {
       }
     });
 
-    // Declare an array to store the grocery store names
-    var storeNames = [];
+    
     // Create an info window for the marker
     var infowindow = new google.maps.InfoWindow();
 
@@ -83,20 +86,20 @@ function initMap() {
       place.geometry.location
     );
 
-    // // Create a button element
-    // var button = document.createElement('button');
-    // button.innerHTML = 'Save Store';
+    // Create a button element
+    var buttontest = document.createElement('button');
+    buttontest.innerHTML = 'Save Store';
 
 
-    // // Add a click event listener to the button
-    // button.addEventListener('click', function() {
-    //   storeNames.push(place.name); // Store the grocery store name in the array
-    //   console.log(storeNames); // Display the array in the console (you can modify this part as needed)
-    // });
+    // Add a click event listener to the button
+    buttontest.addEventListener('click', function() {
+      storeNames.push(place.name); // Store the grocery store name in the array
+      console.log(storeNames); // Display the array in the console (you can modify this part as needed)
+    });
 
-    // // Create a container element for the button
-    // var buttonContainer = document.createElement('div');
-    // buttonContainer.appendChild(button);
+    // Create a container element for the button
+    var buttonContainer = document.createElement('div');
+    buttonContainer.appendChild(buttontest);
 
     // Format the distance in meters or kilometers
     var formattedDistance = distance < 1000 ? distance.toFixed(0) + ' meters' : (distance / 1000).toFixed(2) + ' kilometers';
@@ -110,7 +113,7 @@ function initMap() {
     
     // Set the content of the info window
     var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance + '<br>' + 'Discount: ' + randomDiscount + '% ' + randomDiscountType + "\n";
-    // content += buttonContainer.innerHTML; // Add the button to the info window content
+    content += buttonContainer.innerHTML; // Add the button to the info window content
 
     // Add a click event listener to the marker
     marker.addListener('click', function() {
@@ -123,6 +126,8 @@ function initMap() {
 // Call the initMap function when the page has finished loading
 window.onload = function() {
   initMap();
+
+  // The code for the ingredients
   const getArrayIngre = JSON.parse(localStorage.getItem("ingredients"));
 
   for (var i = 0; i < getArrayIngre.length; i++) {
