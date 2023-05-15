@@ -54,12 +54,6 @@
   background-color: rgba(237, 231, 231, 0.1); /* Color of the scrollbar track */
 }
 
-.active-page {
-  text-align: center;
-  border-bottom: 2px solid #0aaf60;
-  padding-bottom: 5px;
-}
-
 .enviroment {
   margin-left: 12%;
   margin-top: 3%;
