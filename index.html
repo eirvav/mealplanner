@@ -369,6 +369,11 @@
                       </button>
                     </a>
                   </div>
+                  <!-- Pie chart -->
+                  <div class="title-right">
+                    <h3>Macronutrients</h3>
+                  </div>
+                  <canvas id="myChart"></canvas>
                   <!-- ShoppingList -->
                   <div class="shoppingList">
                     <div id="selected-ingredients">
@@ -440,43 +445,10 @@
         </div>
       </footer>
     </main>
-    <canvas id="myChart"></canvas>
 
-    <!-- SRC FOR CHART.JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-    <!-- End Main -->
-    <!-- jquery må stå her med script.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/assets/js/script.js"></script>
-    <script>
-      //Animate content load
-      const calc = document.querySelector(".calc");
-
-      calc.style.display = "none"; // hide the calc div initially
-
-      setTimeout(function () {
-        calc.style.display = "block"; // show the calc div after a short delay
-        calc.classList.add("show"); // add the "show" class to trigger the slide-in animation
-      }, 500);
-
-      //preload content
-      const button = document.querySelector(".btn-primary");
-      const preloader = document.querySelector("#preloader");
-      const generatedContent = document.querySelector(".generated-content");
-
-      preloader.style.display = "none"; // hide the preloader initially
-      generatedContent.style.display = "none"; // hide the generated content initially
-
-      button.addEventListener("click", function () {
-        preloader.style.display = "block"; // show the preloader
-        setTimeout(function () {
-          preloader.style.display = "none"; // hide the preloader after 2 seconds
-          generatedContent.style.display = "block"; // show the generated content
-          generatedContent.classList.add("show"); // add the "show" class to trigger the animation
-        }, 1500);
-      });
-    </script>
+    <script src="/assets/js/loading.js"></script>
   </body>
 </html>

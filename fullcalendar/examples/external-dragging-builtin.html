@@ -32,58 +32,60 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js"></script>
     <link href="/assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/cal.css" rel="stylesheet" />
     <script src="/assets/js/cal.js"></script>
 
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <<<<<<< HEAD
+    <link rel="stylesheet" href="/assets/css/reminder.css" />
+    ======= >>>>>>> 435717a12aa6be2c0ec02639060a9f716965986e
   </head>
   <body>
     <!-- ======= Header ======= -->
-<header
-id="header"
-class="fixed-top d-flex align-items-center header-transparent"
->
-<div class="container d-flex justify-content-between align-items-center">
-  <div class="logo">
-    <h1 class="text-light">
-      <a href="/index.html"><span>PlanYourPlate</span></a>
-    </h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-  </div>
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <h1 class="text-light">
+            <a href="/index.html"><span>PlanYourPlate</span></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
 
-  <nav id="navbar" class="navbar">
-    <ul>
-      <li>
-        <a href="/index.html">MEAL PLANNER</a>
-      </li>
-      <!-- <li>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a href="/index.html">MEAL PLANNER</a>
+            </li>
+            <!-- <li>
         <a href="./Google Cal/calendar.html" target="_blank"
           >GOOGLE CALENDAR</a
         >
       </li> -->
-      <li>
-        <a href="/faq.html"> FAQ</a>
-      </li>
-      <li></li>
-      <li>
-        <a href="/contact.html"> CONTACT</a>
-      </li>
-      <li>
-        <a href="/contact.html" class="active-page" >
-         YOUR CALENDAR</a>
-      </li>
-      <li>
-        <a href="/maps.html">FIND STORES</a>
-      </li>
-    </ul>
-    <i class="bi bi-list mobile-nav-toggle"></i>
-  </nav>
-  <!-- .navbar -->
-</div>
-</header>
+            <li>
+              <a href="/faq.html"> FAQ</a>
+            </li>
+            <li></li>
+            <li>
+              <a href="/contact.html"> CONTACT</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="active-page"> YOUR CALENDAR</a>
+            </li>
+            <li>
+              <a href="/maps.html">FIND STORES</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
     <!-- End Header -->
 
     <main id="main">
@@ -100,25 +102,6 @@ class="fixed-top d-flex align-items-center header-transparent"
                   Find your nearest grocery store
                 </button>
               </a>
-            <div class="set-reminders">
-              <div class="reminders-info">
-                <h4>
-                  <img src="/fullcalendar/examples/img/alert!.svg" alt="info icon">
-                  Set reminders for your meals:
-                </h4>
-              </div>
-              <div class="reminders-dropdown">
-                <select id="reminderDropdown">
-                  <option value="none">None</option>
-                  <option value="5">5 minutes</option>
-                  <option value="10">10 minutes before</option>
-                  <option value="15">15 minutes before</option>
-                  <option value="30">30 minutes before</option>
-                  <!-- Add more options as needed -->
-                </select>
-              </div>
-            </div>
-            
             </div>
             <div id="external-events-list"></div>
             <p>
@@ -129,9 +112,37 @@ class="fixed-top d-flex align-items-center header-transparent"
           <div id="calendar-wrap">
             <div id="calendar"></div>
           </div>
+          <br />
+          <div class="set-reminders">
+            <p>
+              <img src="/fullcalendar/examples/img/info.svg" alt="info icon" />
+              Set reminders for your meals:
+            </p>
+
+            <label for="time-select">Select the time:</label>
+            <select id="time-select" class="reminderDropdown">
+              <option value="2">2 seconds</option>
+              <option value="3">3 seconds</option>
+              <option value="4">4 seconds</option>
+            </select>
+            <button onclick="setAlert()">Start</button>
+            <script>
+              function setAlert() {
+                var timeSelect = document.getElementById("time-select");
+                var selectedTime = parseInt(timeSelect.value);
+
+                if (!isNaN(selectedTime)) {
+                  setTimeout(function () {
+                    alert(selectedTime + " Time has passed!");
+                  }, selectedTime * 1000);
+                } else {
+                  alert("Please select a valid time.");
+                }
+              }
+            </script>
+          </div>
         </div>
       </section>
-
 
       <!-- footer -->
       <footer class="footer-16371">
