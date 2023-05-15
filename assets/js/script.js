@@ -156,6 +156,7 @@ function getDinner(result, mealType, randomDish1, randomDish2) {
 // ADD MEALS TO RIGHT SIDE
 var ingredientArray = [];
 var finishedMealsArray = [];
+var nutrientsArray = [];
 
 function clickMeal(btnNumber, mealday, mealType) {
   const selectedMealTypeCard = document.querySelector(".card-selected");
