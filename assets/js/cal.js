@@ -88,34 +88,31 @@ document.addEventListener("DOMContentLoaded", function () {
   calendar.render();
 });
 
-// REMINDERS TO START PREPERING MEALS
+document.addEventListener("DOMContentLoaded", function () {
+  var calendarEl = document.getElementById("calendar");
 
-// Get the dropdown element
-const dropdown = document.getElementById("reminderDropdown");
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    eventClick: function (info) {
+      var eventObj = info.event;
 
-// Add an event listener to detect when the selection changes
-dropdown.addEventListener("change", function () {
-  // Get the selected value
-  const selectedValue = dropdown.value;
+      if (eventObj.url) {
+        alert(
+          "Clicked " +
+            eventObj.title +
+            ".\n" +
+            "Will open " +
+            eventObj.url +
+            " in a new tab"
+        );
 
-  // Convert the value to a number (if needed)
-  const reminderTime = parseInt(selectedValue);
+        window.open(eventObj.url);
 
-  // Schedule the reminder using the selected value (reminderTime)
-  if (reminderTime > 0) {
-    scheduleReminder(reminderTime);
-  }
+        info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
+      } else {
+        alert("Clicked " + eventObj.title);
+      }
+    },
+  });
+
+  calendar.render();
 });
-
-// Function to schedule the reminder
-function scheduleReminder(minutesBeforeEvent) {
-  // Calculate the time when the reminder should trigger
-  const reminderTime = new Date(eventTime - minutesBeforeEvent * 60000); // Assuming eventTime is defined elsewhere
-
-  // Set up code to trigger the reminder at the specified time
-  // This can involve sending notifications or performing any desired action
-  // Example:
-  setTimeout(function () {
-    alert("Reminder! You need to start prepering the meal soon!");
-  }, reminderTime.getTime() - Date.now());
-}

@@ -158,6 +158,15 @@ var ingredientArray = [];
 var finishedMealsArray = [];
 var nutrientsArray = [];
 
+// Sample data representing the nutrients
+const nutrientsData = {
+  calories: 0,
+  protein: 0,
+  carbohydrates: 0,
+  fat: 0,
+  fiber: 0,
+};
+
 function clickMeal(btnNumber, mealday, mealType) {
   const selectedMealTypeCard = document.querySelector(".card-selected");
   mealType = selectedMealTypeCard
@@ -174,11 +183,17 @@ function clickMeal(btnNumber, mealday, mealType) {
         if (btnNumber == 0) {
           newDiv.innerHTML = result[mealType].Lunch[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[0]].Meal);
-          for (
-            var i = 0;
-            i < result[mealType].Lunch[arrayRandom[0]].Ingredients.length;
-            i++
-          ) {
+
+          // Update nutrientsData with the nutrients from the added meal
+          const mealNutrients = result[mealType].Lunch[arrayRandom[0]].Nutrition;
+          nutrientsData.calories += mealNutrients.Calories
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
+          console.log(nutrientsData);
+
+          for (var i = 0; i < result[mealType].Lunch[arrayRandom[0]].Ingredients.length; i++) {
             ingredientArray.push(
               result[mealType].Lunch[arrayRandom[0]].Ingredients[i]
             );
@@ -186,16 +201,22 @@ function clickMeal(btnNumber, mealday, mealType) {
         } else if (btnNumber == 1) {
           newDiv.innerHTML = result[mealType].Lunch[arrayRandom[1]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Lunch[arrayRandom[1]].Meal);
-          for (
-            var i = 0;
-            i < result[mealType].Lunch[arrayRandom[1]].Ingredients.length;
-            i++
-          ) {
+
+          // Update nutrientsData with the nutrients from the added meal
+          const mealNutrients = result[mealType].Lunch[arrayRandom[1]].Nutrition;
+          nutrientsData.calories += mealNutrients.Calories
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
+          console.log(nutrientsData);
+          for (var i = 0; i < result[mealType].Lunch[arrayRandom[1]].Ingredients.length; i++) {
             ingredientArray.push(
               result[mealType].Lunch[arrayRandom[1]].Ingredients[i]
             );
           }
         }
+        updatePieChart();
         ingredients();
         document.getElementById("selected-meals").appendChild(newDiv);
       } else if (mealday == "Breakfast") {
@@ -208,6 +229,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           finishedMealsArray.push(
             result[mealType].Breakfast[arrayRandom[0]].Meal
           );
+          // Update nutrientsData with the nutrients from the added meal
+          const mealNutrients = result[mealType].Breakfast[arrayRandom[0]].Nutrition;
+          nutrientsData.calories += mealNutrients.Calories
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
+          console.log(nutrientsData);
           for (
             var i = 0;
             i < result[mealType].Breakfast[arrayRandom[0]].Ingredients.length;
@@ -223,6 +252,13 @@ function clickMeal(btnNumber, mealday, mealType) {
           finishedMealsArray.push(
             result[mealType].Breakfast[arrayRandom[1]].Meal
           );
+          const mealNutrients = result[mealType].Breakfast[arrayRandom[1]].Nutrition;
+          nutrientsData.calories += mealNutrients.Calories
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
+          console.log(nutrientsData);
           for (
             var i = 0;
             i < result[mealType].Breakfast[arrayRandom[1]].Ingredients.length;
@@ -233,6 +269,7 @@ function clickMeal(btnNumber, mealday, mealType) {
             );
           }
         }
+        updatePieChart();
         ingredients();
         document.getElementById("selected-meals").appendChild(newDiv);
       } else if (mealday == "Dinner") {
@@ -243,6 +280,14 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML =
             result[mealType].Dinner[arrayRandom[0]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[0]].Meal);
+          const mealNutrients = result[mealType].Dinner[arrayRandom[0]].Nutrition;
+          nutrientsData.calories += mealNutrients.Calories
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
+          console.log(nutrientsData);
+
           for (
             var i = 0;
             i < result[mealType].Dinner[arrayRandom[0]].Ingredients.length;
@@ -256,6 +301,13 @@ function clickMeal(btnNumber, mealday, mealType) {
           newDiv.innerHTML =
             result[mealType].Dinner[arrayRandom[1]].Meal + "\n";
           finishedMealsArray.push(result[mealType].Dinner[arrayRandom[1]].Meal);
+          const mealNutrients = result[mealType].Dinner[arrayRandom[1]].Nutrition;
+          nutrientsData.calories += mealNutrients.Calories
+          nutrientsData.protein += mealNutrients.Protein
+          nutrientsData.carbohydrates += mealNutrients.Carbohydrates
+          nutrientsData.fat += mealNutrients.Fat
+          nutrientsData.fiber += mealNutrients.Fiber
+          console.log(nutrientsData);
           for (
             var i = 0;
             i < result[mealType].Dinner[arrayRandom[1]].Ingredients.length;
@@ -266,6 +318,7 @@ function clickMeal(btnNumber, mealday, mealType) {
             );
           }
         }
+        updatePieChart();
         ingredients();
         document.getElementById("selected-meals").appendChild(newDiv);
       }
@@ -319,3 +372,52 @@ function removeitem() {
 function addToCalendar() {
   localStorage.setItem("meals", JSON.stringify(finishedMealsArray));
 }
+
+// CALORIE COUNT
+
+
+
+let myChart = null; // Initialize the chart variable
+
+function updatePieChart() {
+  const chartCanvas = document.getElementById('myChart');
+
+  // Extracting the labels and values from the data
+  const nutrientLabels = Object.keys(nutrientsData);
+  const nutrientValues = Object.values(nutrientsData);
+
+  // Check if chart instance exists
+  if (myChart) {
+    myChart.data.labels = nutrientLabels;
+    myChart.data.datasets[0].data = nutrientValues;
+    myChart.update();
+  } else {
+    // Creating the pie chart
+    const ctx = chartCanvas.getContext('2d');
+    myChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: nutrientLabels,
+        datasets: [
+          {
+            data: nutrientValues,
+            backgroundColor: [
+              '#FF6384',
+              '#36A2EB',
+              '#FFCE56',
+              '#33FF99',
+              '#9966FF'
+            ]
+          }
+        ]
+      },
+      options: {
+        responsive: true
+      }
+    });
+  }
+}
+
+
+
+

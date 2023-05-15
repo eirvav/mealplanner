@@ -32,10 +32,11 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
     <link href="/assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/cal.css" rel="stylesheet" />
     <script src="/assets/js/cal.js"></script>
-    <script src="/assets/js/index.global.js"></script>
+
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/reminder.css">
   </head>
@@ -85,7 +86,7 @@ class="fixed-top d-flex align-items-center header-transparent"
 </div>
 </header>
     <!-- End Header -->
-    
+
     <main id="main">
       <div class="title calendar-width">
         <h1>Your <strong>Calendar</strong></h1>
@@ -114,10 +115,10 @@ class="fixed-top d-flex align-items-center header-transparent"
           </div>
           <br>
           <div class="set-reminders">
-            <p> <img src="" alt=""> Set reminders for your meals:</p>
+            <p> <img src="/fullcalendar/examples/img/info.svg" alt="info icon"> Set reminders for your meals:</p>
             <select id="reminderDropdown">
               <option value="none"> None</option>
-              <option value="5">5 minutes before</option>
+              <option value="5">10 seconds</option>
               <option value="10">10 minutes before</option>
               <option value="15">15 minutes before</option>
               <option value="30">30 minutes before</option>
