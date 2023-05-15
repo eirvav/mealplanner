@@ -100,7 +100,9 @@ h3 {
 }
 
 .navbar li {
-  position: relative;
+  display: inline-block;
+  width: 25%; /* Adjust this value as needed */
+  text-align: center;
 }
 
 .navbar a,
@@ -299,4 +301,8 @@ h3 {
   font-size: 8vh;
   font-weight: bold;
   color: #0aaf60;
+}
+
+.active-page {
+  border-bottom: #0aaf60 solid 2px;
 }
