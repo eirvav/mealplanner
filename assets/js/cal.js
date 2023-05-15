@@ -94,13 +94,13 @@ document.addEventListener("DOMContentLoaded", function () {
 const dropdown = document.getElementById("reminderDropdown");
 
 // Add an event listener to detect when the selection changes
-dropdown.addEventListener("change", function () {
+dropdown.addEventListener("change", function() {
   // Get the selected value
   const selectedValue = dropdown.value;
-
+  
   // Convert the value to a number (if needed)
   const reminderTime = parseInt(selectedValue);
-
+  
   // Schedule the reminder using the selected value (reminderTime)
   if (reminderTime > 0) {
     scheduleReminder(reminderTime);
@@ -108,14 +108,15 @@ dropdown.addEventListener("change", function () {
 });
 
 // Function to schedule the reminder
-function scheduleReminder(minutesBeforeEvent) {
+function scheduleReminder(secondsBeforeEvent) {
   // Calculate the time when the reminder should trigger
-  const reminderTime = new Date(eventTime - minutesBeforeEvent * 60000); // Assuming eventTime is defined elsewhere
-
+  const reminderTime = new Date(Date.now() + secondsBeforeEvent * 1000);
+  
   // Set up code to trigger the reminder at the specified time
   // This can involve sending notifications or performing any desired action
   // Example:
-  setTimeout(function () {
-    alert("Reminder! You need to start prepering the meal soon!");
-  }, reminderTime.getTime() - Date.now());
+  setTimeout(function() {
+    alert("Reminder: Your event is starting soon!");
+  }, secondsBeforeEvent * 1000);
 }
+
