@@ -528,15 +528,6 @@ section {
   margin-bottom: 0;
 }
 
-li a {
-  border-bottom: 2px solid #fff;
-}
-.active-page {
-  text-align: center;
-  border-bottom: 2px solid #0aaf60;
-  padding-bottom: 5px;
-}
-
 .navbar a {
   padding: 5px 20px 5px 20px;
 }
@@ -548,11 +539,20 @@ li a {
   padding-top: 4%;
 }
 
-.head h1 {
-  margin-bottom: 2%;
-  color: #0aaf60;
-  font-size: 7vh;
-}
 .head p {
   line-height: 3vh;
+}
+.head p b {
+  color: #0aaf60;
+}
+
+.head h1:first-child {
+  font-size: 4vh;
+  color: #09904f;
+}
+
+.head h1.pp {
+  font-size: 8vh;
+  font-weight: bold;
+  color: #0aaf60;
 }
