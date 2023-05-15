@@ -71,7 +71,8 @@ function initMap() {
       position: place.geometry.location,
       title: place.name,
       icon: {
-        url: 'https://cdn-icons-png.flaticon.com/512/1892/1892627.png', // Use a custom marker icon for grocery stores
+        url: getRandomIcon(), // Use a random icon for grocery stores
+        //url: 'https://cdn-icons-png.flaticon.com/512/1892/1892627.png', // Use a custom marker icon for grocery stores
         scaledSize: new google.maps.Size(40, 40) // Set the size of the marker icon
       }
     });
@@ -86,41 +87,43 @@ function initMap() {
       place.geometry.location
     );
 
-    // Create a button element
-    var buttontest = document.createElement('button');
-    buttontest.innerHTML = 'Save Store';
+    
+    
 
-
-    // Add a click event listener to the button
-    buttontest.addEventListener('click', function() {
-      storeNames.push(place.name); // Store the grocery store name in the array
-      console.log(storeNames); // Display the array in the console (you can modify this part as needed)
-    });
-
-    // Create a container element for the button
-    var buttonContainer = document.createElement('div');
-    buttonContainer.appendChild(buttontest);
+    
+    
 
     // Format the distance in meters or kilometers
     var formattedDistance = distance < 1000 ? distance.toFixed(0) + ' meters' : (distance / 1000).toFixed(2) + ' kilometers';
 
-        // Generate a random discount type for the store
+         // Generate a random discount type for the store
         var discountTypes = ['Student Discounts', 'Vegetable Discounts', 'Special Offers'];
         var randomDiscountType = discountTypes[Math.floor(Math.random() * discountTypes.length)];
     
-        // Generate a random whole number discount between 5 and 30
+        // Generate a random whole number discount between 5 and 25
         var randomDiscount = Math.floor(Math.random() * 26) + 5;
     
     // Set the content of the info window
-    var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance + '<br>' + 'Discount: ' + randomDiscount + '% ' + randomDiscountType + "\n";
-    content += buttonContainer.innerHTML; // Add the button to the info window content
+    var content = '<strong>' + place.name + '</strong><br>' + 'Distance: ' + formattedDistance + '<br>' + 'Discount: ' + randomDiscount + '% ' + randomDiscountType + "<br>";
+
 
     // Add a click event listener to the marker
     marker.addListener('click', function() {
       infowindow.setContent(content);
       infowindow.open(map, marker);
+
     });
   }
+}
+
+function getRandomIcon() {
+  // This would not be a random function if we could seperate whats a grocery store and a market. but we couldn`t figure it out in the apis
+  var icons = [
+    'https://cdn-icons-png.flaticon.com/512/1892/1892627.png', // URL for the first icon
+    'https://cdn-icons-png.flaticon.com/512/2230/2230606.png'  // URL for the second icon
+  ];
+  var randomIndex = Math.floor(Math.random() * icons.length);
+  return icons[randomIndex];
 }
 
 // Call the initMap function when the page has finished loading
