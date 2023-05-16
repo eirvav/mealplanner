@@ -11,7 +11,6 @@
   padding-top: 1em;
 }
 
-
 #external-events .fc-event {
   margin: 3px 0;
   cursor: move;
@@ -94,7 +93,7 @@
   font-size: 14px;
 }
 
-.set-reminders #reminderDropdown{
+.set-reminders #reminderDropdown {
   border: 1.5px solid #0a894c;
   border-radius: 5px;
   font-size: 12px;
@@ -115,4 +114,48 @@
 
 .reminders-dropdown {
   width: 200px; /* Adjust width as desired */
+  padding: 10px;
+}
+
+.reminders2 {
+  text-align: center;
+}
+
+.reminder-button {
+  background-color: #0aaf60;
+}
+
+.set-reminders {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+  padding-bottom: 20px;
+}
+
+.reminders2,
+.reminders3,
+.reminders4 {
+  margin: 0 10px; /* Optional: This adds some spacing between your elements */
+}
+
+.time-label {
+  margin-bottom: 0 !important;
+}
+
+#external-events-list {
+  margin-top: 20px;
+}
+
+.fc-button {
+  background-color: #0a894c !important;
+  border: none !important;
+}
+
+.fc-button-active {
+  background-color: #08693a !important;
+}
+
+.fc-today-button {
+  background-color: #08693a !important;
 }

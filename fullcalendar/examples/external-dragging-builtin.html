@@ -96,30 +96,43 @@
                 </button>
               </a>
             </div>
-            <!-- <div class="reminders1">
+            <div class="reminders1">
               <p>
                 <img
                   src="/fullcalendar/examples/img/info.svg"
                   alt="info icon"
+                  class="img-text"
                 />
                 Set reminders for your meals:
               </p>
             </div>
             <div class="set-reminders">
               <div class="reminders2">
-                <label for="time-select">Select the time:</label>
+                <label for="time-select" class="time-label"
+                  >Select the time:</label
+                >
               </div>
               <div class="reminders3">
-                <select id="time-select" class="reminderDropdown">
+                <select
+                  id="time-select"
+                  class="form-select reminderDropdown"
+                  aria-label="Default select example"
+                >
+                  <option value="none">None</option>
                   <option value="2">2 seconds</option>
-                  <option value="3">3 seconds</option>
-                  <option value="4">4 seconds</option>
+                  <option value="90">15 minutes</option>
+                  <option value="400">30 minutes</option>
                 </select>
               </div>
               <div class="reminders4">
-                <button onclick="setAlert()">Start</button>
+                <button
+                  onclick="setAlert()"
+                  class="btn btn-success reminder-button"
+                >
+                  Start
+                </button>
               </div>
-            </div> -->
+            </div>
 
             <div id="external-events-list"></div>
             <p>

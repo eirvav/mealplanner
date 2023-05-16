@@ -74,7 +74,7 @@ function setAlert() {
 
   if (!isNaN(selectedTime)) {
     setTimeout(function () {
-      alert(selectedTime + " Time has passed!");
+      alert("Time to cook!!!");
     }, selectedTime * 1000);
   } else {
     alert("Please select a valid time.");
