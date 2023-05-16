@@ -5,7 +5,6 @@ h1 {
   color: #0a894c;
 }
 .location {
-  width: 80%;
   margin: auto;
   padding: 80px 0;
 }
@@ -17,11 +16,6 @@ h1 {
   border-radius: 10px;
 }
 
-.contact-us {
-  width: 80%;
-  margin-top: -100px;
-  margin-left: 170px;
-}
 .contact-col {
   flex-basis: 48%;
   margin-bottom: 30px;
