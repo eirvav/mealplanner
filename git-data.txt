@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 *   [START commit][author=eirvav][time=1684234127][message=On main: !!GitHub_Desktop<main>][hash=840c7f8dae70a772033cafe5cbe468027f1e7efa]
 |\  
 | * [START commit][author=eirvav][time=1684234127][message=index on main: 4d2665f siste endringer][hash=b605db96ed38a5727d31524d642f4f5f39f2a411]
@@ -626,3 +627,503 @@
 
 * [START commit][author=eirvav][time=1682322786][message=Initial commit][hash=3e19ed98fd8aed319af5345f4ef184ce115a005b]  
    2 files changed, 4 insertions(+)
+=======
+[START commit][author=eirvav][time=1684228013][message=siste endringer][hash=4d2665f67f30cdfb2bedfddb0b28abd429be945c]
+ 7 files changed, 261 insertions(+), 207 deletions(-)
+
+[START commit][author=eirvav][time=1684225226][message=final changes][hash=f810b7648298a2ec2c1146702ad47e32636207b9]
+ 4 files changed, 194 insertions(+), 171 deletions(-)
+
+[START commit][author=pernillehaas][time=1684222923][message=added footer back][hash=367f4222ad54779f4bf74d04e3616e6b34a65eb8]
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[START commit][author=eirvav][time=1684190949][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=3da6d321dd83d97df3e07bc6d48c770fadc112e8]
+[START commit][author=eirvav][time=1684190943][message=changed the "X" to an svg icon][hash=7e6b04fba434b1de2aee220894fb034b056cce1c]
+ 3 files changed, 6 insertions(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1684190841][message=nokka fakka sæ så mått ordne tebake][hash=1cbf2757f934afd66b00c3adaaf26bfbfeb8ecab]
+ 1 file changed, 45 insertions(+), 154 deletions(-)
+
+[START commit][author=isakmd][time=1684190544][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=36f904d63e7b61ca26a98da9e639af3317f321b7]
+[START commit][author=isakmd][time=1684190523][message=remove meals][hash=2c4b88fee1417a3140065532bbb8c2e2350b5b7c]
+ 2 files changed, 100 insertions(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1684190503][message=changes to navbar][hash=866700e240cce14d06cb0c3c992adad28e42e310]
+ 7 files changed, 41 insertions(+), 112 deletions(-)
+
+[START commit][author=eirvav][time=1684188502][message=many css changes/added js functionalities to piechart][hash=84e385ca3e4e11f6e141f1a998526700297f5a6f]
+ 10 files changed, 131 insertions(+), 440 deletions(-)
+
+[START commit][author=eirvav][time=1684179663][message=fixed time toolbar in calendar][hash=c097ea7fccfef1dc5df255cbfc6e5f386036d463]
+ 4 files changed, 147 insertions(+), 84 deletions(-)
+
+[START commit][author=isakmd][time=1684158836][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=31cc318962858bea3317c0a0fad2c7183d0e782a]
+[START commit][author=isakmd][time=1684158672][message=total seperate][hash=e015d28aa1a139b53ed229b1e6f419ad63fe742f]
+ 2 files changed, 15 insertions(+), 9 deletions(-)
+
+[START commit][author=pernillehaas][time=1684158488][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=2eeb94ba125914cd4fd2c8fb7c22ee3af6ac39c9]
+[START commit][author=pernillehaas][time=1684158477][message=Padding fixes][hash=1923423bcfadd3e10badc978fbd63948894fb0cf]
+ 3 files changed, 69 insertions(+), 61 deletions(-)
+
+[START commit][author=Stine2609][time=1684157965][message=bug][hash=7ff270c830f7ee36b6ca81e346a41e1ec0813605]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1684157355][message=scroll][hash=5464a02771d71e03aab9a078b348b63715cb3c9b]
+ 1 file changed, 16 insertions(+)
+
+[START commit][author=pernillehaas][time=1684156676][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=51bdc2b66adb38981d3aa23a15c06ebb6cc5c76e]
+[START commit][author=eirvav][time=1684156594][message=Update style.css][hash=bfeee07bab6498dad6c835978332e913b78ecc29]
+ 1 file changed, 12 insertions(+)
+
+[START commit][author=eirvav][time=1684156592][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=cc40d07be307525aa3c7fee310de85af5d4ed995]
+[START commit][author=eirvav][time=1684156529][message=reminder][hash=f23844c339016e300e510095df0be81d4e03bb40]
+ 6 files changed, 140 insertions(+), 136 deletions(-)
+
+[START commit][author=pernillehaas][time=1684156439][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=172f07db4161a669c7ee3a422380ce997f6958ff]
+[START commit][author=pernillehaas][time=1684156432][message=Removed border on navbar][hash=b5cbbf6a1185eecab5c24dc1f7bce98ef9c2b51f]
+ 1 file changed, 6 deletions(-)
+
+[START commit][author=Stine2609][time=1684156055][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=435717a12aa6be2c0ec02639060a9f716965986e]
+[START commit][author=Stine2609][time=1684156049][message=changes][hash=8de69667c054206e6d4e3de4e07668933fc52f8d]
+ 4 files changed, 20 insertions(+), 3 deletions(-)
+
+[START commit][author=pernillehaas][time=1684155659][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=4e531fe11742936c4878748961c66fd0b5d47af1]
+[START commit][author=pernillehaas][time=1684155654][message=Fixed the reminder info on cal][hash=94a2ed2025efae5e1e34e8250751a2647eb7409e]
+ 4 files changed, 61 insertions(+), 27 deletions(-)
+
+[START commit][author=Stine2609][time=1684154879][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=8bd2a1650775bd96def0e18e0801684479830c04]
+[START commit][author=Stine2609][time=1684154873][message=some changes][hash=1af9b0dd6161ca4f55a334ba22a02fb59475ba47]
+ 6 files changed, 39 insertions(+), 12 deletions(-)
+
+[START commit][author=eirvav][time=1684154542][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=6ed0d0815bf063e98ff0ad39d17fed66525c8435]
+[START commit][author=eirvav][time=1684154485][message=little fixes][hash=01d7c1c22d553b1c00cd56a882ca2942b6ed8867]
+ 8 files changed, 35 insertions(+), 14823 deletions(-)
+
+[START commit][author=isakmd][time=1684154418][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=571ad3c8e1067530a4bdca9cbd29a23bcc31a13d]
+[START commit][author=isakmd][time=1684154387][message=piechart][hash=807875770ed4e3708fb8dbcc588799d87ad914d8]
+ 4 files changed, 120 insertions(+), 11 deletions(-)
+
+[START commit][author=pernillehaas][time=1684153780][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=e4dc3ca0f0a74c88f9e52ac82e45755c363b280d]
+[START commit][author=pernillehaas][time=1684153773][message=Fix on reminders][hash=a343da61c4833773eed508f868419da50c451f3a]
+ 3 files changed, 21 insertions(+), 12 deletions(-)
+
+[START commit][author=Stine2609][time=1684153754][message=changes][hash=17b004d4ade29d5e6f08362c096d4ac0106150c4]
+ 2 files changed, 30 insertions(+), 2 deletions(-)
+
+[START commit][author=Stine2609][time=1684152748][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=3a05498b65a36837f786df9bdeda2d9afd13ce0a]
+[START commit][author=Stine2609][time=1684152738][message=social icons without border bottom in footer][hash=e735ab738c358ad9564a9b0465eb79503c44cbe0]
+ 2 files changed, 14 insertions(+), 12 deletions(-)
+
+[START commit][author=pernillehaas][time=1684152552][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=0798c67bf12fa8b030790b1bc38ce7ccc7d0bfa7]
+[START commit][author=pernillehaas][time=1684152542][message=Added reminder dropdown to calander][hash=841515ed0781a280a0cb5b0a35cd08098b9d87c0]
+ 3 files changed, 58 insertions(+), 6 deletions(-)
+
+[START commit][author=Stine2609][time=1684152374][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=2e620856f1badad96c3a890426d0fd0b791af4bf]
+[START commit][author=Stine2609][time=1684152367][message=fixed estimated travel time][hash=849a229521c96ecc39342998588b0808cb13f6ff]
+ 4 files changed, 70 insertions(+), 86 deletions(-)
+
+[START commit][author=pernillehaas][time=1684151222][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=1037f30261c42d1f98ae6d22abe18a9888c79965]
+[START commit][author=pernillehaas][time=1684151214][message=Space][hash=ef0e725fbfc2bf4b5502437e697439cea28eb220]
+ 1 file changed, 2 insertions(+)
+
+[START commit][author=isakmd][time=1684151193][message=fjernet knapp][hash=ed43ff261c36cb492bebb15d5949956b68eef950]
+ 3 files changed, 23 insertions(+), 19 deletions(-)
+
+[START commit][author=Stine2609][time=1684150562][message=changed color on button][hash=68382a1d6922fbf48856b27ef7b69f160ff70c2e]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=Stine2609][time=1684150436][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=c6923c4614c862f66ddce65136059c866428502c]
+[START commit][author=Stine2609][time=1684150428][message=made it possible to click the logo to get to frontpage][hash=f0c5989e369f82d2e81014d78bc758bc8be2f6e3]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=pernillehaas][time=1684150369][message=Changed footer icons][hash=2fecd94b9271d8db1ee56478428dc909d4bc8caf]
+ 20 files changed, 80 insertions(+), 32 deletions(-)
+
+[START commit][author=pernillehaas][time=1684146816][message=Changed the sentences of FAQ][hash=85415c5992834617fbe6ed43f92e1ba7f63a933b]
+ 1 file changed, 9 insertions(+), 13 deletions(-)
+
+[START commit][author=pernillehaas][time=1684141223][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=354cba9fcb18f5c90dffb8ee375c5efda5372923]
+[START commit][author=pernillehaas][time=1684141208][message=Added Gitdata][hash=74dfc038e2dfef40bb77a53e116e361d4415fbec]
+ 3 files changed, 3 insertions(+)
+
+[START commit][author=isakmd][time=1684139607][message=smal changes][hash=06560b899f3072db87741eeb479b04396bc34596]
+ 1 file changed, 19 insertions(+), 14 deletions(-)
+
+[START commit][author=pernillehaas][time=1684098455][message=CSS changes][hash=8c9755295140bec3eb867154e132d966dc14fabd]
+ 3 files changed, 6 insertions(+), 7 deletions(-)
+
+[START commit][author=pernillehaas][time=1684098124][message=Update .DS_Store][hash=aed143b5e648642ef733b3125bb3ecededbb438f]
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[START commit][author=pernillehaas][time=1684090179][message=Fixed border-radius on contact page][hash=8ca3c04c90471a7ac2fb32b82e8882b8b3902711]
+ 1 file changed, 3 insertions(+)
+
+[START commit][author=eirvav][time=1684078989][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=2752775a2d3fef693c34ae8d82a1cd7e92c01525]
+[START commit][author=pernillehaas][time=1684075993][message=active page calender][hash=da487a4209869c406352875fd50aa715b2afe4ac]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=Stine2609][time=1684070467][message=changes][hash=c380a0f804e3dbf79dcd9c3d4aee73f6041a96af]
+ 3 files changed, 9 insertions(+), 11 deletions(-)
+
+[START commit][author=pernillehaas][time=1684068829][message=HEader fixes][hash=4d20391295c9ca5165dcca1acc70a11f5a7ae0fd]
+ 6 files changed, 91 insertions(+), 181 deletions(-)
+
+[START commit][author=pernillehaas][time=1684066379][message=Fikset header og småting][hash=646a994071e8f3b315bd979636a60fabc8e52bbd]
+ 7 files changed, 215 insertions(+), 57 deletions(-)
+
+[START commit][author=Stine2609][time=1683991762][message=made a button to navigate to maps][hash=f6bf9645dffc0a08105088bcd49010f22b58361b]
+ 2 files changed, 34 insertions(+), 2 deletions(-)
+
+[START commit][author=Stine2609][time=1683907406][message=changed navbar elements to uppercase][hash=e7806540ffafe32de4d92fa4b9ff72689214dc14]
+ 4 files changed, 5 insertions(+), 8 deletions(-)
+
+[START commit][author=Stine2609][time=1683907060][message=some changes][hash=766f436f69743995b61bbdfb038ae3a6254ea8ba]
+ 6 files changed, 26 insertions(+), 16 deletions(-)
+
+[START commit][author=pernillehaas][time=1683901248][message=Bug fixes][hash=8e64c834e119c43c6dabd2e6f6751f0de4adf1eb]
+ 3 files changed, 15 insertions(+), 3 deletions(-)
+
+[START commit][author=pernillehaas][time=1683895881][message=Bug fixes][hash=45b8128c8559a72bffa71eaceb1992e869e8c40f]
+ 4 files changed, 28 insertions(+), 12 deletions(-)
+
+[START commit][author=eirvav][time=1683894678][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=d18fd117c487219e1cc7d9df039d69861ea19a9d]
+[START commit][author=eirvav][time=1683894616][message=Update maps.css][hash=a3ab5102d6087cb127dcb434b33ff824e7775b48]
+ 1 file changed, 24 insertions(+), 29 deletions(-)
+
+[START commit][author=Stine2609][time=1683891103][message=made some changes][hash=82f6a142846ae3cbaa133db8554e689517b093c9]
+ 3 files changed, 19 insertions(+), 14 deletions(-)
+
+[START commit][author=Stine2609][time=1683890450][message=created a contact page][hash=0b852ed40690dc6f416f1c57d95a2be5e5987ec8]
+ 4 files changed, 259 insertions(+), 1 deletion(-)
+
+[START commit][author=Stine2609][time=1683889146][message=finished faq page][hash=81585139e82e488cefb34c66faef3fe809c5e3b8]
+ 9 files changed, 127 insertions(+), 45 deletions(-)
+
+[START commit][author=Stine2609][time=1683886674][message=made additional changes to faq page][hash=ba9f18e252c71596a6ffa5e1d254b9c4341956ad]
+ 2 files changed, 57 insertions(+), 1 deletion(-)
+
+[START commit][author=Stine2609][time=1683885564][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=e8e76f943022f093e10add3aa7ad7f9aae3179ba]
+[START commit][author=Stine2609][time=1683885560][message=made more changes to faq page][hash=00974eba96823fa4334bf0f167f8582c92808c66]
+ 2 files changed, 180 insertions(+), 5 deletions(-)
+
+[START commit][author=pernillehaas][time=1683885532][message=Added directions][hash=7fa42d11ddec3eb72dbd9b22ebdb35e123bb2e27]
+ 13 files changed, 223 insertions(+), 2 deletions(-)
+
+[START commit][author=pernillehaas][time=1683882836][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=a322f656efe991cd53397df929cb5bc88de60c1d]
+[START commit][author=pernillehaas][time=1683882830][message=Fixed the footer design][hash=b41ef6399c44f2b9101ee7f9d7a0ffda60ea0092]
+ 13 files changed, 169 insertions(+), 13 deletions(-)
+
+[START commit][author=isakmd][time=1683882014][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=3aa7ffed712b504dfe23dad5ebb2d98a3f359f72]
+[START commit][author=isakmd][time=1683882011][message=button is commented but not working yet][hash=8dc20d76165860e46e45844377e901cc457af277]
+ 1 file changed, 19 insertions(+), 25 deletions(-)
+
+[START commit][author=pernillehaas][time=1683880098][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=085641c2c02788bba658da9e17de461c9595ee37]
+[START commit][author=pernillehaas][time=1683880087][message=Footer][hash=f7a1e042f2b71c327e3045ec98bc19742238d9e3]
+ 2 files changed, 117 insertions(+)
+
+[START commit][author=Stine2609][time=1683879557][message=new html file][hash=6702c7405a8c0692b65fa029920bfd79a570735c]
+ 1 file changed, 41 insertions(+)
+
+[START commit][author=isakmd][time=1683879370][message=Update maps.js][hash=7cfc09d17b5173ff39a05231c539023ff3730344]
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1683876374][message=styling changes][hash=03e571352f3ce14428acb4403d940c7c0106c2e4]
+ 8 files changed, 161 insertions(+), 181 deletions(-)
+
+[START commit][author=isakmd][time=1683809609][message=deleted ingredients will not show in maps tab and removed for local storage][hash=00908bf6a5bb6cd24992645fef6c935215c9336a]
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+[START commit][author=isakmd][time=1683805620][message=shows scrollbar all the time][hash=e8e594637c829f336d0346360e846b0589d38a70]
+ 2 files changed, 26 insertions(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1683804197][message=scrollable ingredient on mainpage asswell][hash=c50fbb291f51240732ace574c7b8f3fb954e9dd4]
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1683804013][message=scrollble ingredients][hash=4de4e8dfa3dda3b2a2ffad7a6ae1950415476ebb]
+ 1 file changed, 5 insertions(+)
+
+[START commit][author=isakmd][time=1683803592][message=ingredients displays when opening map][hash=772ceb25b2b0772691ab46bb40a956233499d2bd]
+ 4 files changed, 55 insertions(+), 11 deletions(-)
+
+[START commit][author=isakmd][time=1683746902][message=tiitlechange][hash=fdb3097c3dcc4f73f237bbaabbaff1d7ede1a340]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1683730668][message=style draggable events][hash=5b653b5ab2cffef8159bebac8258574ec21ed497]
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1683729637][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=eaff8e8542b4e1b65571731f0fecaac7bf6725a8]
+[START commit][author=eirvav][time=1683729631][message=pwpdpaw][hash=83f66151db13008055fe98b5d0e6569298862ab9]
+ 4 files changed, 30 insertions(+), 2 deletions(-)
+
+[START commit][author=isakmd][time=1683728845][message=added maps with our own icons][hash=4e157fe8699ecd151b91c65d4fad93ff2ca6cf72]
+ 3 files changed, 222 insertions(+), 1703 deletions(-)
+
+[START commit][author=eirvav][time=1683719472][message=masse endringer][hash=ae3ba1f7fbe16a181747764fb2d3a386d80cc457]
+ 7 files changed, 111 insertions(+), 82 deletions(-)
+
+[START commit][author=eirvav][time=1683584197][message=Added alot of styling][hash=c0f939ffde749103ac6fe01a1ce7802e0acb34bc]
+ 12 files changed, 452 insertions(+), 334 deletions(-)
+
+[START commit][author=eirvav][time=1683554809][message=endringer i css][hash=e8febcb5f6d4ef56e3caa667ad96fa49388b9aec]
+ 3 files changed, 99 insertions(+), 10 deletions(-)
+
+[START commit][author=isakmd][time=1683553191][message=maps site][hash=a298f6836a58771d08a684b79e814e993a4f8914]
+ 1 file changed, 1716 insertions(+)
+
+[START commit][author=eirvav][time=1683551607][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=6f10601a31488d0aad244aba0ed721c865bcc1c0]
+[START commit][author=eirvav][time=1683551601][message=la til ting i kalender][hash=1baca90c5fdf7a668a16352961ee565c568a4aa9]
+ 5 files changed, 135 insertions(+), 58 deletions(-)
+
+[START commit][author=isakmd][time=1683551536][message=You can now delete ingredients][hash=c48981eff8fef733ef18563918f899479d40460d]
+ 2 files changed, 42 insertions(+), 4 deletions(-)
+
+[START commit][author=eirvav][time=1683546477][message=Merge branch 'main' of https://github.com/eirvav/mealplanner][hash=f1615b05acd27f12d2ea109fb523eb6b91f59ac2]
+[START commit][author=eirvav][time=1683546474][message=eirik endringer][hash=b883d7ddc9558d9d87d330246fa85f3b3493904d]
+ 4 files changed, 375 insertions(+), 156 deletions(-)
+
+[START commit][author=isakmd][time=1683538649][message=nvm fiksa d no][hash=98df26956f551f43ac82bde02c52e6b358261a7e]
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+[START commit][author=isakmd][time=1683538346][message=lagt til de noen middager slik at error forsvinner][hash=dec69e27e934e6ce44d1e5e244657695dd3c2fc9]
+ 2 files changed, 46 insertions(+), 6 deletions(-)
+
+[START commit][author=isakmd][time=1683537439][message=deleted unsessesary code][hash=cd8f81d7c344eb920a9d029fa0497aaf16e1b1ca]
+ 1 file changed, 64 insertions(+), 392 deletions(-)
+
+[START commit][author=eirvav][time=1683113702][message=Update script.js][hash=fde82dd5715e5607d39545bd8ba9da0490f7ed3a]
+ 1 file changed, 1 deletion(-)
+
+[START commit][author=eirvav][time=1683113609][message=Merge branch 'first-branch'][hash=c8fd3670c60b0e0c92f1354a36362de58d39de73]
+[START commit][author=eirvav][time=1683113305][message=sletta masse drit][hash=7d2b337ff513cd3825e6ad6bb5328967d5e975d6]
+ 10 files changed, 180 insertions(+), 588 deletions(-)
+
+[START commit][author=eirvav][time=1683111964][message=fjerna masse drit][hash=4029ea8a0ef005d0e01e9da395c2868d3b7383bb]
+ 1778 files changed, 11 insertions(+), 120209 deletions(-)
+
+[START commit][author=isakmd][time=1683109823][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=f67595580a964e307a5523a5083a194197762f03]
+[START commit][author=isakmd][time=1683109821][message=added meals to callendar][hash=9f8198462f6211838ca76c53949daf6cfbc0a0bc]
+ 3 files changed, 19 insertions(+)
+
+[START commit][author=eirvav][time=1683109795][message=Delete test2.html][hash=4f625e4960dad2cc46158a277b8e016ed78d7e08]
+ 1 file changed, 51 deletions(-)
+
+[START commit][author=eirvav][time=1683107541][message=mer calendar ting][hash=558bf00a68435ff4fec2619ee26822e153ee6eee]
+ 2 files changed, 59 insertions(+), 3 deletions(-)
+
+[START commit][author=eirvav][time=1683106014][message=Fixed refresh button in calendar][hash=47ef32f68b9d6c43b780d34ac480c5683b1d7075]
+ 1 file changed, 3 insertions(+)
+
+[START commit][author=eirvav][time=1683105514][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=be01cbd7a68e4e85b327cec48861162fe29a2d31]
+[START commit][author=eirvav][time=1683105487][message=Update calendar.html][hash=deb138288df37330708acf83de43cfac41331523]
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1683105071][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=04c510830c1e1a2f8435f15e96a53334dbadbeb9]
+[START commit][author=isakmd][time=1683105051][message=smal][hash=d8b96b0e27809b3c56a3a6f3964309c307d0700d]
+ 2 files changed, 2 insertions(+), 4 deletions(-)
+
+[START commit][author=eirvav][time=1683105005][message=Update calendar.html][hash=69ab1c06349225a609adf8eed49fd63bf8c53af4]
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+[START commit][author=eirvav][time=1683101756][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=7d7766642f6fdf8e69191913d0d895e651b02916]
+[START commit][author=eirvav][time=1683101754][message=working calendar][hash=35a414160a385bfb65115a245f55d3da472793b4]
+ 3 files changed, 104 insertions(+), 48 deletions(-)
+
+[START commit][author=isakmd][time=1683101592][message=added array][hash=68bbb3bca9dbb88221a04f8075c52c7ad70fcf26]
+ 1 file changed, 24 insertions(+), 3 deletions(-)
+
+[START commit][author=eirvav][time=1683028889][message=Update index.html][hash=99c6eb5a4606c8a6b6df70a11f4dc0d14c81e21c]
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1683028602][message=removed calorie button][hash=97f2c3ff9ea1f2d828bf7d661b6ca583c53ad882]
+ 2 files changed, 5 insertions(+), 28 deletions(-)
+
+[START commit][author=eirvav][time=1683027779][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=9379d55d579658253684d3dbcda3389da2187748]
+[START commit][author=eirvav][time=1683027776][message=added calendar stuff][hash=836234106201bb50e85166d0df11875e8ff0b206]
+ 1783 files changed, 135521 insertions(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1683023414][message=non dublicates of shoppinglist][hash=2b0632c1b916ddac1ce4bb29955fa6d4305b7f6d]
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+[START commit][author=isakmd][time=1683019756][message=Functioning dinner][hash=f06a9e2b000772268c7458420f2bb28e423d4b0e]
+ 1 file changed, 154 insertions(+), 79 deletions(-)
+
+[START commit][author=eirvav][time=1683018152][message=commented dinner][hash=eb4bb331d7dcd9afdb568e480a3eebc48152da48]
+ 1 file changed, 83 insertions(+)
+
+[START commit][author=eirvav][time=1683017676][message=Added "dinner" section][hash=4484a87924b97b9da2bee5805863677656e70bbd]
+ 2 files changed, 50 insertions(+)
+
+[START commit][author=eirvav][time=1683017427][message=deleted files][hash=13bf388984995c981375e4a2b57514391895cecb]
+ 7 files changed, 103 insertions(+), 477 deletions(-)
+
+[START commit][author=eirvav][time=1683016937][message=made the <hero> smaller][hash=beea602eab7e47628488ccd2320c50c8c1081f9f]
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
+[START commit][author=eirvav][time=1683016367][message=fjerna kommentarer][hash=7e3ad3bee7a431c293c40c07eab89839d850fda1]
+ 1 file changed, 18 deletions(-)
+
+[START commit][author=isakmd][time=1683016213][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=f291f6e42afabf08f2695eb02d93f61a51f0842a]
+[START commit][author=isakmd][time=1683016201][message=Create test.html][hash=9cca038dec24e3fbedad3cacc8e9a31959b9cefd]
+ 1 file changed, 312 insertions(+)
+
+[START commit][author=eirvav][time=1683016097][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=ce601325d1a8607d0f1ae49773b0edf865ff9d63]
+[START commit][author=eirvav][time=1683016006][message=fjerna kommentert kode][hash=18759bd53efcb1405e85dee5339d339cb0c0aff1]
+ 1 file changed, 19 deletions(-)
+
+[START commit][author=pernillehaas][time=1682934833][message=Homepage][hash=49d2fbea095f477644c73b04b88fdbf22d3d35d4]
+ 6 files changed, 83 insertions(+)
+
+[START commit][author=eirvav][time=1682883988][message=deleted files][hash=8724e2178e6e1e9a3cbf02117f6ae26196cdc549]
+ 20 files changed, 839 deletions(-)
+
+[START commit][author=eirvav][time=1682883747][message=some styling changes][hash=09443d8b04757b3e0b6a74246eb026fdc9b36bef]
+ 2 files changed, 52 insertions(+), 75 deletions(-)
+
+[START commit][author=eirvav][time=1682694411][message=LITT CSS][hash=cea8a6295fe83badc6995697a12e964ab3377ebf]
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+[START commit][author=eirvav][time=1682693683][message=fiksa oppsett][hash=01fdcacf48982270695b6f05917d50294939d06a]
+ 3 files changed, 31 insertions(+), 23 deletions(-)
+
+[START commit][author=eirvav][time=1682693074][message=fjerna 1 meal][hash=530b0e4d67492c30bd62c46a4379484af9336dfe]
+ 1 file changed, 19 deletions(-)
+
+[START commit][author=eirvav][time=1682692903][message=siste endring for dagen;)?][hash=2d7fc400fa3e19f84a24d353484cfecf858c2005]
+ 3 files changed, 286 insertions(+), 417 deletions(-)
+
+[START commit][author=eirvav][time=1682692689][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=de761a9d5681032c90c623b0981b75338ffcdc26]
+[START commit][author=eirvav][time=1682692659][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=c5eefc4d5a1de9e686403b1eda08f7e305e755fe]
+[START commit][author=isakmd][time=1682692657][message=test][hash=70bf42a562b82aa4ea72a9e90210353741f381ec]
+ 2 files changed, 300 insertions(+), 76 deletions(-)
+
+[START commit][author=isakmd][time=1682692332][message=new file][hash=5c566dc915f5d518eb3b7553c046232daf4d7b88]
+ 2 files changed, 77 insertions(+), 52 deletions(-)
+
+[START commit][author=eirvav][time=1682691671][message=changes_eirik][hash=d2697d43265c7b069914ace969ec939742a32a88]
+ 3 files changed, 375 insertions(+), 318 deletions(-)
+
+[START commit][author=isakmd][time=1682690732][message=Update planmeals.css][hash=ebb04a9be644548fd8f64e3e9ad1a0eef5ae5713]
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[START commit][author=isakmd][time=1682688160][message=fikset ingrediensene også][hash=65cca9a89d6bfe2d04dcd6fbc7a928ecbbfd04aa]
+ 1 file changed, 34 insertions(+), 16 deletions(-)
+
+[START commit][author=isakmd][time=1682687668][message=fikset at 2 randome retter blir valgt når man trykker og at det semmer med meals added][hash=794e61444232b2996bf3ca609fd1f1eae05b787d]
+ 1 file changed, 36 insertions(+), 7 deletions(-)
+
+[START commit][author=isakmd][time=1682686030][message=fikset random retter][hash=b846fab553ba9abc28b09730216a6e426b4e6d4f]
+ 1 file changed, 4 insertions(+), 108 deletions(-)
+
+[START commit][author=isakmd][time=1682685825][message=test][hash=5da6633c5889d0bd3893c9b18ac62f5fa35bbcd4]
+ 6 files changed, 237 insertions(+), 37 deletions(-)
+
+[START commit][author=eirvav][time=1682684084][message=.prettier + formatering][hash=20ea428d29880474e98e6b2e67a1754b36b82033]
+ 2 files changed, 326 insertions(+), 247 deletions(-)
+
+[START commit][author=eirvav][time=1682681612][message=la til hidden content inne i main][hash=df099dcc6adb0ef43272dea93f90ae9f7f0d13ca]
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+[START commit][author=isakmd][time=1682681221][message=jeg ahdasd][hash=3d3bd4e9fe4732c08e5931a80bb1899e0c0ca00e]
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[START commit][author=isakmd][time=1682680466][message=liten endring][hash=8c61809847da9c08bd9fcf0209bb784793bdc4eb]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1682679874][message=small change][hash=40f6051314359b0f99b5ee4eaf228d43ca02dcdd]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1682679487][message=La til bilder][hash=69a7478b165db512ec4962999e056c381bd66484]
+ 4 files changed, 68 insertions(+), 14 deletions(-)
+
+[START commit][author=isakmd][time=1682604102][message=liten kodefeil][hash=e31ddbe72451b8f145823f827ecb0f6020eb5c5f]
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+[START commit][author=isakmd][time=1682603997][message=Added a shoppinglist][hash=7411bb213fb5b2b38e00bbec35732e7f1a82ab5d]
+ 3 files changed, 64 insertions(+), 8 deletions(-)
+
+[START commit][author=isakmd][time=1682597409][message=småe greier][hash=e2c5ac92f5c8e1e414455fa4e41103af9edd9d22]
+ 3 files changed, 6 insertions(+), 2 deletions(-)
+
+[START commit][author=isakmd][time=1682596055][message=nå fungerer det å legge til målteder på høyre side][hash=186a9de00345e4b9a5a9ead0e1378717f505b020]
+ 2 files changed, 42 insertions(+), 14 deletions(-)
+
+[START commit][author=isakmd][time=1682524734][message=LA til lunch og at man kan legge til matretter i  meals added][hash=316954b336f9c351d5820b99c5d7fa160bb4a30c]
+ 3 files changed, 65 insertions(+), 16 deletions(-)
+
+[START commit][author=isakmd][time=1682521441][message=la til lunch delen og ordnet slik at man kan se protein og fat i tilleg][hash=029339cae5995cdb3d86334dde534480114f38e4]
+ 3 files changed, 83 insertions(+), 18 deletions(-)
+
+[START commit][author=isakmd][time=1682516596][message=farge][hash=16f879eb2e9cacf7df7e413a005d217eeb5c8122]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=isakmd][time=1682516024][message=contet vissible/hidden][hash=ae1b477f1f462c15376ad3aa502dc8fb64146638]
+ 4 files changed, 16 insertions(+), 6 deletions(-)
+
+[START commit][author=isakmd][time=1682515410][message=Har lagt til interaktivt kode][hash=cbadb5bb1b3b293679f8858e772abc235acecaea]
+ 4 files changed, 267 insertions(+), 250 deletions(-)
+
+[START commit][author=isakmd][time=1682505936][message=byttet link][hash=5de1a69c8430dd1dad6b2c76c5962eb58bd3c8df]
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[START commit][author=eirvav][time=1682505250][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=ef600ddbbc0e0dea27d65f5d8dc950aea88cb0a1]
+[START commit][author=eirvav][time=1682504887][message=endringer, Eirik][hash=8b60205fa508f5dd8601e3fd412bb51f6ce89645]
+ 6 files changed, 677 insertions(+), 166 deletions(-)
+
+[START commit][author=isakmd][time=1682504866][message=småe endringer med noen css problemer][hash=0a1957ed00c2680035901294c24ea8dcfc7ce98f]
+ 4 files changed, 222 insertions(+), 188 deletions(-)
+
+[START commit][author=isakmd][time=1682500094][message=jsonfile exs][hash=6286d7f2071c8c5ef93e43b9162052dcb68f2cb5]
+ 4 files changed, 283 insertions(+)
+
+[START commit][author=eirvav][time=1682498700][message=first commit main][hash=0c3fe9e70f9fceb996b6a5464aed2f4fba816a68]
+ 26 files changed, 1082 insertions(+), 141 deletions(-)
+
+[START commit][author=eirvav][time=1682433199][message=First iteration][hash=4efbb8f31fad6570cd2a5d6ae5ba8eeee8aa1bdd]
+ 26 files changed, 1072 insertions(+), 29 deletions(-)
+
+[START commit][author=Stine2609][time=1682330261][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=36c2182f95e5e0297056917965c9c33348acaf22]
+[START commit][author=Stine2609][time=1682330138][message=noe][hash=4bfdc8db7da2b02ec6c128b559abf90a42ee2316]
+ 1 file changed, 6 insertions(+)
+
+[START commit][author=eirvav][time=1682330089][message=Navbar][hash=eabd9f92676793394309e239d98f3e81f1d4ddff]
+ 1 file changed, 28 insertions(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1682329227][message=Start av prosjekt][hash=7fca0c6fae6aa8b30328bc968fcec071a07e6a56]
+ 2 files changed, 13 insertions(+), 146 deletions(-)
+
+[START commit][author=eirvav][time=1682327274][message=Merge pull request #7 from eirvav/first-branch][hash=45d07719cd6264e67ddbcb139f662155bdc32c0a]
+[START commit][author=eirvav][time=1682327217][message=Tester om jeg klarer å committe til first bar first branch][hash=5050ffdc1948567510991354a9a1e15a9da17ec1]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[START commit][author=eirvav][time=1682327129][message=Merge pull request #6 from eirvav/second-branch][hash=87d276a5d04203da3c85aa38e77ad7a40a1e458c]
+[START commit][author=eirvav][time=1682327102][message=Merge pull request #5 from eirvav/main][hash=a8784bb89f69e23fc348bde0eb2bb4be19cbf1c3]
+[START commit][author=eirvav][time=1682326556][message=Merge branch 'first-branch' of https://github.com/eirvav/mealplanner into first-branch][hash=c6f13921bf69e28f9538f171da6a9342a084e5e7]
+[START commit][author=eirvav][time=1682326496][message=oppdatere first branch][hash=dc4c60821a028ecf46e895d3ad71bb324bee5c83]
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+[START commit][author=eirvav][time=1682326255][message=Merge pull request #4 from eirvav/main][hash=41f82cc9fd26c65cdcf2a19ebfa2fcf32a22c004]
+[START commit][author=eirvav][time=1682326216][message=fjerna ting][hash=7546e57b289fe9f5b544eb5fe718dda6ecd5b018]
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+[START commit][author=eirvav][time=1682324352][message=Merge pull request #3 from eirvav/second-branch][hash=14a5bf525b290eb9e5e836acd01f31de05676bfa]
+[START commit][author=eirvav][time=1682324328][message=Merge branch 'second-branch' of https://github.com/eirvav/mealplanner into second-branch][hash=b5f6c90a17fddb92a769941b72c10640039c2072]
+[START commit][author=eirvav][time=1682324325][message=test2][hash=adc4aa9c8aa95b1cb9aad51e9af61ebd34a063d3]
+ 1 file changed, 1 insertion(+)
+
+[START commit][author=eirvav][time=1682324254][message=Merge pull request #2 from eirvav/first-branch][hash=ee331ff9e0795b63688325da37bf7441ef190ef9]
+[START commit][author=eirvav][time=1682324193][message=Merge pull request #1 from eirvav/second-branch][hash=0085ba46ed094759e988ebd9b9467f7d2e9731f3]
+[START commit][author=eirvav][time=1682324149][message=first commit second branch][hash=fdacebcfd191249593bd92133cca68daae7a6d06]
+ 1 file changed, 1 insertion(+)
+
+[START commit][author=pernillehaas][time=1682323860][message=Pernille edit][hash=71a357e7123b1553f656b4a19d0bc3a20b5e8a2d]
+ 1 file changed, 77 insertions(+), 65 deletions(-)
+
+[START commit][author=isakmd][time=1682323550][message=skreiv navnet mitt nederst][hash=23e0b43598e86c9756ab310f24ec2b6e14ec35ab]
+ 1 file changed, 66 insertions(+), 62 deletions(-)
+
+[START commit][author=eirvav][time=1682322859][message=First commit][hash=a748f56334337ab7da86ea74330901de04f7072c]
+ 3 files changed, 132 insertions(+)
+
+[START commit][author=eirvav][time=1682322786][message=Initial commit][hash=3e19ed98fd8aed319af5345f4ef184ce115a005b]
+ 2 files changed, 4 insertions(+)
+>>>>>>> Stashed changes
